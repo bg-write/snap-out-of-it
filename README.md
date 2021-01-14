@@ -10,6 +10,10 @@ Deploy the app: TBD
 
 Trello board: https://trello.com/b/5GaF2ssf/snap-out-of-it
 
+# ERD
+
+![ERD](public/images/erd.png)
+
 ## Screenshots
 
 ### Landing Page
@@ -18,11 +22,11 @@ Trello board: https://trello.com/b/5GaF2ssf/snap-out-of-it
 
 ### SCREENSHOT TWO
 
-![TBD](TBD)
+![MobileScreenshot1](public/images/mobilescreenshot.png)
 
 ### SCREENSHOT THREE
 
-![TBD](TBD)
+![DesktopScreenshot](public/images/desktopscreenshot.png)
 
 ## What This App Can Do
 
