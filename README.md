@@ -2,6 +2,8 @@
 
 The app to help you get through a breakup, or any other kind of heartbreak. This MERN app uses a mix of user action steps and available resources to address how hard and overwhelming heartbreak can feel, and to help users in all stages of grief help navigate towards healing and embrace empathy.
 
+Heroku: (link)
+
 ## Getting Started
 
 Deploy the app: TBD
