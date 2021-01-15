@@ -10,8 +10,11 @@ const NavBar = ({ user, handleLogout }) => {
             <ul id="nav-mobile" className="right">
               <li className="nav-link">Welcome, {user.name}</li>
               <li><Link to="/users" className="nav-link">Users</Link></li>
-              <Link to='' className='nav-link' onClick={handleLogout}>LOG OUT</Link>
-              <li><Link to="/mantrapage" className="nav-link">MantraPage</Link></li>
+              <Link to='' className='nav-link' onClick={handleLogout}>Log Out</Link>
+              <li><Link to="/mantrapage" className="nav-link">Mantra Page</Link></li>
+              <li><Link to="/metimepage" className="nav-link">Me Time Page</Link></li>
+              <li><Link to="/dealbreakerpage" className="nav-link">Dealbreaker Page</Link></li>
+              <li><Link to="/playlistpage" className="nav-link">Playlist Page</Link></li>
               <li><Link to="/" className="nav-link">Home</Link></li>
             </ul>
           </div>
