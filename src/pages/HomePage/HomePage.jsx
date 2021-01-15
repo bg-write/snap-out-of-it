@@ -18,10 +18,16 @@ function HomePage() {
 
     return(
         <>
-            <div>
-                <h1> Home page :D</h1>
-                <MantraPage />
-            </div>
+            <header></header>
+            <main>
+                <Route exact path="/mantra-page" render={() =>
+                    <MantraPage/>
+                }/>
+                {/* <Route exact path="/me-time" render={() =>
+                    <MeTimePage />
+                }/> */}
+            </main>
+
         </>
     )
 
