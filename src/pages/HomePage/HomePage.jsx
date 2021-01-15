@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./HomePage.css";
 import { Route, NavLink, useHistory } from 'react-router-dom';
-import MantraList from "../MantraList/MantraList"
+import MantraPage from "../MantraPage/MantraPage";
 
 // Here we import all the things we are exporting from all our pages
 
@@ -20,7 +20,7 @@ function HomePage() {
         <>
             <div>
                 <h1> Home page :D</h1>
-                <MantraList />
+                <MantraPage />
             </div>
         </>
     )

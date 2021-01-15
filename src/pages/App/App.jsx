@@ -9,7 +9,7 @@ import "./App.css";
 import HomePage from "../HomePage/HomePage"
 
 
-// This App class is rendering all the components that were imported above into the page.
+// This App page is rendering all the components that were imported above into the page.
 class App extends Component {
   state = {
     user: authService.getUser(),
