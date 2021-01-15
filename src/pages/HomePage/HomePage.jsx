@@ -20,9 +20,10 @@ function HomePage() {
         <>
             <header></header>
             <main>
-                <Route exact path="/mantra-page" render={() =>
+                <h1>Home actual page</h1>
+                {/* <Route exact path="/mantraPage" render={() =>
                     <MantraPage/>
-                }/>
+                }/> */}
                 {/* <Route exact path="/me-time" render={() =>
                     <MeTimePage />
                 }/> */}
