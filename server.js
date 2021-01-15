@@ -9,6 +9,15 @@ require('./config/database');
 
 const userRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
+//mantra route
+const mantrasRouter = require('./routes/api/mantras')
+//me time route
+
+//deal breaker route
+
+//playlist route
+
+//affirmations route
 
 const cors = require('cors')
 
@@ -23,6 +32,15 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use('/api/auth', authRouter);
 app.use('/api/users', userRouter);
+//mantra route middleware
+app.use('/api/mantras', mantrasRouter)
+//me time route middleware
+
+//deal breakers route middleware
+
+//playlist route middleware
+
+//affirmations route middleware
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
