@@ -6,7 +6,10 @@ import Login from "../Login/Login";
 import authService from "../../services/authService";
 import Users from '../Users/Users'
 import "./App.css";
+import HomePage from "../HomePage/HomePage"
 
+
+// This App class is rendering all the components that were imported above into the page.
 class App extends Component {
   state = {
     user: authService.getUser(),
@@ -32,6 +35,7 @@ class App extends Component {
           path="/"
           render={() => (
             <main>
+              <HomePage />
               <h1>Welcome. This is an authorization template.</h1>
             </main>
           )}
