@@ -7,7 +7,7 @@ import authService from "../../services/authService";
 import Users from '../Users/Users'
 import "./App.css";
 import HomePage from "../HomePage/HomePage"
-
+import MantraPage from "../MantraPage/MantraPage"
 
 // This App page is rendering all the components that were imported above into the page.
 class App extends Component {
@@ -36,7 +36,7 @@ class App extends Component {
           render={() => (
             <main>
               <HomePage />
-              <h1>Welcome. This is an authorization template.</h1>
+              <h1>Home Page(App.js).</h1>
             </main>
           )}
         />
@@ -67,6 +67,9 @@ class App extends Component {
             user ? <Users /> : <Redirect to="/login" />
           }
         />
+          <Route exact path="/mantrapage" render={() =>
+                    <MantraPage/>
+                }/>
       </>
     );
   }

@@ -16,7 +16,7 @@ function MantraPage(props) {
 
   useEffect(() => {
     // This is listening for changes in mantras state, then the function below will reroute
-    history.push("/");
+    history.push("/mantrapage");
   }, [mantras, history]);
 
   // Add a mantra
@@ -54,7 +54,7 @@ function MantraPage(props) {
   return (
     <>
       <div>
-        <h1> Mantra list :D</h1>
+        <h1> Mantra page!</h1>
       </div>
       <div>
         <h1>MantraCard Component</h1>
