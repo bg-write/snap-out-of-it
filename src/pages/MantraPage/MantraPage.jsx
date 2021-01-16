@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./MantraList.css";
+import "./MantraPage.css";
 import { Route, NavLink, useHistory } from "react-router-dom";
 import MantraCard from "../../components/MantraCard/MantraCard";
 import * as mantraAPI from "../../services/mantras-api";
