@@ -8,41 +8,32 @@ import AddMantraCard from "../../components/AddMantraCard/AddMantraCard";
 import { useStateWithCallback } from "../../hooks/useStateWithCallback";
 
 // This is our mantra list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
-
 function MantraPage(props) {
   // Creating state for mantras
   const [mantras, setMantras] = useState([]);
   const history = useHistory();
-
   useEffect(() => {
     // This is listening for changes in mantras state, then the function below will reroute
     history.push("/mantrapage");
   }, [mantras, history]);
-
   // Add a mantra
   async function handleAddMantra(newMantraData) {
     const newMantra = await mantraAPI.create(newMantraData);
-
     setMantras((mantras) => [...mantras, newMantra]);
   }
-
   // Update a mantra
   async function handleUpdateMantra(updatedMantraData) {
     const updatedMantra = await mantraAPI.update(updatedMantraData);
     const newMantrasArray = mantras.map((m) =>
       m._id === updatedMantra._id ? updatedMantra : m
     );
-
     setMantras(newMantrasArray);
   }
-
   // Delete a mantra
   async function handleDeleteMantra(id) {
     await mantraAPI.deleteOne(id);
-
     setMantras(mantras.filter((m) => m._id !== id));
   }
-
   /*--- Lifecycle Methods ---*/
   useEffect(() => {
     (async function () {
@@ -59,50 +50,27 @@ function MantraPage(props) {
       <div>
         <h1>MantraCard Component</h1>
         <>
-          {mantras.map((mantra) => (
-            <p>
-              <MantraCard
-                mantra={mantra}
-                handleDeleteMantra={handleDeleteMantra}
-                key={mantra._id}
-              />
-            </p>
-          ))}
-          <>
-            <AddMantraCard handleAddMantra={handleAddMantra} />
-          </>
-        </>
-
-        {/* <div>
-          {mantras.map(
-            mantra => (
-              <>
-                <MantraCard
-                  mantra={mantra}
-                  handleDeleteMantra={handleDeleteMantra}
-                  key={mantra._id}
-                />
-              
-              
-                <EditMantraCard
-                  mantra={mantra}
-                  handleUpdateMantra={handleUpdateMantra}
-                  key={mantra._id}
-                />
-              
-              
-                <AddMantraCard
+        {mantras.map(mantra => (
+         <p>
+         <MantraCard
+         mantra={mantra}
+         handleDeleteMantra={handleDeleteMantra}
+         key={mantra._id} />
+          <AddMantraCard
                   mantra={mantra}
                   handleAddMantra={handleAddMantra}
                   key={mantra._id}
                 />
-              </>
-            )
-          )}
-        </div> */}
+          <EditMantraCard
+            mantra={mantra}
+            handleUpdateMantra={handleUpdateMantra}
+            key={mantra._id}
+          />
+         </p>
+        ))}
+        </>
       </div>
     </>
   );
 }
-
 export default MantraPage;
