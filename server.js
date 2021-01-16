@@ -18,6 +18,7 @@ const dealBreakersRouter = require('./routes/api/dealBreakers')
 //playlist route
 
 //affirmations route
+const affirmationsRouter = require("./routes/api/affirmations")
 
 const cors = require('cors')
 
