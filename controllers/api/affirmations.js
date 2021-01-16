@@ -1,4 +1,3 @@
-const { deleteOne } = require("../../models/affirmation");
 const Affirmation = require("../../models/affirmation");
 
 module.exports = {
