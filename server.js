@@ -14,7 +14,7 @@ const mantrasRouter = require('./routes/api/mantras')
 //me time route
 // HELLO
 //deal breaker route
-
+const dealBreakersRouter = require('./routes/api/dealBreakers')
 //playlist route
 
 //affirmations route
@@ -37,7 +37,7 @@ app.use('/api/mantras', mantrasRouter)
 //me time route middleware
 
 //deal breakers route middleware
-
+app.use('/api/dealBreakers', dealBreakersRouter)
 //playlist route middleware
 
 //affirmations route middleware
