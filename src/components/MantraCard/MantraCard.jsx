@@ -11,7 +11,6 @@ function MantraCard({ mantra, handleDeleteMantra }) {
 		<>
 		<div>
 			<div>
-			<h1>This is our Mantra List Item</h1>
 			<p>{mantra.text}</p>
 			</div>
 			<div>
