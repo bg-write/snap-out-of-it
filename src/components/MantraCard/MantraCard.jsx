@@ -2,11 +2,8 @@ import React, {Component, useState, useEffect, useRef} from 'react';
 import { Link } from 'react-router-dom';
 import './MantraCard.css';
 
-
-
-
 function MantraCard({ mantra, handleDeleteMantra }) {
-	
+
 	return (
 		<>
 		<div>
