@@ -37,7 +37,7 @@ class LoginPage extends Component {
     return (
       <main className="Login">
         <h3>Log In</h3>
-        <form autoComplete="off" onSubmit={this.handleSubmit}>
+        <form className="form" autoComplete="off" onSubmit={this.handleSubmit}>
           <input
             type="text"
             autoComplete="off"

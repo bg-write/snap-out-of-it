@@ -7,6 +7,7 @@ import EditMantraCard from "../../components/EditMantraCard/EditMantraCard";
 import AddMantraCard from "../../components/AddMantraCard/AddMantraCard";
 import { useStateWithCallback } from "../../hooks/useStateWithCallback";
 
+
 // This is our mantra list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
 
 function MantraPage(props) {
@@ -54,37 +55,51 @@ function MantraPage(props) {
   return (
     <>
       <div>
-        <h1> Mantra page!</h1>
+        <h1> Mantra page.jsx!</h1>
       </div>
       <div>
         <h1>MantraCard Component</h1>
-        <div>
+        <>
+        {mantras.map(mantra => (
+         <p>
+         <MantraCard
+         mantra={mantra}
+         handleDeleteMantra={handleDeleteMantra}
+         key={mantra._id} />
+         
+         </p>
+         
+         
+        ))}
+        </>
+     
+        {/* <div>
           {mantras.map(
-            (mantra) => (
-              (
+            mantra => (
+              <>
                 <MantraCard
                   mantra={mantra}
                   handleDeleteMantra={handleDeleteMantra}
                   key={mantra._id}
                 />
-              ),
-              (
+              
+              
                 <EditMantraCard
                   mantra={mantra}
                   handleUpdateMantra={handleUpdateMantra}
                   key={mantra._id}
                 />
-              ),
-              (
+              
+              
                 <AddMantraCard
                   mantra={mantra}
                   handleAddMantra={handleAddMantra}
                   key={mantra._id}
                 />
-              )
+              </>
             )
           )}
-        </div>
+        </div> */}
       </div>
     </>
   );
