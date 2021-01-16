@@ -7,7 +7,7 @@ module.exports = {
     create,
     delete: deleteOne,
     update
-;}
+};
 
 // setting all affirmations to variable and turning variable into JSON
 async function index(req, res) {
