@@ -36,9 +36,11 @@ class LoginPage extends Component {
     const {email, pw} = this.state
     return (
       <main className="Login">
-        <h3>Log In</h3>
-        <form className="form" autoComplete="off" onSubmit={this.handleSubmit}>
-          <input
+       <div className="logo-container"><img className="logo-pic" src="/images/logo.jpg" alt=""/></div> 
+     
+        <form  autoComplete="off" onSubmit={this.handleSubmit}>
+        <h3 className="login-text h2">Log In</h3>
+          <input className="form-control form-control-sm" placeholder="Email..."
             type="text"
             autoComplete="off"
             id="email"
@@ -46,8 +48,8 @@ class LoginPage extends Component {
             name="email"
             onChange={this.handleChange}
           />
-          <label htmlFor="email">Email</label>
-          <input
+          <label htmlFor="email"></label>
+          <input className="form-control form-control-sm" placeholder="Password..."
             type="password"
             autoComplete="off"
             id="password"
@@ -55,9 +57,9 @@ class LoginPage extends Component {
             name="pw"
             onChange={this.handleChange}
           />
-          <label htmlFor="password">Password</label>
-          <button className="btn green">Log In</button>&nbsp;&nbsp;&nbsp;
-          <Link className="btn red" to="/">
+          <label htmlFor="password"></label>
+          <button className="buttons btn btn-light">Log In</button>
+          <Link className="buttons btn btn-light" to="/">
             Cancel
           </Link>
         </form>

@@ -1,22 +1,31 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import './NavBar.css';
+import {FaUserCircle } from 'react-icons/fa';
+
 
 const NavBar = ({ user, handleLogout }) => {
     return (
     <>
       {user ?
-        <nav>
-          <div className="nav-wrapper">
-            <ul id="nav-mobile" className="right">
-              <li className="nav-link">Welcome, {user.name}</li>
-              <li><Link to="/users" className="nav-link">Users</Link></li>
-              <Link to='' className='nav-link' onClick={handleLogout}>Log Out</Link>
-              <li><Link to="/mantrapage" className="nav-link">Mantra Page</Link></li>
-              <li><Link to="/metimepage" className="nav-link">Me Time Page</Link></li>
-              <li><Link to="/dealbreakerpage" className="nav-link">Dealbreaker Page</Link></li>
-              <li><Link to="/playlistpage" className="nav-link">Playlist Page</Link></li>
-              <li><Link to="/" className="nav-link">Home</Link></li>
+        <nav className="navbar fixed-bottom navbar-light bg-light">
+          <div >
+            
+            <ul classNmae="ul-nav">
+              <li><Link to="/" class="navbar-brand" href="">SnapOutOfIt</Link></li>
+
+              <li><Link to="/users" className="nav-link"><FaUserCircle color="lightgrey" size="2rem" /></Link></li>
+
+              <li><Link to="/mantrapage" className="nav-link">🧘‍♀️</Link></li>
+
+              <li><Link to="/metimepage" className="nav-link">❤️</Link></li>
+
+              <li><Link to="/dealbreakerpage" className="nav-link">💔</Link></li>
+              <li><Link to="/playlistpage" className="nav-link">🎧</Link></li>
+              <li><Link to='' className='nav-link' onClick={handleLogout}>🚪</Link></li>
+              
             </ul>
+            {/* <li className="nav-link">Welcome, {user.name}</li> */}
           </div>
         </nav>
       :
