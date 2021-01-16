@@ -12,7 +12,7 @@ const authRouter = require('./routes/auth');
 //mantra route
 const mantrasRouter = require('./routes/api/mantras')
 //me time route
-// HELLO
+const meTimeRouter = require('./routes/api/meTime')
 //deal breaker route
 
 //playlist route
@@ -35,7 +35,7 @@ app.use('/api/users', userRouter);
 //mantra route middleware
 app.use('/api/mantras', mantrasRouter)
 //me time route middleware
-
+app.use('/api/meTime', meTimeRouter)
 //deal breakers route middleware
 
 //playlist route middleware
