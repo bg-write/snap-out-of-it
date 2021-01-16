@@ -74,6 +74,7 @@ class App extends Component {
                 }/>
           <Route exact path="/dealbreakerpage" render={() =>
                     <DealBreakerPage/>
+                }/>
           <Route exact path="/metimepage" render={() =>
                     <MeTimePage/>
                 }/>
