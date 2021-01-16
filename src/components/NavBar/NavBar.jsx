@@ -8,7 +8,7 @@ const NavBar = ({ user, handleLogout }) => {
     return (
     <>
       {user ?
-        <nav className="navbar fixed-bottom navbar-light bg-light">
+        <nav className="navbar fixed-bottom navbar-light bg-">
           <div >
             
             <ul classNmae="ul-nav">
