@@ -6,6 +6,8 @@ import * as mantraAPI from "../../services/mantras-api";
 import EditMantraCard from "../../components/EditMantraCard/EditMantraCard";
 import AddMantraCard from "../../components/AddMantraCard/AddMantraCard";
 import { useStateWithCallback } from "../../hooks/useStateWithCallback";
+
+
 // This is our mantra list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
 function MantraPage(props) {
   // Creating state for mantras
@@ -40,6 +42,7 @@ function MantraPage(props) {
       setMantras(mantras);
     })();
   }, []);
+
   return (
     <>
       <div>
@@ -54,32 +57,19 @@ function MantraPage(props) {
          mantra={mantra}
          handleDeleteMantra={handleDeleteMantra}
          key={mantra._id} />
-         </p>
-        ))}
-        </>
-        {/* <div>
-          {mantras.map(
-            mantra => (
-              <>
-                <MantraCard
-                  mantra={mantra}
-                  handleDeleteMantra={handleDeleteMantra}
-                  key={mantra._id}
-                />
-                <EditMantraCard
-                  mantra={mantra}
-                  handleUpdateMantra={handleUpdateMantra}
-                  key={mantra._id}
-                />
-                <AddMantraCard
+          <AddMantraCard
                   mantra={mantra}
                   handleAddMantra={handleAddMantra}
                   key={mantra._id}
                 />
-              </>
-            )
-          )}
-        </div> */}
+          <EditMantraCard
+            mantra={mantra}
+            handleUpdateMantra={handleUpdateMantra}
+            key={mantra._id}
+          />
+         </p>
+        ))}
+        </>
       </div>
     </>
   );
