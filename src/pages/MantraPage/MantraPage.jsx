@@ -66,7 +66,11 @@ function MantraPage(props) {
          mantra={mantra}
          handleDeleteMantra={handleDeleteMantra}
          key={mantra._id} />
-         
+          <AddMantraCard
+                  mantra={mantra}
+                  handleAddMantra={handleAddMantra}
+                  key={mantra._id}
+                />
          </p>
          
          
