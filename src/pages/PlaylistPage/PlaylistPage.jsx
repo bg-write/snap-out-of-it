@@ -47,8 +47,9 @@ function PlaylistPage(props) {
       <>
         <div>
           <h1> Playlist page.jsx!</h1>
-          <h1> Playlist page</h1>
         </div>
+        <div>
+          <h1> Playlist page</h1>
          
           <>
           {playlists.map(playlist => (
