@@ -2,7 +2,8 @@ const mongoose = require('mongoose')
 const Schema = mongoose.Schema;
 
 const quotesSassy = new Schema({
-    quotes: [{
+    quotes: [
+        {
             id: 1,
             quote: '"All discarded lovers should be given a second chance, but with somebody else." - Mae West',
         },
@@ -74,6 +75,6 @@ const quotesSassy = new Schema({
     ]
 }, {
     timestamps: true
-})
+});
 
 module.exports = mongoose.model("QuotesSassy", quotesSassy);
