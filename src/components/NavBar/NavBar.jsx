@@ -13,7 +13,7 @@ const NavBar = ({ user, handleLogout }) => {
 			{user ? (
 				<nav>
 					<div>
-						<li className="nav-link">Welcome, {user.name}</li>
+					
 
 						<Container>
 							<Navbar id="NavBar" fixed="bottom">

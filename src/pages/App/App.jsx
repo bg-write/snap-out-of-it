@@ -39,7 +39,7 @@ class App extends Component {
           path="/"
           render={() => user ? (
             <main>
-              <HomePage />
+              <HomePage user={this.state.user}/>
               <h1>Home Page(App.js).</h1>
             </main>
           ): <Redirect to="/Login"/>}
