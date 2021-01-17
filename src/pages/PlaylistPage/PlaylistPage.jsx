@@ -45,10 +45,10 @@ function PlaylistPage(props) {
     return (
       <>
         <div>
-          <h1> Playlist page.jsx!</h1>
+          <h1> Playlist page</h1>
         </div>
         <div>
-          <h1>PlaylistCard Component</h1>
+         
           <>
           {playlists.map(playlist => (
            <p>

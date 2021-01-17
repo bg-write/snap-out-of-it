@@ -6,13 +6,18 @@ function AffirmationCard({ affirmation, handleDeleteAffirmation }) {
 
     return (
         <>
-            <div>
-                <div>
+            <div className="af-card-container">
+            <div className="card a-card">
+            <div className="card-header a-header">
+            Affirmation
+          </div>
+                <div className="card-text a-text">
                     <p>{affirmation.text}</p>
                 </div>
             </div>
             <div>
-                <button onClick={() => handleDeleteAffirmation(affirmation._id)}>DELETE</button>
+                <button className="btn af-delete" onClick={() => handleDeleteAffirmation(affirmation._id)}>x</button>
+            </div>
             </div>
         </>
     )
