@@ -7,3 +7,4 @@ router.get("/", playlistsCtrl.index);
 
 // Protected routes
 router.use(require("../../config/auth"));
+router.get("/:id", playlistsCtrl.show);
