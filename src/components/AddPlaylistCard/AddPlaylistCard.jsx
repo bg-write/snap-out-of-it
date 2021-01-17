@@ -1,6 +1,6 @@
 import React, {Component, useState, useEffect, useRef} from 'react';
 import { Link } from 'react-router-dom';
-import './PlaylistCard.css';
+import './AddPlaylistCard.css';
 
 function AddPlaylistCard({ playlist, handleDeletePlaylist }) {
 

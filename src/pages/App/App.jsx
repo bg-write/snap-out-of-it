@@ -9,6 +9,8 @@ import HomePage from "../HomePage/HomePage"
 import MantraPage from "../MantraPage/MantraPage"
 import DealBreakerPage from "../DealBreakerPage/DealBreakerPage"
 import MeTimePage from "../MeTimePage/MeTimePage"
+import AffirmationsPage from "../AffirmationsPage/AffirmationsPage"
+import PlaylistPage from "../PlaylistPage/PlaylistPage"
 import "./App.css";
 
 // This App page is rendering all the components that were imported above into the page.
@@ -78,6 +80,12 @@ class App extends Component {
           <Route exact path="/metimepage" render={() =>
                     <MeTimePage/>
                 }/>
+          <Route exact path="/affirmationpage" render={() =>
+                    <AffirmationsPage/>
+                }/>
+          <Route exact path="/playlistpage" render={() =>
+                    <PlaylistPage />
+                } />
       </>
     );
   }

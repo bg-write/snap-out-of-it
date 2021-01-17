@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./AffirmationPage.css";
+import "./AffirmationsPage.css";
 import { Route, NavLink, useHistory } from "react-router-dom";
 import AffirmationCard from "../../components/AffirmationCard/AffirmationCard";
 import * as affirmationAPI from "../../services/affirmations-api";
