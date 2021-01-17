@@ -43,7 +43,6 @@ app.use('/api/dealBreakers', dealBreakersRouter)
 app.use('/api/playlist', playlistRouter);
 //affirmations route middleware
 app.use('/api/affirmations', affirmationsRouter);
-
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });

@@ -14,7 +14,7 @@ export default function EditDealBreakerCard({dealBreaker, handleUpdateDealBreake
 
     return (
       <>
-        <h1>Edit Deal Breaker</h1>
+        
         <form ref={formRef} autoComplete="off" onSubmit={(e) => {
             e.preventDefault()
             console.log(state, '  is state')
@@ -22,8 +22,8 @@ export default function EditDealBreakerCard({dealBreaker, handleUpdateDealBreake
       }}>
 
           <div>
-            <label>Deal Breaker (required)</label>
-            <input
+        
+            <input className="form-control form-control-md"
               name="text"
               value={ state.text }
               onChange={ handleChange }
@@ -31,13 +31,13 @@ export default function EditDealBreakerCard({dealBreaker, handleUpdateDealBreake
             />
           </div>
 
-          <button
+          <button className="btn btn-light edit-button"
             type="submit"
             disabled={invalidForm}
           >
-            SAVE Deal Breaker
-          </button>&nbsp;&nbsp;
-          <Link to='/dealbreakerpage'>CANCEL</Link>
+            Edit Deal Breaker
+          </button>
+          
         </form>
       </>
     );

@@ -5,16 +5,17 @@ import './DealBreakerCard.css';
 function DealBreakerCard({ dealBreaker, handleDeleteDealBreaker }) {
 
 	return (
-		<>
 		<div>
-			<div>
-			<p>{dealBreaker.text}</p>
+		<div className="deal-card-container">
+			<div className="card d-card">
+			<div className="card-header d-header">Deal Breaker</div>
+			<p className="card-text d-text">{dealBreaker.text}</p>
 			</div>
 			<div>
-				<button onClick={() => handleDeleteDealBreaker(dealBreaker._id)}>DELETE</button>
+				<button className="btn deal-delete" onClick={() => handleDeleteDealBreaker(dealBreaker._id)}>x</button>
 			</div>
 		</div>
-		</>
+		</div>
 	);
 }
 

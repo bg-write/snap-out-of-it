@@ -43,13 +43,21 @@ function AffirmationPage(props) {
   }, []);
 
   return (
-    <>
-      <div>
-        <h1> Affirmation page.jsx!</h1>
+    <div className="spiral-list-container">
+      <div className="spiral-heading">
+        <h1 className="spiral-page-head"> I'm Spiraling</h1>
       </div>
+      <>
+        <img className="spiral-pic" src="/images/empathy.jpg" alt="" />
+      </>
       <div>
-        <h1>AffirmationCard Component</h1>
-        <>
+      <>
+      <>
+        <AddAffirmationCard
+         handleAddAffirmation={handleAddAffirmation}
+         />
+        </>
+       
         {affirmations.map(affirmation => (
          <p>
          <AffirmationCard
@@ -64,13 +72,9 @@ function AffirmationPage(props) {
          </p>
         ))}
         </>
-        <>
-        <AddAffirmationCard
-         handleAddAffirmation={handleAddAffirmation}
-         />
-        </>
+       
       </div>
-    </>
+    </div>
   );
 }
 export default AffirmationPage;

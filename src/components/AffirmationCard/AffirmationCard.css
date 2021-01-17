@@ -1,0 +1,39 @@
+
+.af-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column ;
+    margin-top: 50px;
+   text-align: center;
+}
+
+.a-card{
+    
+    text-align: center;
+    padding: 10px;
+    width: 500px;
+    background-color:rgba(255, 255, 255, 0);
+    border: none;
+   
+}
+
+.a-header{
+ background-color:rgba(255, 255, 255, 0.301);
+ border-radius: 25px;
+ font-family: 'Laila', serif;
+ color: rgba(34, 61, 182, 0.774);
+
+}
+.a-text{
+    padding: 20px  20px 10px;
+    background-color:rgba(255, 255, 255, 0.664);
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.af-delete{
+    background-color: rgba(40, 93, 241, 0.24);
+    border-radius: 50%;
+}
