@@ -27,7 +27,7 @@ export default function AddMantraCard(props) {
 				<div className="input-group">
 					<input
 						className="form-control width100"
-						placeholder="Add A Mantra..."
+						placeholder="Something like 'I am awesome' or 'I am worthy' ..."
 						name="text"
 						value={state.text}
 						onChange={handleChange}

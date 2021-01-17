@@ -25,18 +25,21 @@ export default function AddMeTimeCard(props) {
 					props.handleAddMeTime(state);
 				}}
 			>
-				<div className="metime-input">
-					
-					<input className="form-control" placeholder="Add A Me Time..."
+				<div className="input-group">
+					<input
+						className="form-control width100"
+						placeholder="Check in with yourself ... anything new you want to try?"
 						name="text"
 						value={state.text}
 						onChange={handleChange}
 						required
 					/>
+					<span class="input-group-btn">
+						<button class="btn btn-info" type="submit" disabled={invalidForm}>
+							ADD
+						</button>
+					</span>
 				</div>
-				<button className="btn btn-light" type="submit" disabled={invalidForm}>
-					ADD
-				</button>
 			</form>
 		</div>
 	);

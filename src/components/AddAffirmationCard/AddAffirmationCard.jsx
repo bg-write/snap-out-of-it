@@ -21,11 +21,21 @@ export default function AddAffirmationCard(props) {
                 props.handleAddAffirmation(state);
             }}
             >
-                <div>
-                    <input className="form-control" placeholder="Add A Mantra..."name="text" value={state.text} onChange={handleChange} required
-                    />
-                </div>
-                <button type="submit" disabled={invalidForm}>ADD</button>
+				<div className="input-group">
+					<input
+						className="form-control width100"
+						placeholder="Some kind words, from you ..."
+						name="text"
+						value={state.text}
+						onChange={handleChange}
+						required
+					/>
+					<span class="input-group-btn">
+						<button class="btn btn-info" type="submit" disabled={invalidForm}>
+							ADD
+						</button>
+					</span>
+				</div>
             </form>
         </>
     );

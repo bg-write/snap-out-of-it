@@ -25,19 +25,20 @@ export default function AddDealBreakerCard(props) {
 					props.handleAddDealBreaker(state);
 				}}
 			>
-				<div>
-				
-					<input className="form-control" placeholder="Add A Deal breaker..."
+					<div className="input-group">
+					<input
+						className="form-control width100"
+						placeholder="What are some things you DON'T miss about your ex ..."
 						name="text"
 						value={state.text}
 						onChange={handleChange}
 						required
 					/>
-				</div>
-				<div >
-				<button className="btn btn-light"type="submit" disabled={invalidForm}>
-					ADD
-				</button>
+					<span class="input-group-btn">
+						<button class="btn btn-info" type="submit" disabled={invalidForm}>
+							ADD
+						</button>
+					</span>
 				</div>
 			</form>
 		</div>
