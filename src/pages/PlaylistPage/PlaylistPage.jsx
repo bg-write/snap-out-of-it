@@ -5,6 +5,7 @@ import PlaylistCard from "../../components/PlaylistCard/PlaylistCard";
 import * as playlistAPI from "../../services/playlists-api";
 import EditPlaylistCard from "../../components/EditPlaylistCard/EditPlaylistCard";
 import AddPlaylistCard from "../../components/AddPlaylistCard/AddPlaylistCard";
+import showTextNode from "../../components/QuotesSassy/QuotesSassy"
 import { useStateWithCallback } from "../../hooks/useStateWithCallback";
 
 // This is our playlist list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
@@ -45,9 +46,9 @@ function PlaylistPage(props) {
     return (
       <>
         <div>
+          <h1> Playlist page.jsx!</h1>
           <h1> Playlist page</h1>
         </div>
-        <div>
          
           <>
           {playlists.map(playlist => (
