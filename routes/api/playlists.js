@@ -10,3 +10,4 @@ router.use(require("../../config/auth"));
 router.get("/:id", playlistsCtrl.show);
 router.post("/", playlistsCtrl.create);
 router.delete("/:id", playlistsCtrl.delete);
+router.put("/:id", playlistsCtrl.update);
