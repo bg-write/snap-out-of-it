@@ -1,0 +1,26 @@
+.spiral-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column ;
+    background: rgb(145, 104, 240);
+    padding: 20px;
+    padding-bottom: 160px;
+}
+
+.spiral-heading{
+    margin: 30px;
+    font-family: 'Laila', serif;
+}
+
+.spiral-page-head{
+    color: rgb(61, 42, 165);
+    font-size: 4rem;
+}
+
+.spiral-pic{
+    border-radius: 50%;
+    height: 400px;
+    margin: 20px;
+    margin-bottom: 50px;
+}
