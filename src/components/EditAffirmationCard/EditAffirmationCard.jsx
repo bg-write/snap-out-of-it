@@ -13,8 +13,8 @@ export default function EditAffirmationCard({affirmation, handleUpdateAffirmatio
     }, [state]);
 
     return (
-      <>
-        <h1>Edit Affirmation</h1>
+      <div className="edit-container">
+       
         <form ref={formRef} autoComplete="off" onSubmit={(e) => {
             e.preventDefault()
             console.log(state, '  is state')
@@ -22,8 +22,8 @@ export default function EditAffirmationCard({affirmation, handleUpdateAffirmatio
       }}>
 
           <div>
-            <label>Affirmation (required)</label>
-            <input
+            
+            <input className="form-control form-control-md"
               name="text"
               value={ state.text }
               onChange={ handleChange }
@@ -31,14 +31,14 @@ export default function EditAffirmationCard({affirmation, handleUpdateAffirmatio
             />
           </div>
 
-          <button
+          <button className="btn btn-light"
             type="submit"
             disabled={invalidForm}
           >
-            SAVE Affirmation
-          </button>&nbsp;&nbsp;
-          <Link to='/affirmationpage'>CANCEL</Link>
+            Edit Affirmation
+          </button>
+          
         </form>
-      </>
+      </div>
     );
 }

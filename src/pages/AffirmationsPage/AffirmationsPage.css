@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-flow: column ;
-    background: rgb(145, 104, 240);
+    background: rgba(131, 94, 218, 0.87);
     padding: 20px;
     padding-bottom: 160px;
 }
