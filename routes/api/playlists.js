@@ -4,3 +4,6 @@ const playlistsCtrl = require("../../controllers/api/playlists");
 
 // Public routes
 router.get("/", playlistsCtrl.index);
+
+// Protected routes
+router.use(require("../../config/auth"));
