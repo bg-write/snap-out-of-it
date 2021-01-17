@@ -35,7 +35,7 @@ const NavBar = ({ user, handleLogout }) => {
 								</Navbar.Brand>
 
 								<Navbar.Brand>
-									<Link to="/mantrapage">
+									<Link to="/mantra-page">
 										<Col xm={7}>
 											<Image className="Logo" src="https://i.imgur.com/5tFbdEs.png" fluid />
 										</Col>
