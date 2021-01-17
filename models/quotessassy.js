@@ -72,4 +72,6 @@ const quotesSassy = new Schema({
             quote: '"Want to be happy? Stop trying to be perfect." - Brene Brown'
         }
     ]
+}, {
+    timestamps: true
 })
