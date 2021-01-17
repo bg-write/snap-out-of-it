@@ -16,7 +16,7 @@ const meTimeRouter = require('./routes/api/meTime')
 //deal breaker route
 const dealBreakersRouter = require('./routes/api/dealBreakers')
 //playlist route
-
+const playlistRouter = require("./routes/api/playlist")
 //affirmations route
 const affirmationsRouter = require("./routes/api/affirmations")
 

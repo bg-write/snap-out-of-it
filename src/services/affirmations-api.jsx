@@ -1,11 +1,11 @@
 import tokenService from "../services/tokenService";
-const BASE_URL = "/api/playlists/";
+const BASE_URL = "/api/affirmations/";
 
 export function getAll() {
   return fetch(BASE_URL, { mode: "cors" }).then((res) => res.json());
 }
 
-export function create(playlist) {
+export function create(affirmation) {
   return fetch(
     BASE_URL,
     {
@@ -14,22 +14,22 @@ export function create(playlist) {
         "content-type": "application/json",
         Authorization: "Bearer " + tokenService.getToken(),
       },
-      body: JSON.stringify(playlist),
+      body: JSON.stringify(affirmation),
     },
     { mode: "cors" }
   ).then((res) => res.json());
 }
 
-export function update(playlist) {
+export function update(affirmation) {
   return fetch(
-    `${BASE_URL}/${playlist._id}`,
+    `${BASE_URL}/${affirmation._id}`,
     {
       method: "PUT",
       headers: {
         "content-type": "application/json",
         Authorization: "Bearer " + tokenService.getToken(),
       },
-      body: JSON.stringify(playlist),
+      body: JSON.stringify(affirmation),
     },
     { mode: "cors" }
   ).then((res) => res.json());
