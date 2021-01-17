@@ -5,11 +5,11 @@ import Signup from "../Signup/Signup";
 import Login from "../Login/Login";
 import authService from "../../services/authService";
 import Users from '../Users/Users'
-import "./App.css";
 import HomePage from "../HomePage/HomePage"
 import MantraPage from "../MantraPage/MantraPage"
 import DealBreakerPage from "../DealBreakerPage/DealBreakerPage"
 import MeTimePage from "../MeTimePage/MeTimePage"
+import "./App.css";
 
 // This App page is rendering all the components that were imported above into the page.
 class App extends Component {
