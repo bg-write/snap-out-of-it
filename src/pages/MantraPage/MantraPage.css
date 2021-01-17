@@ -1,0 +1,27 @@
+
+.mantra-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column ;
+    background: rgb(255,205,1);
+    background: linear-gradient(48deg, rgba(255,205,1,0.5242471988795518) 0%, rgba(255,206,4,0.5242471988795518) 67%, rgba(241,220,131,0.5886729691876751) 88%);
+    padding: 20px;
+    padding-bottom: 160px;
+}
+
+.mantra-page-head{
+    color: rgb(165, 87, 42);
+    font-size: 4rem;
+}
+
+.mantra-heading{
+    margin: 30px;
+    font-family: 'Laila', serif;
+}
+
+.mantra-pic{
+    border-radius: 50%;
+    height: 400px;
+    margin: 20px;
+}

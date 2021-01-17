@@ -7,6 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
 
 const NavBar = ({ user, handleLogout }) => {
+
 	return (
 		<>
 			{user ? (
@@ -98,5 +99,6 @@ const NavBar = ({ user, handleLogout }) => {
 		</>
 	);
 };
+
 
 export default NavBar;
