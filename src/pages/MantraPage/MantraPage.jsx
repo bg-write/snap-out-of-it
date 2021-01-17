@@ -43,34 +43,31 @@ function MantraPage(props) {
   }, []);
 
   return (
-    <>
-      <div>
-        <h1> Mantra page.jsx!</h1>
+    <div className="mantra-list-container">
+      <div className="mantra-heading">
+        <h1 className="mantra-page-head"> Mantra Page</h1>
       </div>
+      <>
+        <img className="mantra-pic" src="/images/Mantrapic.jpg" alt="" />
+      </>
       <div>
-        <h1>MantraCard Component</h1>
         <>
-        {mantras.map(mantra => (
-         <p>
-         <MantraCard
-         mantra={mantra}
-         handleDeleteMantra={handleDeleteMantra}
-         key={mantra._id} />
-          <EditMantraCard
-            mantra={mantra}
-            handleUpdateMantra={handleUpdateMantra}
-            key={mantra._id}
-          />
-         </p>
-        ))}
-        </>
-        <>
-        <AddMantraCard
-         handleAddMantra={handleAddMantra}
-         />
+          <>
+            <AddMantraCard handleAddMantra={handleAddMantra} />
+          </>
+          {mantras.map((mantra) => (
+            <p>
+              <MantraCard
+                mantra={mantra}
+                handleDeleteMantra={handleDeleteMantra}
+                handleUpdateMantra={handleUpdateMantra}
+                key={mantra._id}
+              />
+            </p>
+          ))}
         </>
       </div>
-    </>
+    </div>
   );
 }
 export default MantraPage;

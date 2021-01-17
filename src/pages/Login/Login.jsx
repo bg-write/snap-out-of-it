@@ -37,7 +37,7 @@ class LoginPage extends Component {
     return (
       <main className="Login">
        <div className="logo-container"><img className="logo-pic" src="/images/logo.jpg" alt=""/></div> 
-     
+        <h1 className="Brand-name">Snap Out Of It!</h1>
         <form  autoComplete="off" onSubmit={this.handleSubmit}>
         <h3 className="login-text h2">Log In</h3>
           <input className="form-control form-control-sm" placeholder="Email..."
