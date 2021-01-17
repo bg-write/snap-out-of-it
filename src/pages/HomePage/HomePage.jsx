@@ -5,7 +5,7 @@ import MantraPage from "../MantraPage/MantraPage";
 
 // Here we import all the things we are exporting from all our pages
 
-function HomePage() {
+function HomePage({user}) {
     // Creating state for mantras
     // const [mantras, setMantras] = useState([])
     // const history = useHistory;
@@ -20,6 +20,7 @@ function HomePage() {
         <>
             <header></header>
             <main>
+            <p className="nav-link">Welcome, {user.name}</p>
                 <h1>Home actual page</h1>
                 {/* <Route exact path="/mantraPage" render={() =>
                     <MantraPage/>
