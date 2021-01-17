@@ -37,17 +37,17 @@ class App extends Component {
         <Route
           exact
           path="/"
-          render={() => (
+          render={() => user ? (
             <main>
               <HomePage />
               <h1>Home Page(App.js).</h1>
             </main>
-          )}
+          ): <Redirect to="/Login"/>}
         />
         <Route
           exact
           path="/signup"
-          render={({ history }) => (
+          render={({ history }) =>  (
             <Signup
               history={history}
               handleSignupOrLogin={this.handleSignupOrLogin}
@@ -56,7 +56,7 @@ class App extends Component {
         />
         <Route
           exact
-          path="/login"
+          path="/Login"
           render={({ history }) => (
             <Login
               history={history}
@@ -68,23 +68,23 @@ class App extends Component {
           exact
           path="/users"
           render={() =>
-            user ? <Users /> : <Redirect to="/login" />
+            user ? <Users /> : <Redirect to="/Login" />
           }
         />
-          <Route exact path="/mantrapage" render={() =>
-                    <MantraPage/>
+          <Route exact path="/mantra-page" render={() => user ? 
+                    <MantraPage user={this.state.user}/> : <Redirect to="/Login" />
                 }/>
-          <Route exact path="/dealbreakerpage" render={() =>
-                    <DealBreakerPage/>
+          <Route exact path="/dealbreakerpage" render={() => user ? 
+                    <DealBreakerPage user={this.state.user}/> : <Redirect to="/Login" />
                 }/>
-          <Route exact path="/metimepage" render={() =>
-                    <MeTimePage/>
+          <Route exact path="/metimepage" render={() => user ? 
+                    <MeTimePage user={this.state.user}/> : <Redirect to="/Login" />
                 }/>
-          <Route exact path="/affirmationpage" render={() =>
-                    <AffirmationsPage/>
+          <Route exact path="/affirmationpage" render={() => user ? 
+                    <AffirmationsPage user={this.state.user}/> : <Redirect to="/Login" />
                 }/>
-          <Route exact path="/playlistpage" render={() =>
-                    <PlaylistPage />
+          <Route exact path="/playlistpage" render={() => user ? 
+                    <PlaylistPage user={this.state.user} /> : <Redirect to="/Login" />
                 } />
       </>
     );

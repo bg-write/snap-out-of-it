@@ -14,7 +14,7 @@ function MantraPage(props) {
   const history = useHistory();
   useEffect(() => {
     // This is listening for changes in mantras state, then the function below will reroute
-    history.push("/mantrapage");
+    history.push("/mantra-page");
   }, [mantras, history]);
   // Add a mantra
   async function handleAddMantra(newMantraData) {
