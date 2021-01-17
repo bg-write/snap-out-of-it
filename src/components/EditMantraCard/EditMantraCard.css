@@ -1,0 +1,12 @@
+
+.edit-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    margin: 10px;
+}
+
+.edit-button{
+    margin: 10px;
+}

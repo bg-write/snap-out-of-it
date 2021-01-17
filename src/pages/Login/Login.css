@@ -21,8 +21,6 @@ ul{
 }
 
 
-
-
 .buttons{
 margin: 20px;
 }
@@ -44,4 +42,11 @@ margin: 20px;
 .logo-pic{
   height: 200px;
   border-radius: 50%;
+}
+
+.Brand-name{
+  color: #fff;
+  margin: 30px;
+  font-size: 5rem;
+  font-family: 'Laila', serif;
 }

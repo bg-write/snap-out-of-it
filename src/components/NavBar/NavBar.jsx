@@ -11,8 +11,8 @@ const NavBar = ({ user, handleLogout }) => {
         <nav className="navbar fixed-bottom navbar-light bg-">
           <div >
             
-            <ul classNmae="ul-nav">
-              <li><Link to="/" class="navbar-brand" href="">SnapOutOfIt</Link></li>
+            <ul className="ul-nav">
+              <li><Link to="/" className="navbar-brand" href="">SnapOutOfIt</Link></li>
 
               <li><Link to="/users" className="nav-link"><FaUserCircle color="lightgrey" size="2rem" /></Link></li>
 

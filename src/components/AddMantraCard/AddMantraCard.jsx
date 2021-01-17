@@ -14,9 +14,9 @@ export default function AddMantraCard(props) {
 	}, [state]);
 
 	return (
-		<>
-			<h1>Add A Mantra</h1>
-			<form
+		<div className="add-mantra-container">
+			
+			<form 
 				autoComplete="off"
 				ref={formRef}
 				onSubmit={(e) => {
@@ -26,18 +26,20 @@ export default function AddMantraCard(props) {
 				}}
 			>
 				<div>
-					<label>Mantra(required)</label>
-					<input
+					<input className="form-control" placeholder="Add A Mantra..."
 						name="text"
 						value={state.text}
 						onChange={handleChange}
 						required
 					/>
+					
 				</div>
-				<button type="submit" disabled={invalidForm}>
+				<div className="add-button">
+				<button className="btn btn-light"  type="submit" disabled={invalidForm}>
 					ADD
 				</button>
+				</div>
 			</form>
-		</>
+		</div>
 	);
 }
