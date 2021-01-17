@@ -8,7 +8,9 @@ function MantraCard({ mantra, handleDeleteMantra, handleUpdateMantra }) {
     <>
       <div className="mantra-card-container">
         <div className="card m-card">
-          <div className="card-header m-header">Mantra</div>
+          <div className="card-header m-header">
+            Mantra
+          </div>
 
           <div className="card-text m-text">
             <p>{mantra.text} </p>
@@ -20,7 +22,7 @@ function MantraCard({ mantra, handleDeleteMantra, handleUpdateMantra }) {
           </div>
           
         </div>
-		<>
+        <>
             <EditMantraCard 
               mantra={mantra}
               handleUpdateMantra={handleUpdateMantra}

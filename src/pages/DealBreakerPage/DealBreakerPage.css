@@ -1,0 +1,22 @@
+.dealbreaker-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background-color: rgba(255, 170, 42, 0.479);
+    text-align: center;
+}
+
+.deal-page-head{
+    margin: 30px;
+    font-family: 'Laila', serif;
+    font-size: 4rem;
+    color: rgba(255, 81, 0, 0.733);
+}
+
+.dealbreaker-pic{
+    border-radius: 50%;
+    height: 400px;
+    margin: 30px;
+}
+

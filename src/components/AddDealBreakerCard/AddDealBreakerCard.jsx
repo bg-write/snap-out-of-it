@@ -14,8 +14,8 @@ export default function AddDealBreakerCard(props) {
 	}, [state]);
 
 	return (
-		<>
-			<h1>Add A Deal Breaker</h1>
+		<div className="add-breaker-container">
+		
 			<form
 				autoComplete="off"
 				ref={formRef}
@@ -25,19 +25,22 @@ export default function AddDealBreakerCard(props) {
 					props.handleAddDealBreaker(state);
 				}}
 			>
-				<div>
-					<label>Deal Breaker(required)</label>
+					<div className="input-group">
 					<input
+						className="form-control width100"
+						placeholder="What are some things you DON'T miss about your ex ..."
 						name="text"
 						value={state.text}
 						onChange={handleChange}
 						required
 					/>
+					<span class="input-group-btn">
+						<button class="btn btn-info" type="submit" disabled={invalidForm}>
+							ADD
+						</button>
+					</span>
 				</div>
-				<button type="submit" disabled={invalidForm}>
-					ADD
-				</button>
 			</form>
-		</>
+		</div>
 	);
 }

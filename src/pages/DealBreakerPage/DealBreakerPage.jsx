@@ -23,7 +23,9 @@ function DealBreakerPage(props) {
   }
   // Update a mantra
   async function handleUpdateDealBreaker(updatedDealBreakerData) {
-    const updatedDealBreaker = await dealBreakerAPI.update(updatedDealBreakerData);
+    const updatedDealBreaker = await dealBreakerAPI.update(
+      updatedDealBreakerData
+    );
     const newDealBreakersArray = dealBreakers.map((d) =>
       d._id === updatedDealBreaker._id ? updatedDealBreaker : d
     );
@@ -43,34 +45,35 @@ function DealBreakerPage(props) {
   }, []);
 
   return (
-    <>
+    <div className="dealbreaker-list-container">
       <div>
-        <h1> Deal Breaker page.jsx!</h1>
+        <h1 className="deal-page-head"> Deal Breakers</h1>
       </div>
+      <>
+        <img className="dealbreaker-pic" src="/images/dealbreaker.jpg" alt="" />
+      </>
       <div>
-        <h1>DealBreakerCard Component</h1>
         <>
-        {dealBreakers.map(dealBreaker => (
-         <p>
-         <DealBreakerCard
-         dealBreaker={dealBreaker}
-         handleDeleteDealBreaker={handleDeleteDealBreaker}
-         key={dealBreaker._id} />
-          <EditDealBreakerCard
-            dealBreaker={dealBreaker}
-            handleUpdateDealBreaker={handleUpdateDealBreaker}
-            key={dealBreaker._id}
-          />
-         </p>
-        ))}
-        </>
-        <>
-        <AddDealBreakerCard
-         handleAddDealBreaker={handleAddDealBreaker}
-         />
+          <>
+            <AddDealBreakerCard handleAddDealBreaker={handleAddDealBreaker} />
+          </>
+          {dealBreakers.map((dealBreaker) => (
+            <p>
+              <DealBreakerCard
+                dealBreaker={dealBreaker}
+                handleDeleteDealBreaker={handleDeleteDealBreaker}
+                key={dealBreaker._id}
+              />
+              <EditDealBreakerCard
+                dealBreaker={dealBreaker}
+                handleUpdateDealBreaker={handleUpdateDealBreaker}
+                key={dealBreaker._id}
+              />
+            </p>
+          ))}
         </>
       </div>
-    </>
+    </div>
   );
 }
 export default DealBreakerPage;

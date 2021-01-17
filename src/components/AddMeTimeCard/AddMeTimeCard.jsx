@@ -14,9 +14,9 @@ export default function AddMeTimeCard(props) {
 	}, [state]);
 
 	return (
-		<>
-			<h1>Add A Me Time</h1>
-			<form
+		<div className="add-metime-container">
+			
+			<form 
 				autoComplete="off"
 				ref={formRef}
 				onSubmit={(e) => {
@@ -25,19 +25,22 @@ export default function AddMeTimeCard(props) {
 					props.handleAddMeTime(state);
 				}}
 			>
-				<div>
-					<label>Me Time(required)</label>
+				<div className="input-group">
 					<input
+						className="form-control width100"
+						placeholder="Check in with yourself ... anything new you want to try?"
 						name="text"
 						value={state.text}
 						onChange={handleChange}
 						required
 					/>
+					<span class="input-group-btn">
+						<button class="btn btn-info" type="submit" disabled={invalidForm}>
+							ADD
+						</button>
+					</span>
 				</div>
-				<button type="submit" disabled={invalidForm}>
-					ADD
-				</button>
 			</form>
-		</>
+		</div>
 	);
 }
