@@ -75,6 +75,6 @@ const quotesSassy = new Schema({
     ]
 }, {
     timestamps: true
-})
+});
 
 module.exports = mongoose.model("QuotesSassy", quotesSassy);
