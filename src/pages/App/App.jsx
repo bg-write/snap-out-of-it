@@ -37,12 +37,12 @@ class App extends Component {
         <Route
           exact
           path="/"
-          render={() => (
+          render={() => user ? (
             <main>
               <HomePage />
               <h1>Home Page(App.js).</h1>
             </main>
-          )}
+          ): <Redirect to="/Login"/>}
         />
         <Route
           exact

@@ -73,6 +73,9 @@ const NavBar = ({ user, handleLogout }) => {
 										</Col>
 									</Link>
 								</Navbar.Brand>
+								<Link to="" className="nav-link" onClick={handleLogout}>
+                LOG OUT
+              </Link>
 								</Container>
 							</Navbar>
 						</Container>

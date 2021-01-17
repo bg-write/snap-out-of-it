@@ -31,9 +31,10 @@ export default function EditMeTimeCard({meTime, handleUpdateMeTime}){
             />
           </div>
 
-          <button className="btn btn-light delete-edit-metime"
+          <button className="btn btn-light"
             type="submit"
             disabled={invalidForm}
+            styles="margin-top: 10px"
           >
             Edit Me Time
           </button>

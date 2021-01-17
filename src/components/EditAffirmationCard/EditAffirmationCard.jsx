@@ -31,7 +31,7 @@ export default function EditAffirmationCard({affirmation, handleUpdateAffirmatio
             />
           </div>
 
-          <button className="btn btn-light"
+          <button className="btn btn-light edit-metime"
             type="submit"
             disabled={invalidForm}
           >
