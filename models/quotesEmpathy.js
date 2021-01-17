@@ -154,6 +154,6 @@ const quotesEmpathy = new Schema({
     ]
 }, {
     timestamps: true
-})
+});
 
 module.exports = mongoose.model("QuotesEmpathy", quotesEmpathy);
