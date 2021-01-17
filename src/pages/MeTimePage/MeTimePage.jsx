@@ -45,7 +45,7 @@ function MeTimePage(props) {
   return (
     <div className="metime-list-container">
       <div>
-        <h1 className="metime-page-head"> Me Time page</h1>
+        <h1 className="metime-page-head"> Me Time</h1>
       </div>
       <div>
         <img className="metime-pic" src="/images/selflove2.png" alt="" />
