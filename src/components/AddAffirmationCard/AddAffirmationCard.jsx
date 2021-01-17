@@ -15,15 +15,14 @@ export default function AddAffirmationCard(props) {
 
     return (
         <>
-            <h1>Add an Affirmation</h1>
+            
             <form autoComplete="off" ref={formRef} onSubmit={(e) => {
                 e.preventDefault();
                 props.handleAddAffirmation(state);
             }}
             >
                 <div>
-                    <label>Affirmation(required)</label>
-                    <input name="text" value={state.text} onChange={handleChange} required
+                    <input className="form-control" placeholder="Add A Mantra..."name="text" value={state.text} onChange={handleChange} required
                     />
                 </div>
                 <button type="submit" disabled={invalidForm}>ADD</button>
