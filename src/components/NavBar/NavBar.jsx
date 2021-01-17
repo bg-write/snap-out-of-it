@@ -67,7 +67,7 @@ const NavBar = ({ user, handleLogout }) => {
 								</Navbar.Brand>
 
 								<Navbar.Brand>
-									<Link to="/">
+									<Link to="/affirmationpage">
 										<Col xs={7}>
 											<Image src="https://i.imgur.com/Ad14HrN.png" fluid />
 										</Col>
