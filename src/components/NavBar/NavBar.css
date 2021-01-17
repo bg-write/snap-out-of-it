@@ -9,11 +9,11 @@ a:hover {
     color: blue;
 }
 
-.navbar{
+/* .navbar{
     display:flex;
     justify-content: center;
     border-top: 2px grey solid;
-}
+} */
 
 li{
     list-style: none;

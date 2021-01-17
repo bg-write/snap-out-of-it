@@ -1,21 +1,35 @@
-import React, {Component, useState, useEffect, useRef} from 'react';
-import { Link } from 'react-router-dom';
-import './MantraCard.css';
+import React, { Component, useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import "./MantraCard.css";
+import EditMantraCard from "../EditMantraCard/EditMantraCard";
 
-function MantraCard({ mantra, handleDeleteMantra }) {
+function MantraCard({ mantra, handleDeleteMantra, handleUpdateMantra }) {
+  return (
+    <>
+      <div className="mantra-card-container">
+        <div className="card m-card">
+          <div className="card-header m-header">Mantra</div>
 
-	return (
+          <div className="card-text m-text">
+            <p>{mantra.text} </p>
+
+            <button
+              className="btn mantra-delete"
+              onClick={() => handleDeleteMantra(mantra._id)}
+            >x</button>
+          </div>
+          
+        </div>
 		<>
-		<div>
-			<div>
-			<p>{mantra.text}</p>
-			</div>
-			<div>
-				<button onClick={() => handleDeleteMantra(mantra._id)}>DELETE</button>
-			</div>
-		</div>
-		</>
-	);
+            <EditMantraCard 
+              mantra={mantra}
+              handleUpdateMantra={handleUpdateMantra}
+              key={mantra._id}
+            />
+          </>
+      </div>
+    </>
+  );
 }
 
 export default MantraCard;

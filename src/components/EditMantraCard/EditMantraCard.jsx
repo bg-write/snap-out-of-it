@@ -13,32 +13,31 @@ export default function EditMantraCard({mantra, handleUpdateMantra}){
     }, [state]);
 
     return (
-      <>
-        <h1>Edit Mantra</h1>
-        <form ref={formRef} autoComplete="off" onSubmit={(e) => {
+      <div className="edit-container">
+        
+        <form className="edit-container" ref={formRef} autoComplete="off" onSubmit={(e) => {
             e.preventDefault()
             console.log(state, '  is state')
             handleUpdateMantra(state);
       }}>
 
           <div>
-            <label>Mantra (required)</label>
-            <input
+            <input  className="form-control form-control-md"
               name="text"
               value={ state.text }
               onChange={ handleChange }
               required
             />
-          </div>
-
-          <button
+        </div> 
+           
+         
+          <button className="btn btn-light edit-button"
             type="submit"
             disabled={invalidForm}
-          >
-            SAVE Mantra
-          </button>&nbsp;&nbsp;
-          <Link to='/mantrapage'>CANCEL</Link>
+          > Edit Mantra
+             </button>
+          
         </form>
-      </>
+      </div>
     );
 }

@@ -1,0 +1,39 @@
+
+.mantra-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column ;
+    margin-top: 50px;
+   text-align: center;
+}
+
+.m-card{
+    
+    text-align: center;
+    padding: 10px;
+    width: 500px;
+    background-color:rgba(255, 255, 255, 0);
+    border: none;
+   
+}
+
+.m-header{
+ background-color:rgba(255, 255, 255, 0.301);
+ border-radius: 25px;
+ font-family: 'Laila', serif;
+ color: rgb(161, 85, 22);
+
+}
+.m-text{
+    padding: 20px 70px 20px 10px;
+    background-color:rgba(255, 255, 255, 0.664);
+    border-radius: 10px 140px 30px 140px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mantra-delete{
+    background-color: rgba(243, 172, 19, 0.24);
+    border-radius: 50%;
+}
