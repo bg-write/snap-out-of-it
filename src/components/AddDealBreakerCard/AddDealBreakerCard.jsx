@@ -14,8 +14,8 @@ export default function AddDealBreakerCard(props) {
 	}, [state]);
 
 	return (
-		<>
-			<h1>Add A Deal Breaker</h1>
+		<div className="add-breaker-container">
+		
 			<form
 				autoComplete="off"
 				ref={formRef}
@@ -26,18 +26,20 @@ export default function AddDealBreakerCard(props) {
 				}}
 			>
 				<div>
-					<label>Deal Breaker(required)</label>
-					<input
+				
+					<input className="form-control" placeholder="Add A Deal breaker..."
 						name="text"
 						value={state.text}
 						onChange={handleChange}
 						required
 					/>
 				</div>
-				<button type="submit" disabled={invalidForm}>
+				<div >
+				<button className="btn btn-light"type="submit" disabled={invalidForm}>
 					ADD
 				</button>
+				</div>
 			</form>
-		</>
+		</div>
 	);
 }
