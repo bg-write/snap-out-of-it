@@ -1,4 +1,4 @@
-const QuotesSassy = require("../../models/quotessassy");
+const QuotesSassy = require("../../models/quotesSassy");
 
 module.exports = {
     index,
