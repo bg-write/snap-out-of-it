@@ -13,8 +13,8 @@ export default function EditMeTimeCard({meTime, handleUpdateMeTime}){
     }, [state]);
 
     return (
-      <>
-        <h1>Edit Me Time</h1>
+      <div className="edit-metime-container">
+     
         <form ref={formRef} autoComplete="off" onSubmit={(e) => {
             e.preventDefault()
             console.log(state, '  is state')
@@ -22,8 +22,8 @@ export default function EditMeTimeCard({meTime, handleUpdateMeTime}){
       }}>
 
           <div>
-            <label>Me Time (required)</label>
-            <input
+            
+            <input className="form-control form-control-md"
               name="text"
               value={ state.text }
               onChange={ handleChange }
@@ -31,14 +31,14 @@ export default function EditMeTimeCard({meTime, handleUpdateMeTime}){
             />
           </div>
 
-          <button
+          <button className="btn btn-light delete-edit-metime"
             type="submit"
             disabled={invalidForm}
           >
-            SAVE Me Time
-          </button>&nbsp;&nbsp;
-          <Link to='/metimepage'>CANCEL</Link>
+            Edit Me Time
+          </button>
+         
         </form>
-      </>
+      </div>
     );
 }

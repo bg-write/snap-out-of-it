@@ -43,34 +43,33 @@ function MeTimePage(props) {
   }, []);
 
   return (
-    <>
+    <div className="metime-list-container">
       <div>
-        <h1> Me Time page.jsx!</h1>
+        <h1 className="metime-page-head"> Me Time page</h1>
       </div>
       <div>
-        <h1>MeTimeCard Component</h1>
+        <img className="metime-pic" src="/images/selflove2.png" alt="" />
         <>
-        {meTime.map(meTime => (
-         <p>
-         <MeTimeCard
-         meTime={meTime}
-         handleDeleteMeTime={handleDeleteMeTime}
-         key={meTime._id} />
-          <EditMeTimeCard
-            meTime={meTime}
-            handleUpdateMeTime={handleUpdateMeTime}
-            key={meTime._id}
-          />
-         </p>
-        ))}
-        </>
-        <>
-        <AddMeTimeCard
-         handleAddMeTime={handleAddMeTime}
-         />
+          <>
+            <AddMeTimeCard handleAddMeTime={handleAddMeTime} />
+          </>
+          {meTime.map((meTime) => (
+            <p>
+              <MeTimeCard
+                meTime={meTime}
+                handleDeleteMeTime={handleDeleteMeTime}
+                key={meTime._id}
+              />
+              <EditMeTimeCard
+                meTime={meTime}
+                handleUpdateMeTime={handleUpdateMeTime}
+                key={meTime._id}
+              />
+            </p>
+          ))}
         </>
       </div>
-    </>
+    </div>
   );
 }
 export default MeTimePage;

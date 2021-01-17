@@ -6,12 +6,12 @@ function MeTimeCard({ meTime, handleDeleteMeTime }) {
 
 	return (
 		<>
-		<div>
-			<div>
-			<p>{meTime.text}</p>
+		<div className="metime-card-container">
+			<div className="card met-card">
+			<p className="card-text mt-text" >{meTime.text}</p>
 			</div>
-			<div>
-				<button onClick={() => handleDeleteMeTime(meTime._id)}>DELETE</button>
+			<div className="metime-delete-box">
+				<button className="btn btn-light metime-delete" onClick={() => handleDeleteMeTime(meTime._id)}>-</button>
 			</div>
 		</div>
 		</>
