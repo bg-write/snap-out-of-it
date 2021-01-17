@@ -8,7 +8,7 @@ function AddPlaylistCard({ playlist, handleDeletePlaylist }) {
 		<>
 		<div>
 			<div>
-			<p>{playlist.text}</p>
+			<p>This is playlist page</p>
 			</div>
 			<div>
 				<button onClick={() => handleDeletePlaylist(playlist._id)}>DELETE</button>
