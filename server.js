@@ -40,9 +40,9 @@ app.use('/api/meTime', meTimeRouter)
 //deal breakers route middleware
 app.use('/api/dealBreakers', dealBreakersRouter)
 //playlist route middleware
-
+app.use('/api/plylist', playlistRouter);
 //affirmations route middleware
-
+app.use('/api/affirmations', affirmationsRouter);
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
