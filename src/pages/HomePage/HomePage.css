@@ -28,8 +28,17 @@ body {
 }
 
 #new-quote {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 2rem;
+	background: teal;
+	border: none;
+	color: white;
+	padding: 0.7rem 1rem;
+	font-size: 0.9rem;
+	font-weight: bold;
+	border-radius: 2px;
+	outline: none;
+	cursor: pointer;
+}
+
+#new-quote:hover {
+	opacity: 0.9;
 }
