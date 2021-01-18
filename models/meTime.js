@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const meTimeSchema = new Schema({
     // id
-    text: {type: String, required: true}
+    text: 
+        {type: String, required: true}
 
 },{
     timestamps: true
