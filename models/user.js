@@ -1,12 +1,19 @@
 const mongoose = require('mongoose');
 const bcrypt = require("bcrypt");
+const Schema = mongoose.Schema
 
 const SALT_ROUNDS = 6;
 
 const userSchema = new mongoose.Schema({
   name: String,
   email: {type: String, required: true, lowercase: true, unique: true},
-  password: String
+  password: String,
+  mantras: [{type: Schema.Types.ObjectId, ref: 'Mantra' }],
+  metimes: [{type: Schema.Types.ObjectId, ref: 'meTime'}],
+  dealbreakers: [{type: Schema.Types.ObjectId, ref: 'DealBreaker'}],
+  playlists: [{type: Schema.Types.ObjectId, ref: 'Playlist'}],
+  affirmations: [{type: Schema.Types.ObjectId, ref: 'Affirmation'}]
+
 }, {
   timestamps: true
 });
@@ -36,3 +43,4 @@ userSchema.methods.comparePassword = function (tryPassword, cb) {
 };
 
 module.exports = mongoose.model('User', userSchema);
+//comments
