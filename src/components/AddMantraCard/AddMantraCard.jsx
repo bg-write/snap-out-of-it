@@ -1,7 +1,7 @@
 import React, { Component, useState, useRef, useEffect } from 'react';
 import { useForm } from '../../hooks/useForm';
 
-export default function AddMantraCard(mantraNum, handleAddMantra) {
+export default function AddMantraCard({mantra, handleAddMantra}) {
 	const [invalidForm, setValidForm] = useState(true);
 	const [state, handleChange] = useForm({
 		text: '',
@@ -34,14 +34,18 @@ export default function AddMantraCard(mantraNum, handleAddMantra) {
 						onChange={handleChange}
 						required
 					/>
-				{/* {mantraNum <= 5 ?   */}
+				{mantra <= 4 ?  
 					<span class="input-group-btn">
 						<button class="btn btn-info" type="submit" disabled={invalidForm}>
 							ADD
-						</button>
+							 </button>
 					</span>
-						{/* :  <p>too many </p> 
-					}  */}
+						:  
+							<> <h1 class="btn btn-info">
+						Too Many Mantras
+							 </h1>
+							 </>
+					 } 
 				</div>
 			</form>
 		</div>
