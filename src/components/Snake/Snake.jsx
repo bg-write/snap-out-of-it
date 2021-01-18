@@ -105,7 +105,7 @@ class SnakeGame extends React.Component {
   }
 
   resetGame() {
-    let width = this.state.width;
+    let width = this.state.width ;
     let height = this.state.height;
     let blockWidth = this.state.blockWidth;
     let blockHeight = this.state.blockHeight;
@@ -145,7 +145,7 @@ class SnakeGame extends React.Component {
       direction: "right",
       directionChanged: false,
       isGameOver: false,
-      gameLoopTimeout: 50,
+      gameLoopTimeout: 400,
       snakeColor: this.getRandomColor(),
       appleColor: this.getRandomColor(),
       score: 0,
@@ -375,7 +375,7 @@ class SnakeGame extends React.Component {
         style={{
           width: this.state.width + 20,
           height: this.state.height + 20,
-          borderWidth: this.state.width / 70,
+          borderWidth: this.state.width / 75,
         }}
       >
         {this.state.snake.map((snakePart, index) => {
