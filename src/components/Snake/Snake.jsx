@@ -13,7 +13,7 @@ class SnakeGame extends React.Component {
       height: 0,
       blockWidth: 0,
       blockHeight: 0,
-      gameLoopTimeout: 400,
+      gameLoopTimeout: 100,
       timeoutId: 0,
       startSnakeSize: 0,
       snake: [],
@@ -37,12 +37,12 @@ class SnakeGame extends React.Component {
 
   initGame() {
     // Game size initialization
-    let percentageWidth = this.props.percentageWidth || 40
+    let percentageWidth = this.props.percentageWidth || 45
     let width =
       document.getElementById('GameBoard').parentElement.offsetWidth *
       (percentageWidth / 100)
     width -= width % 30
-    if (width < 30) width = 30
+    if (width < 30) width = 35
     let height = (width / 3) * 2
     let blockWidth = width / 30
     let blockHeight = height / 20
@@ -373,8 +373,8 @@ class SnakeGame extends React.Component {
       <div
         id='GameBoard'
         style={{
-          width: this.state.width,
-          height: this.state.height,
+          width: this.state.width+32,
+          height: this.state.height +32,
           borderWidth: this.state.width / 50,
         }}>
         {this.state.snake.map((snakePart, index) => {
