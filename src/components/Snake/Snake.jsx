@@ -407,20 +407,20 @@ class SnakeGame extends React.Component {
           HIGH-SCORE: {this.state.highScore}&ensp;&ensp;&ensp;&ensp;SCORE:{" "}
           {this.state.score}
         </div>
-        {/* <div class="controls">
-          <button class="control-button" id="left" onClick={this.goLeft}>
+        <div class="controls">
+          <button class="control-button" id="left" onClick={() => this.goLeft()}>
             ⬅
           </button>
-          <button class="control-button" id="up" onClick={this.goUp}>
+          <button class="control-button" id="up" onClick={() => this.goUp()}>
             ⬆
           </button>
-          <button class="control-button" id="down" onClick={this.goDown}>
+          <button class="control-button" id="down" onClick={() => this.goDown()}>
             ⬇
           </button>
-          <button class="control-button" id="right" onClick={this.goRight}>
+          <button class="control-button" id="right" onClick={() => this.goRight()}>
             ➡
           </button>
-        </div> */}
+        </div>
       </div>
     );
   }
