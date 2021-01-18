@@ -1,7 +1,7 @@
 import React, { Component, useState, useRef, useEffect } from 'react';
 import { useForm } from '../../hooks/useForm';
 
-export default function AddDealBreakerCard(props) {
+export default function AddDealBreakerCard({dealBreaker, handleAddDealBreaker}) {
 	const [invalidForm, setValidForm] = useState(true);
 	const [state, handleChange] = useForm({
 		text: '',
@@ -22,7 +22,7 @@ export default function AddDealBreakerCard(props) {
 				onSubmit={(e) => {
 					e.preventDefault();
 					console.log(state, ' this is state');
-					props.handleAddDealBreaker(state);
+					handleAddDealBreaker(state);
 				}}
 			>
 					<div className="input-group">
@@ -34,11 +34,18 @@ export default function AddDealBreakerCard(props) {
 						onChange={handleChange}
 						required
 					/>
+					{dealBreaker <= 4 ?  
 					<span class="input-group-btn">
 						<button class="btn btn-info" type="submit" disabled={invalidForm}>
 							ADD
 						</button>
 					</span>
+					:  
+					<> <h1 class="btn btn-info">
+				Too Many Deal breakers
+					 </h1>
+					 </>
+			 }
 				</div>
 			</form>
 		</div>
