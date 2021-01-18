@@ -22,22 +22,22 @@ function HomePage({ user }) {
     })();
   }, [quotesSassy]);
 
-  function randomQuoteSassy() {
-    const randomNumber = Math.floor(Math.random() * quotesSassy.length);
-    return quotesSassy[randomNumber];
-  }
+  // function randomQuoteSassy() {
+  //   const randomNumber = Math.floor(Math.random() * quotesSassy.length);
+  //   return quotesSassy[randomNumber];
+  // }
 
-  function shuffleQuotesSassy(array) {
-    return array.sort(() => Math.random() - 0.5);
-  }
+  // function shuffleQuotesSassy(array) {
+  //   return array.sort(() => Math.random() - 0.5);
+  // }
 
-  function handleClick() {
-    const generateRandomQuoteSassy = this.randomQuoteSassy();
-    this.setState({
-      quotesSassy: generateRandomQuoteSassy.quotesSassy,
-    });
-    this.shuffleQuotesSassy(quotesSassy);
-  }
+  // function handleClick() {
+  //   const generateRandomQuoteSassy = this.randomQuoteSassy();
+  //   this.setState({
+  //     quotesSassy: generateRandomQuoteSassy.quotesSassy,
+  //   });
+  //   this.shuffleQuotesSassy(quotesSassy);
+  // }
 
   return (
     <>
@@ -45,7 +45,7 @@ function HomePage({ user }) {
       <main>
         <p className="nav-link">Welcome, {user.name}</p>
         <h1>Home actual page</h1>
-        
+
       </main>
     </>
   );
