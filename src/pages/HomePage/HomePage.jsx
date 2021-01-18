@@ -2,46 +2,23 @@ import React, { useState, useEffect } from "react";
 import "./HomePage.css";
 import { Route, NavLink, useHistory } from "react-router-dom";
 import MantraPage from "../MantraPage/MantraPage.jsx";
+import QuotesSassy from '../../components/QuotesSassy/QuotesSassy'
 import * as quotesSassyAPI from "../../services/quotesSassy-api";
 import MantraCard from "../../components/MantraCard/MantraCard";
 
 // Here we import all the things we are exporting from all our pages
 
 function HomePage({ user }) {
-  const [quotesSassy, setQuoteSassy] = useState([]);
-  const history = useHistory();
-
-  useEffect(() => {
-    history.push("/");
-  }, [quotesSassy, history]);
-
-  /*--- Lifecycle Methods ---*/
-  useEffect(() => {
-    (async function () {
-      const quotesSassy = await quotesSassyAPI.getAll();
-      setQuoteSassy(quotesSassy);
-    })();
-  }, [quotesSassy]);
-
-  // function randomQuoteSassy() {
-  //   const randomNumber = Math.floor(Math.random() * quotesSassy.length);
-  //   return quotesSassy[randomNumber];
-  // }
-
-  // function shuffleQuotesSassy(array) {
-  //   return array.sort(() => Math.random() - 0.5);
-  // }
-
-  // function handleClick() {
-  //   const generateRandomQuoteSassy = this.randomQuoteSassy();
-  //   this.setState({
-  //     quotesSassy: generateRandomQuoteSassy.quotesSassy,
-  //   });
-  //   this.shuffleQuotesSassy(quotesSassy);
-  // }
 
   return (
     <>
+
+      <main>
+        <p className="nav-link">Welcome, {user.name}</p>
+        <h1>Home actual page</h1>
+        <QuotesSassy />
+        {/* below this is "Home Page(App.js)" from somewhere else */}
+
       <header></header>
       <main className="home-container">
 
@@ -65,6 +42,7 @@ function HomePage({ user }) {
         <h5>Mantras</h5>
         </div>
     </div>
+
 
     <div class="carousel-item">
     <div className="square-MeTime"></div>
