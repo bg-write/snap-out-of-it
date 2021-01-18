@@ -105,8 +105,8 @@ class SnakeGame extends React.Component {
   }
 
   resetGame() {
-    let width = this.state.width + 25;
-    let height = this.state.height + 25;
+    let width = this.state.width ;
+    let height = this.state.height;
     let blockWidth = this.state.blockWidth;
     let blockHeight = this.state.blockHeight;
     let apple = this.state.apple;
@@ -373,8 +373,8 @@ class SnakeGame extends React.Component {
       <div
         id="GameBoard"
         style={{
-          width: this.state.width + 25,
-          height: this.state.height + 25,
+          width: this.state.width + 20,
+          height: this.state.height + 20,
           borderWidth: this.state.width / 70,
         }}
       >
