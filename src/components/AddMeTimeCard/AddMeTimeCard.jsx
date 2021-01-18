@@ -16,6 +16,10 @@ export default function AddMeTimeCard(props) {
 	return (
 		<div className="add-metime-container">
 			
+			{/* <div>
+			{(meTime.length <= 5) ? 'Yas' : 'Not Yas'}
+			</div> */}
+
 			<form 
 				autoComplete="off"
 				ref={formRef}
@@ -35,9 +39,9 @@ export default function AddMeTimeCard(props) {
 						required
 					/>
 					<span class="input-group-btn">
-						<button class="btn btn-info" type="submit" disabled={invalidForm}>
+						<button class="btn btn-info" type="submit" disabled={invalidForm} >
 							ADD
-						</button>
+						</button>	
 					</span>
 				</div>
 			</form>

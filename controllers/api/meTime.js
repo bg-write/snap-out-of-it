@@ -23,7 +23,7 @@ async function show(req, res){
 // creating a mantra from req body, setting to mantra variable, turning variable into json obj
 async function create(req,res){
     const meTime = await MeTime.create(req.body)
-    res.status(201).json(meTime)
+        res.status(201).json(meTime)
 }
 
 // deleting mantra by id, and setting to variable, and turning variable into a json obj
