@@ -10,7 +10,7 @@ function GameOver(props) {
         borderWidth: props.width / 50,
       }}>
       <div id='GameOver' style={{ fontSize: props.width / 15 }}>
-        <div id='GameOverText'>GAME OVER</div>
+        <div id='GameOverText'>The only limit is yourself.</div>
         <div>Your score: {props.score}</div>
         <div>
           {props.newHighScore ? 'New local ' : 'Local '}high score:{' '}
