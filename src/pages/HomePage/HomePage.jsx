@@ -13,17 +13,16 @@ function HomePage({ user }) {
   return (
     <>
 
-      <main>
+      <div>
         <p className="nav-link">Welcome, {user.name}</p>
         <h1>Home actual page</h1>
         <QuotesSassy />
-        {/* below this is "Home Page(App.js)" from somewhere else */}
+        </div>
 
       <header></header>
+
       <main className="home-container">
 
-        <p className="nav-link">Welcome, {user.name}</p>
-        <h1>Home</h1>
 <div className="divide"></div>
        
        <div className="carousel-container">
