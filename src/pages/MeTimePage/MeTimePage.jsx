@@ -51,7 +51,7 @@ function MeTimePage(props) {
         <img className="metime-pic" src="/images/selflove2.png" alt="" />
         <>
           <>
-            <AddMeTimeCard meTime={meTime} handleAddMeTime={handleAddMeTime} />
+            <AddMeTimeCard meTime={meTime.length} handleAddMeTime={handleAddMeTime} />
           </>
           {meTime.map((meTime) => (
             <p>

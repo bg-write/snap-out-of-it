@@ -60,6 +60,7 @@ function AffirmationPage(props) {
       <>
       <>
         <AddAffirmationCard
+        affirmation={affirmations.length}
          handleAddAffirmation={handleAddAffirmation}
          />
         </>
