@@ -24,3 +24,47 @@
     margin: 20px;
     margin-bottom: 50px;
 }
+
+/* Quote Generator */
+#quote-box {
+	background: white;
+	width: 40rem;
+	margin: 10rem auto;
+	padding: 3rem;
+	border-radius: 5px;
+}
+
+#quote-box {
+	background: white;
+	width: 40rem;
+	margin: 10rem auto;
+	padding: 3rem;
+	border-radius: 5px;
+}
+
+#text {
+	font-size: 2rem;
+	margin-bottom: 1.5rem;
+}
+
+#author {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 1.2rem;
+}
+
+#new-quote {
+	background: teal;
+	border: none;
+	color: white;
+	padding: 0.7rem 1rem;
+	font-size: 0.9rem;
+	font-weight: bold;
+	border-radius: 2px;
+	outline: none;
+	cursor: pointer;
+}
+
+#new-quote:hover {
+	opacity: 0.9;
+}
