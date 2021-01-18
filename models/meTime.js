@@ -9,4 +9,4 @@ const meTimeSchema = new Schema({
     timestamps: true
 })
 
-module.exports = mongoose.model('meTime', meTimeSchema);
+module.exports = mongoose.model('MeTime', meTimeSchema);

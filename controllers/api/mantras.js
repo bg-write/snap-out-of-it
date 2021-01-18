@@ -11,7 +11,9 @@ module.exports = {
 // setting all mantras to variable and turning variable into json obj
 async function index(req,res){
     const mantras = await Mantra.find({})
-    res.status(200).json(mantras)
+
+        res.status(200).json(mantras)
+    
 }
 
 // finding individual mantra by id and set it to a variable that turns into a json obj
@@ -23,7 +25,12 @@ async function show(req, res){
 // creating a mantra from req body, setting to mantra variable, turning variable into json obj
 async function create(req,res){
     const mantra = await Mantra.create(req.body)
+    // if(mantra <= 5 ){
+    
     res.status(201).json(mantra)
+// } else{
+//     res.status(404)
+//    }
 }
 
 // deleting mantra by id, and setting to variable, and turning variable into a json obj
