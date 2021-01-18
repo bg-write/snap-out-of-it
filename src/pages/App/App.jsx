@@ -40,7 +40,6 @@ class App extends Component {
           render={() => user ? (
             <main>
               <HomePage user={this.state.user}/>
-              <h1>Home Page(App.js).</h1>
             </main>
           ): <Redirect to="/Login"/>}
         />

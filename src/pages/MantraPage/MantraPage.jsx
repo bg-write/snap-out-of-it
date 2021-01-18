@@ -56,9 +56,9 @@ function MantraPage(props) {
 
       <div>
         <>
-            <AddMantraCard handleAddMantra={handleAddMantra} />
+            <AddMantraCard mantra={mantras.length} handleAddMantra={handleAddMantra} />
         
-          {mantras.length <= 20 ?  
+          {/* {mantras.length <= 5 ?   */}
           <>
           {mantras.map((mantra) => (
             <p>
@@ -71,8 +71,8 @@ function MantraPage(props) {
             </p>
           ))}
           </>
-          : <p>too many mantras</p>
-        }  
+          {/* : <p>too many mantras</p>
+        }    */}
         </>
       </div>
     </div>
