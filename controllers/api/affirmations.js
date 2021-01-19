@@ -10,7 +10,9 @@ module.exports = {
 
 // setting all affirmations to variable and turning variable into JSON
 async function index(req, res) {
-    const affirmations = await Affirmation.find({})
+    console.log("req.user -->", req.user)
+    const affirmations = await Affirmation.find({ "_id": req.user._id })
+    .populate("postedBy")
     res.status(200).json(affirmations)
 };
 
@@ -22,6 +24,7 @@ async function show(req, res){
 
 // creating a affirmation from req body, setting to affirmation variable, turning variable into json obj
 async function create(req,res){
+    req.body.postedBy = req.user._id
     const affirmation = await Affirmation.create(req.body)
     res.status(201).json(affirmation)
 }
