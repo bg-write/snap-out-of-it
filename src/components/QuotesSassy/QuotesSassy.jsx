@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import "./QuotesSassy.css";
-import React from 'react';
 import QuoteAndAuthor from './QuotesSassyCard';
 import quotes from '../../services/quotesSassy-api';
 
