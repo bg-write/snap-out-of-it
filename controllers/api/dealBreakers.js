@@ -11,6 +11,7 @@ module.exports = {
 // setting all deal breakers to variable and turning variable into json obj
 async function index(req,res){
     const dealBreakers = await DealBreaker.find({})
+    .populate('postedBy')
     res.status(200).json(dealBreakers)
 }
 
@@ -22,6 +23,7 @@ async function show(req, res){
 
 // creating a deal breaker from req body, setting to mantra variable, turning variable into json obj
 async function create(req,res){
+    req.body.postedBy = req.user._id
     const dealBreaker = await DealBreaker.create(req.body)
     res.status(201).json(dealBreaker)
 }

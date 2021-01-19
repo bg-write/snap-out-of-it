@@ -1,7 +1,7 @@
 import React, { Component, useState, useRef, useEffect } from 'react';
 import { useForm } from '../../hooks/useForm';
 
-export default function AddDealBreakerCard({dealBreaker, handleAddDealBreaker}) {
+export default function AddDealBreakerCard({user, dealBreaker, handleAddDealBreaker}) {
 	const [invalidForm, setValidForm] = useState(true);
 	const [state, handleChange] = useForm({
 		text: '',
@@ -14,6 +14,8 @@ export default function AddDealBreakerCard({dealBreaker, handleAddDealBreaker}) 
 	}, [state]);
 
 	return (
+		<>
+		{user ? (
 		<div className="add-breaker-container">
 		
 			<form
@@ -49,5 +51,8 @@ export default function AddDealBreakerCard({dealBreaker, handleAddDealBreaker}) 
 				</div>
 			</form>
 		</div>
+		) : <h1>You have no lists</h1>
+		}
+		</>
 	);
 }
