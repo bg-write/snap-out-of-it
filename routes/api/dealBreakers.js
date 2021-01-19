@@ -7,10 +7,10 @@ router.get("/", dealBreakersCtrl.index);
 
 // Protected Routes
 router.use(require('../../config/auth'));
-router.get("/:id", dealBreakersCtrl.show);
-router.post("/", dealBreakersCtrl.create);
-router.delete("/:id", dealBreakersCtrl.delete);
-router.put("/:id", dealBreakersCtrl.update);
+router.get("/:id", checkAuth, dealBreakersCtrl.show);
+router.post("/", checkAuth, dealBreakersCtrl.create);
+router.delete("/:id", checkAuth, dealBreakersCtrl.delete);
+router.put("/:id", checkAuth, dealBreakersCtrl.update);
 
 
 function checkAuth(req, res, next) {

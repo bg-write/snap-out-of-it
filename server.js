@@ -7,8 +7,8 @@ const logger = require('morgan');
 require('dotenv').config();
 require('./config/database');
 
-const userRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
+const userRouter = require('./routes/users');
 //mantra route
 const mantrasRouter = require('./routes/api/mantras')
 //me time route

@@ -1,7 +1,7 @@
 import React, { Component, useState, useRef, useEffect } from 'react';
 import { useForm } from '../../hooks/useForm';
 
-export default function AddMantraCard({mantra, handleAddMantra}) {
+export default function AddMantraCard({user, mantra, handleAddMantra}) {
 	const [invalidForm, setValidForm] = useState(true);
 	const [state, handleChange] = useForm({
 		text: '',
@@ -14,6 +14,8 @@ export default function AddMantraCard({mantra, handleAddMantra}) {
 	}, [state]);
 
 	return (
+		<>
+		{user ? (
 		<div className="add-mantra-container">
 			<form 
 			
@@ -48,6 +50,9 @@ export default function AddMantraCard({mantra, handleAddMantra}) {
 					 } 
 				</div>
 			</form>
-		</div>
-	);
-}
+			</div>
+			) : <h1>You have no lists</h1>
+		}
+		</>
+		);
+	}

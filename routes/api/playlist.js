@@ -7,10 +7,10 @@ router.get("/", playlistsCtrl.index);
 
 // Protected routes
 router.use(require("../../config/auth"));
-router.get("/:id", playlistsCtrl.show);
-router.post("/", playlistsCtrl.create);
-router.delete("/:id", playlistsCtrl.delete);
-router.put("/:id", playlistsCtrl.update);
+router.get("/:id", checkAuth, playlistsCtrl.show);
+router.post("/", checkAuth, playlistsCtrl.create);
+router.delete("/:id", checkAuth, playlistsCtrl.delete);
+router.put("/:id", checkAuth, playlistsCtrl.update);
 
 function checkAuth(req, res, next) {
     if (req.user) return next();

@@ -4,10 +4,15 @@
 	box-sizing: border-box;
 }
 
-body {
+.home-container-container {
 	background-color: salmon;
 }
 
+.home-page-head{
+    font-size: 4rem;
+    font-family: 'Laila', serif;
+    color:rgba(250, 248, 229, 0.87)
+}
 #quote-box {
 	background: white;
 	width: 40rem;

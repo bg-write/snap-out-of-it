@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import "./MantraCard.css";
 import EditMantraCard from "../EditMantraCard/EditMantraCard";
 
-function MantraCard({ mantra, handleDeleteMantra, handleUpdateMantra }) {
-  return (
+function MantraCard({ user, mantra, handleDeleteMantra, handleUpdateMantra }) {
+
+  return ( 
     <>
+
+
       <div className="mantra-card-container">
         <div className="card m-card">
           <div className="card-header m-header">
@@ -30,6 +33,7 @@ function MantraCard({ mantra, handleDeleteMantra, handleUpdateMantra }) {
             />
           </>
       </div>
+
     </>
   );
 }

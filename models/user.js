@@ -8,11 +8,11 @@ const userSchema = new mongoose.Schema({
   name: String,
   email: {type: String, required: true, lowercase: true, unique: true},
   password: String,
-  mantras: [{type: Schema.Types.ObjectId, ref: 'Mantra' }],
-  metimes: [{type: Schema.Types.ObjectId, ref: 'meTime'}],
-  dealbreakers: [{type: Schema.Types.ObjectId, ref: 'DealBreaker'}],
-  playlists: [{type: Schema.Types.ObjectId, ref: 'Playlist'}],
-  affirmations: [{type: Schema.Types.ObjectId, ref: 'Affirmation'}]
+  // mantras: [{type: Schema.Types.ObjectId, ref: 'Mantra' }],
+  // metimes: [{type: Schema.Types.ObjectId, ref: 'meTime'}],
+  // dealbreakers: [{type: Schema.Types.ObjectId, ref: 'DealBreaker'}],
+  // playlists: [{type: Schema.Types.ObjectId, ref: 'Playlist'}],
+  // affirmations: [{type: Schema.Types.ObjectId, ref: 'Affirmation'}]
 
 }, {
   timestamps: true

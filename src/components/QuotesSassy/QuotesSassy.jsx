@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import "./QuotesSassy.css";
 
 const QuotesSassy = () => {
 	const [quote, setQuote] = useState('');
@@ -27,12 +28,12 @@ const QuotesSassy = () => {
 
 	return (
 		<>
-			<div id="quote-box">
+			<div className="sassy-box">
 				<div id="text">
-					<p>{quote}</p>
+					<p>"{quote}"</p>
 				</div>
-				<button onClick={handleClick} id="new-quote">
-					Wisdom, please.
+				<button onClick={handleClick} id="new-quote" className="hvr-grow-shadow">
+					Slap!
 				</button>
 			</div>
 		</>
