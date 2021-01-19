@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect, useRef } from 'react';
 import { Link, useLocation, useHistory } from "react-router-dom";
 import { useForm } from "../../hooks/useForm";
+import "./EditMantraCard.css"
 
 export default function EditMantraCard({mantra, handleUpdateMantra}){
     const [invalidForm, setValidForm] = useState(true);
