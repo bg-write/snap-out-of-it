@@ -55,7 +55,7 @@ function AffirmationPage(props) {
       <>
       <Quotes />
       </>
-      
+
       <div>
       <>
       <>
@@ -64,7 +64,7 @@ function AffirmationPage(props) {
          handleAddAffirmation={handleAddAffirmation}
          />
         </>
-       
+
         {affirmations.map(affirmation => (
          <p>
          <AffirmationCard
@@ -79,7 +79,7 @@ function AffirmationPage(props) {
          </p>
         ))}
         </>
-       
+
       </div>
     </div>
   );

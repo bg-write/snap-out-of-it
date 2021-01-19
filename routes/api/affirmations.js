@@ -3,10 +3,10 @@ const router = express.Router();
 const affirmationsCtrl = require("../../controllers/api/affirmations");
 
 // Public routes
-router.get("/", affirmationsCtrl.index);
 
 // Protected routes
 router.use(require('../../config/auth'));
+router.get("/", affirmationsCtrl.index);
 router.get("/:id", checkAuth, affirmationsCtrl.show);
 router.post("/", checkAuth, affirmationsCtrl.create);
 router.delete("/:id", checkAuth, affirmationsCtrl.delete);
