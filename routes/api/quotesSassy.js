@@ -7,7 +7,7 @@ router.get("/", quotesSassyCtrl.index);
 
 // Protected Routes
 router.use(require('../../config/auth'));
-router.get("/:id", quotesSassyCtrl.show);
+router.get("/:id", checkAuth, quotesSassyCtrl.show);
 
 
 function checkAuth(req, res, next) {

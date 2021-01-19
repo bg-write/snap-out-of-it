@@ -1,3 +1,5 @@
+import React, { useState, useEffect } from 'react';
+import "./QuotesSassy.css";
 import React from 'react';
 import QuoteAndAuthor from './QuotesSassyCard';
 import quotes from '../../services/quotesSassy-api';
@@ -26,10 +28,10 @@ class QuotesSassy extends React.Component {
 		});
 		this.shuffleQuotes(quotes);
 	};
-
+	
 	render() {
 		return (
-			<div>
+			<div className="sassy-box">
 				<QuoteAndAuthor handleClick={this.handleClick} {...this.state} />
 			</div>
 		);

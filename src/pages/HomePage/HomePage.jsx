@@ -11,11 +11,11 @@ import MantraCard from "../../components/MantraCard/MantraCard";
 function HomePage({ user }) {
 
   return (
-    <>
+    <div className="home-container-container">
 
       <div>
         <p className="nav-link">Welcome, {user.name}</p>
-        <h1>Home actual page</h1>
+        <h1 className="home-page-head">Home</h1>
         <QuotesSassy />
         </div>
 
@@ -23,7 +23,7 @@ function HomePage({ user }) {
 
       <main className="home-container">
 
-<div className="divide"></div>
+
        
        <div className="carousel-container">
         <div id="carouselExampleIndicators" class="carousel slide " interval='false' data-ride="false" data-pause="hover" >
@@ -74,7 +74,7 @@ function HomePage({ user }) {
        
 </div>
       </main>
-    </>
+    </div>
   );
 }
 
