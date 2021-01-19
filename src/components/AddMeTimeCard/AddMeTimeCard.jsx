@@ -1,7 +1,7 @@
 import React, { Component, useState, useRef, useEffect } from 'react';
 import { useForm } from '../../hooks/useForm';
 
-export default function AddMeTimeCard(props) {
+export default function AddMeTimeCard({meTime, handleAddMeTime}) {
 	const [invalidForm, setValidForm] = useState(true);
 	const [state, handleChange] = useForm({
 		text: '',
@@ -26,7 +26,7 @@ export default function AddMeTimeCard(props) {
 				onSubmit={(e) => {
 					e.preventDefault();
 					console.log(state, ' this is state');
-					props.handleAddMeTime(state);
+					handleAddMeTime(state);
 				}}
 			>
 				<div className="input-group">
@@ -38,11 +38,18 @@ export default function AddMeTimeCard(props) {
 						onChange={handleChange}
 						required
 					/>
+					{meTime <= 4 ?  
 					<span class="input-group-btn">
 						<button class="btn btn-info" type="submit" disabled={invalidForm} >
 							ADD
 						</button>	
 					</span>
+					:  
+					<> <h1 class="btn btn-info">
+				Too Many me Times
+					 </h1>
+					 </>
+			 } 
 				</div>
 			</form>
 		</div>

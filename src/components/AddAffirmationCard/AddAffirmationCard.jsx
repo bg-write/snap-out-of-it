@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useRef, useState } from 'react';
 import { useForm } from "../../hooks/useForm";
 
-export default function AddAffirmationCard(props) {
+export default function AddAffirmationCard({affirmation, handleAddAffirmation}) {
     const [invalidForm, setValidForm] = useState(true);
     const [state, handleChange] = useForm({
         text: '',
@@ -18,7 +18,7 @@ export default function AddAffirmationCard(props) {
             
             <form autoComplete="off" ref={formRef} onSubmit={(e) => {
                 e.preventDefault();
-                props.handleAddAffirmation(state);
+                handleAddAffirmation(state);
             }}
             >
 				<div className="input-group">
@@ -30,11 +30,18 @@ export default function AddAffirmationCard(props) {
 						onChange={handleChange}
 						required
 					/>
+                    {affirmation <= 4 ?  
 					<span class="input-group-btn">
 						<button class="btn btn-info" type="submit" disabled={invalidForm}>
 							ADD
 						</button>
 					</span>
+                    :  
+                    <> <h1 class="btn btn-info">
+                Too Many Affirmations
+                     </h1>
+                     </>
+             } 
 				</div>
             </form>
         </>

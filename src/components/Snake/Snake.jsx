@@ -105,7 +105,7 @@ class SnakeGame extends React.Component {
   }
 
   resetGame() {
-    let width = this.state.width ;
+    let width = this.state.width;
     let height = this.state.height;
     let blockWidth = this.state.blockWidth;
     let blockHeight = this.state.blockHeight;

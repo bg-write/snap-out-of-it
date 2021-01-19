@@ -55,7 +55,7 @@ function DealBreakerPage(props) {
       <div>
         <>
           <>
-            <AddDealBreakerCard handleAddDealBreaker={handleAddDealBreaker} />
+            <AddDealBreakerCard  dealBreaker={dealBreakers.length} handleAddDealBreaker={handleAddDealBreaker} />
           </>
           {dealBreakers.map((dealBreaker) => (
             <p>

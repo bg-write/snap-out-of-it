@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./MantraPage.css";
-import { Route, NavLink, useHistory } from "react-router-dom";
+import { Route, NavLink, useHistory, Redirect } from "react-router-dom";
 import MantraCard from "../../components/MantraCard/MantraCard";
 import * as mantraAPI from "../../services/mantras-api";
 import EditMantraCard from "../../components/EditMantraCard/EditMantraCard";
@@ -19,6 +19,7 @@ function MantraPage(props) {
   // Add a mantra
   async function handleAddMantra(newMantraData) {
     const newMantra = await mantraAPI.create(newMantraData);
+  
     setMantras((mantras) => [...mantras, newMantra]);
   }
   // Update a mantra
@@ -44,17 +45,21 @@ function MantraPage(props) {
 
   return (
     <div className="mantra-list-container">
+
       <div className="mantra-heading">
         <h1 className="mantra-page-head"> Mantra Page</h1>
       </div>
+
       <>
         <img className="mantra-pic" src="/images/Mantrapic.jpg" alt="" />
       </>
+
       <div>
         <>
+            <AddMantraCard mantra={mantras.length} handleAddMantra={handleAddMantra} />
+        
+          {/* {mantras.length <= 5 ?   */}
           <>
-            <AddMantraCard handleAddMantra={handleAddMantra} />
-          </>
           {mantras.map((mantra) => (
             <p>
               <MantraCard
@@ -62,9 +67,12 @@ function MantraPage(props) {
                 handleDeleteMantra={handleDeleteMantra}
                 handleUpdateMantra={handleUpdateMantra}
                 key={mantra._id}
-              />
+                />
             </p>
           ))}
+          </>
+          {/* : <p>too many mantras</p>
+        }    */}
         </>
       </div>
     </div>

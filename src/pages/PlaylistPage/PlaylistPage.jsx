@@ -46,10 +46,10 @@ function PlaylistPage(props) {
     return (
       <>
         <div>
-          <h1> Playlist page.jsx!</h1>
+          <h1>Relaxing snake game</h1>
         </div>
         <div>
-          <h1> Playlist page</h1>
+          <h1> Play to your heart's contempt</h1>
           <SnakeGame />
           <>
           {playlists.map(playlist => (

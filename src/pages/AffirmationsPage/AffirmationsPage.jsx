@@ -5,6 +5,7 @@ import AffirmationCard from "../../components/AffirmationCard/AffirmationCard";
 import * as affirmationAPI from "../../services/affirmations-api";
 import EditAffirmationCard from "../../components/EditAffirmationCard/EditAffirmationCard";
 import AddAffirmationCard from "../../components/AddAffirmationCard/AddAffirmationCard";
+import Quotes from '../../components/Quotes/Quotes'
 import { useStateWithCallback } from "../../hooks/useStateWithCallback";
 
 // This is our Affirmation list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
@@ -50,10 +51,16 @@ function AffirmationPage(props) {
       <>
         <img className="spiral-pic" src="/images/empathy.jpg" alt="" />
       </>
+
+      <>
+      <Quotes />
+      </>
+      
       <div>
       <>
       <>
         <AddAffirmationCard
+        affirmation={affirmations.length}
          handleAddAffirmation={handleAddAffirmation}
          />
         </>

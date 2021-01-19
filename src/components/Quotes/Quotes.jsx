@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-const QuotesSassy = () => {
+const Quotes = () => {
 	const [quote, setQuote] = useState('');
+	const [author, setAuthor] = useState('');
 
 	useEffect(() => {
 		getQuote();
@@ -18,6 +19,7 @@ const QuotesSassy = () => {
 				let randomQuote = dataQuotes[randomNum];
 
 				setQuote(randomQuote.quote);
+				setAuthor(randomQuote.author);
 			});
 	};
 
@@ -31,12 +33,15 @@ const QuotesSassy = () => {
 				<div id="text">
 					<p>{quote}</p>
 				</div>
+				<div id="author">
+					<p>{author}</p>
+				</div>
 				<button onClick={handleClick} id="new-quote">
-					Wisdom, please.
+					You're OK.
 				</button>
 			</div>
 		</>
 	);
 };
 
-export default QuotesSassy;
+export default Quotes;
