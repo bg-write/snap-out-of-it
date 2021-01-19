@@ -11,6 +11,7 @@ module.exports = {
 // setting all mantras to variable and turning variable into json obj
 async function index(req,res){
     const meTime = await MeTime.find({})
+    .populate('postedBy')
     res.status(200).json(meTime)
 }
 
@@ -22,6 +23,7 @@ async function show(req, res){
 
 // creating a mantra from req body, setting to mantra variable, turning variable into json obj
 async function create(req,res){
+    req.body.postedBy = req.user._id
     const meTime = await MeTime.create(req.body)
         res.status(201).json(meTime)
 }

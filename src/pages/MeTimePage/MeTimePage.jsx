@@ -8,14 +8,12 @@ import AddMeTimeCard from "../../components/AddMeTimeCard/AddMeTimeCard";
 import { useStateWithCallback } from "../../hooks/useStateWithCallback";
 
 // This is our me time list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
-function MeTimePage(props) {
+function MeTimePage({user}) {
   // Creating state for me time
+  const [person, setPerson] = useState(user)
   const [meTime, setMeTime] = useState([]);
   const history = useHistory();
-  useEffect(() => {
-    // This is listening for changes in mantras state, then the function below will reroute
-    history.push("/metimepage");
-  }, [meTime, history]);
+ 
   // Add a mantra
   async function handleAddMeTime(newMeTimeData) {
     const newMeTime = await meTimeAPI.create(newMeTimeData);
@@ -31,43 +29,58 @@ function MeTimePage(props) {
   }
   // Delete a mantra
   async function handleDeleteMeTime(id) {
+    if (user) {
     await meTimeAPI.deleteOne(id);
     setMeTime(meTime.filter((m) => m._id !== id));
+  } else {
+    history.push("/login");
   }
+}
   /*--- Lifecycle Methods ---*/
   useEffect(() => {
     (async function () {
-      const meTime = await meTimeAPI.getAll();
-      setMeTime(meTime);
+      const allMeTime = await meTimeAPI.getAll();
+
+      console.log(allMeTime, '<= meTime')
+      setMeTime(allMeTime.filter((meTime) => user._id === meTime.postedBy._id));
+
     })();
   }, []);
 
+  console.log(person)
   return (
     <div className="metime-list-container">
-      <div>
+
+      <div className="metime-heading">
         <h1 className="metime-page-head"> Me Time</h1>
       </div>
-      <div>
+
+      <>
         <img className="metime-pic" src="/images/selflove2.png" alt="" />
+      </>
+
+      <div>
+
         <>
+            <AddMeTimeCard user={person} meTime={meTime.length} handleAddMeTime={handleAddMeTime} />
+          
+          {meTime.length ? 
           <>
-            <AddMeTimeCard meTime={meTime.length} handleAddMeTime={handleAddMeTime} />
-          </>
           {meTime.map((meTime) => (
             <p>
               <MeTimeCard
+                user={person}
                 meTime={meTime}
                 handleDeleteMeTime={handleDeleteMeTime}
-                key={meTime._id}
-              />
-              <EditMeTimeCard
-                meTime={meTime}
                 handleUpdateMeTime={handleUpdateMeTime}
                 key={meTime._id}
               />
             </p>
           ))}
         </>
+        : <p>No Me Times</p>
+          }
+          </>
       </div>
     </div>
   );
