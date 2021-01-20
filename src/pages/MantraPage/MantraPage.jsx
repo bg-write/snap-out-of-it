@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./MantraPage.css";
-import { Route, NavLink, useHistory, Redirect } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
 import MantraCard from "../../components/MantraCard/MantraCard";
 import * as mantraAPI from "../../services/mantras-api";
-import EditMantraCard from "../../components/EditMantraCard/EditMantraCard";
 import AddMantraCard from "../../components/AddMantraCard/AddMantraCard";
-import { useStateWithCallback } from "../../hooks/useStateWithCallback";
-import authService from "../../services/authService";
 
 // This is our mantra list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
 function MantraPage({ user }) {

@@ -105,7 +105,7 @@ class SnakeGame extends React.Component {
   }
 
   resetGame() {
-    let width = this.state.width ;
+    let width = this.state.width;
     let height = this.state.height;
     let blockWidth = this.state.blockWidth;
     let blockHeight = this.state.blockHeight;
@@ -408,22 +408,34 @@ class SnakeGame extends React.Component {
           {this.state.score}
         </div>
         <div class="controls">
-          <button class="control-button" id="left" onClick={() => this.goLeft()}>
+          <button
+            class="control-button"
+            id="left"
+            onClick={() => this.goLeft()}
+          >
             ⬅
           </button>
           <button class="control-button" id="up" onClick={() => this.goUp()}>
             ⬆
           </button>
-          <button class="control-button" id="down" onClick={() => this.goDown()}>
+          <button
+            class="control-button"
+            id="down"
+            onClick={() => this.goDown()}
+          >
             ⬇
           </button>
-          <button class="control-button" id="right" onClick={() => this.goRight()}>
+          <button
+            class="control-button"
+            id="right"
+            onClick={() => this.goRight()}
+          >
             ➡
           </button>
         </div>
       </div>
     );
   }
-};
+}
 
 export default SnakeGame;

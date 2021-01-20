@@ -15,8 +15,6 @@ const mantrasRouter = require('./routes/api/mantras')
 const meTimeRouter = require('./routes/api/meTime')
 //deal breaker route
 const dealBreakersRouter = require('./routes/api/dealBreakers')
-//playlist route
-const playlistRouter = require("./routes/api/playlist")
 //affirmations route
 const affirmationsRouter = require("./routes/api/affirmations")
 
@@ -39,8 +37,6 @@ app.use('/api/mantras', mantrasRouter)
 app.use('/api/meTime', meTimeRouter)
 //deal breakers route middleware
 app.use('/api/dealBreakers', dealBreakersRouter)
-//playlist route middleware
-app.use('/api/playlist', playlistRouter);
 //affirmations route middleware
 app.use('/api/affirmations', affirmationsRouter);
 app.get('/*', function(req, res) {

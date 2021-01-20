@@ -1,21 +1,20 @@
-
-.metime-list-container{
-    background-color: pink;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column ;
+.metime-list-container {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
-.metime-page-head{
-    margin: 30px;
-    font-family: 'Laila', serif;
-    color: rgb(187, 88, 88);
-    font-size: 4rem;
+.metime-page-head {
+  margin: 30px;
+  font-family: "Laila", serif;
+  color: rgb(187, 88, 88);
+  font-size: 4rem;
 }
-.metime-pic{
-    border-radius: 50%;
-    height: 260px;
-    padding: 10px;
-    margin-bottom: 30px;
+.metime-pic {
+  border-radius: 50%;
+  height: 260px;
+  padding: 10px;
+  margin-bottom: 30px;
 }

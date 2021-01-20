@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./MeTimePage.css";
-import { Route, NavLink, useHistory } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
 import MeTimeCard from "../../components/MeTimeCard/MeTimeCard";
 import * as meTimeAPI from "../../services/meTime-api";
-import EditMeTimeCard from "../../components/EditMeTimeCard/EditMeTimeCard";
 import AddMeTimeCard from "../../components/AddMeTimeCard/AddMeTimeCard";
-import { useStateWithCallback } from "../../hooks/useStateWithCallback";
 
 // This is our me time list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
-function MeTimePage({user}) {
+function MeTimePage({ user }) {
   // Creating state for me time
-  const [person, setPerson] = useState(user)
+  const [person, setPerson] = useState(user);
   const [meTime, setMeTime] = useState([]);
   const history = useHistory();
- 
+
   // Add a mantra
   async function handleAddMeTime(newMeTimeData) {
     const newMeTime = await meTimeAPI.create(newMeTimeData);
@@ -30,27 +28,25 @@ function MeTimePage({user}) {
   // Delete a mantra
   async function handleDeleteMeTime(id) {
     if (user) {
-    await meTimeAPI.deleteOne(id);
-    setMeTime(meTime.filter((m) => m._id !== id));
-  } else {
-    history.push("/login");
+      await meTimeAPI.deleteOne(id);
+      setMeTime(meTime.filter((m) => m._id !== id));
+    } else {
+      history.push("/login");
+    }
   }
-}
   /*--- Lifecycle Methods ---*/
   useEffect(() => {
     (async function () {
       const allMeTime = await meTimeAPI.getAll();
 
-      console.log(allMeTime, '<= meTime')
+      console.log(allMeTime, "<= meTime");
       setMeTime(allMeTime.filter((meTime) => user._id === meTime.postedBy._id));
-
     })();
   }, []);
 
-  console.log(person)
+  console.log(person);
   return (
     <div className="metime-list-container">
-
       <div className="metime-heading">
         <h1 className="metime-page-head"> Me Time</h1>
       </div>
@@ -60,27 +56,31 @@ function MeTimePage({user}) {
       </>
 
       <div>
-
         <>
-            <AddMeTimeCard user={person} meTime={meTime.length} handleAddMeTime={handleAddMeTime} />
-          
-          {meTime.length ? 
-          <>
-          {meTime.map((meTime) => (
-            <p>
-              <MeTimeCard
-                user={person}
-                meTime={meTime}
-                handleDeleteMeTime={handleDeleteMeTime}
-                handleUpdateMeTime={handleUpdateMeTime}
-                key={meTime._id}
-              />
-            </p>
-          ))}
+          <AddMeTimeCard
+            user={person}
+            meTime={meTime.length}
+            handleAddMeTime={handleAddMeTime}
+          />
+
+          {meTime.length ? (
+            <>
+              {meTime.map((meTime) => (
+                <p>
+                  <MeTimeCard
+                    user={person}
+                    meTime={meTime}
+                    handleDeleteMeTime={handleDeleteMeTime}
+                    handleUpdateMeTime={handleUpdateMeTime}
+                    key={meTime._id}
+                  />
+                </p>
+              ))}
+            </>
+          ) : (
+            <p>No Me Times</p>
+          )}
         </>
-        : <p>No Me Times</p>
-          }
-          </>
       </div>
     </div>
   );

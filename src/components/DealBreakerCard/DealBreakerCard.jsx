@@ -1,5 +1,4 @@
-import React, {Component, useState, useEffect, useRef} from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import './DealBreakerCard.css';
 import EditDealBreakerCard from '../EditDealBreakerCard/EditDealBreakerCard'
 
