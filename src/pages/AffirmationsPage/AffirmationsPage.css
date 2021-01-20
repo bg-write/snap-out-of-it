@@ -1,70 +1,70 @@
-.spiral-list-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column ;
-    background: rgba(131, 94, 218, 0.87);
-    padding: 20px;
-    padding-bottom: 160px;
+.spiral-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background: rgba(131, 94, 218, 0.87);
+  padding: 20px;
+  padding-bottom: 160px;
 }
 
-.spiral-heading{
-    margin: 30px;
-    font-family: 'Laila', serif;
+.spiral-heading {
+  margin: 30px;
+  font-family: "Laila", serif;
 }
 
-.spiral-page-head{
-    color: rgb(61, 42, 165);
-    font-size: 4rem;
+.spiral-page-head {
+  color: rgb(61, 42, 165);
+  font-size: 4rem;
 }
 
-.spiral-pic{
-    border-radius: 50%;
-    height: 400px;
-    margin: 20px;
-    margin-bottom: 50px;
+.spiral-pic {
+  border-radius: 50%;
+  height: 400px;
+  margin: 20px;
+  margin-bottom: 50px;
 }
 
 /* Quote Generator */
 #quote-box {
-	background: white;
-	width: 40rem;
-	margin: 10rem auto;
-	padding: 3rem;
-	border-radius: 5px;
+  background: white;
+  width: 40rem;
+  margin: 10rem auto;
+  padding: 3rem;
+  border-radius: 5px;
 }
 
 #quote-box {
-	background: white;
-	width: 40rem;
-	margin: 10rem auto;
-	padding: 3rem;
-	border-radius: 5px;
+  background: white;
+  width: 40rem;
+  margin: 10rem auto;
+  padding: 3rem;
+  border-radius: 5px;
 }
 
 #text {
-	font-size: 2rem;
-	margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 #author {
-	display: flex;
-	justify-content: flex-end;
-	font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
 }
 
 #new-quote {
-	background: teal;
-	border: none;
-	color: white;
-	padding: 0.7rem 1rem;
-	font-size: 0.9rem;
-	font-weight: bold;
-	border-radius: 2px;
-	outline: none;
-	cursor: pointer;
+  background: teal;
+  border: none;
+  color: white;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
 }
 
 #new-quote:hover {
-	opacity: 0.9;
+  opacity: 0.9;
 }

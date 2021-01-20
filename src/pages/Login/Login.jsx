@@ -29,18 +29,22 @@ class LoginPage extends Component {
   };
 
   updateMessage = (msg) => {
-    this.setState({message: msg});
-  }
+    this.setState({ message: msg });
+  };
 
   render() {
-    const {email, pw} = this.state
+    const { email, pw } = this.state;
     return (
       <main className="Login">
-       <div className="logo-container"><img className="logo-pic" src="/images/logo.jpg" alt=""/></div> 
+        <div className="logo-container">
+          <img className="logo-pic" src="/images/logo.jpg" alt="" />
+        </div>
         <h1 className="Brand-name">Snap Out Of It!</h1>
-        <form  autoComplete="off" onSubmit={this.handleSubmit}>
-        <h3 className="login-text h2">Log In</h3>
-          <input className="form-control form-control-sm" placeholder="Email..."
+        <form autoComplete="off" onSubmit={this.handleSubmit}>
+          <h3 className="login-text h2">Log In</h3>
+          <input
+            className="form-control form-control-sm"
+            placeholder="Email..."
             type="text"
             autoComplete="off"
             id="email"
@@ -49,7 +53,9 @@ class LoginPage extends Component {
             onChange={this.handleChange}
           />
           <label htmlFor="email"></label>
-          <input className="form-control form-control-sm" placeholder="Password..."
+          <input
+            className="form-control form-control-sm"
+            placeholder="Password..."
             type="password"
             autoComplete="off"
             id="password"

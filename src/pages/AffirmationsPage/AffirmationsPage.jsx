@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./AffirmationsPage.css";
-import { Route, NavLink, useHistory } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
 import AffirmationCard from "../../components/AffirmationCard/AffirmationCard";
 import * as affirmationAPI from "../../services/affirmations-api";
-import EditAffirmationCard from "../../components/EditAffirmationCard/EditAffirmationCard";
 import AddAffirmationCard from "../../components/AddAffirmationCard/AddAffirmationCard";
 import Quotes from "../../components/Quotes/Quotes";
-import { useStateWithCallback } from "../../hooks/useStateWithCallback";
+
 
 // This is our Affirmation list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
 function AffirmationPage({ user }) {
@@ -66,26 +65,25 @@ function AffirmationPage({ user }) {
 
       <div>
         <>
-
-            <AddAffirmationCard
-              user={person}
-              affirmation={affirmations.length}
-              handleAddAffirmation={handleAddAffirmation}
-            />
+          <AddAffirmationCard
+            user={person}
+            affirmation={affirmations.length}
+            handleAddAffirmation={handleAddAffirmation}
+          />
 
           {affirmations.length ? (
-          <>
-          {affirmations.map((affirmation) => (
-            <p>
-              <AffirmationCard
-                affirmation={affirmation}
-                handleDeleteAffirmation={handleDeleteAffirmation}
-                handleUpdateAffirmation={handleUpdateAffirmation}
-                key={affirmation._id}
-              />
-            </p>
-          ))}
-          </>
+            <>
+              {affirmations.map((affirmation) => (
+                <p>
+                  <AffirmationCard
+                    affirmation={affirmation}
+                    handleDeleteAffirmation={handleDeleteAffirmation}
+                    handleUpdateAffirmation={handleUpdateAffirmation}
+                    key={affirmation._id}
+                  />
+                </p>
+              ))}
+            </>
           ) : (
             <p>Add some affirmations</p>
           )}

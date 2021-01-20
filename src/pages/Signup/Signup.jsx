@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import SignupForm from '../../components/SignupForm/SignupForm';
-import './Signup.css';
+import React, { Component } from "react";
+import SignupForm from "../../components/SignupForm/SignupForm";
+import "./Signup.css";
 
 class Signup extends Component {
   state = {
-    message: ''
-  }
+    message: "",
+  };
 
   updateMessage = (msg) => {
-    this.setState({message: msg});
-  }
+    this.setState({ message: msg });
+  };
 
   render() {
     return (
