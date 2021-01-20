@@ -1,139 +1,137 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .home-container-container {
-	background-color: salmon;
+  background-color: salmon;
 }
 
-.home-page-head{
-    font-size: 4rem;
-    font-family: 'Laila', serif;
-    color:rgba(250, 248, 229, 0.87)
+.home-page-head {
+  font-size: 4rem;
+  font-family: "Laila", serif;
+  color: rgba(250, 248, 229, 0.87);
 }
 #quote-box {
-	background: white;
-	width: 40rem;
-	margin: 10rem auto;
-	padding: 3rem;
-	border-radius: 5px;
+  background: white;
+  width: 40rem;
+  margin: 10rem auto;
+  padding: 3rem;
+  border-radius: 5px;
 }
 
 #text {
-	font-size: 2rem;
-	margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 #author {
-	display: flex;
-	justify-content: flex-end;
-	font-size: 1.2rem;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
 }
 
 #new-quote {
-	background: teal;
-	border: none;
-	color: white;
-	padding: 0.7rem 1rem;
-	font-size: 0.9rem;
-	font-weight: bold;
-	border-radius: 2px;
-	outline: none;
-	cursor: pointer;
+  background: teal;
+  border: none;
+  color: white;
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
 }
 
 #new-quote:hover {
-	opacity: 0.9;
+  opacity: 0.9;
 }
 
-.home-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
-.divide{
-    height: 400px;
+.divide {
+  height: 400px;
 }
 
-.d-block{
-    height: 400px;
-    width: 400px;
-    border-radius: 30%;
-    margin-bottom: 100px;
-   
+.d-block {
+  height: 400px;
+  width: 400px;
+  border-radius: 30%;
+  margin-bottom: 100px;
 }
 
-.carousel-container{
-    width: 400px;
-    border-radius: 30%;
-    margin-bottom: 100px;
+.carousel-container {
+  width: 400px;
+  border-radius: 30%;
+  margin-bottom: 100px;
 }
 
-.square-mantra{
-    height: 400px;
-    background: rgb(255,205,1);
-    border-radius: 30%;
+.square-mantra {
+  height: 400px;
+  background: rgb(255, 205, 1);
+  border-radius: 30%;
 }
-.square-MeTime{
-    height: 400px;
-    background-color: pink;
-    border-radius: 30%;  
+.square-MeTime {
+  height: 400px;
+  background-color: pink;
+  border-radius: 30%;
 }
-.square-dealbreaker{
-    height: 400px;
-    background-color: rgba(255, 170, 42, 0.479);
-    border-radius: 30%;  
+.square-dealbreaker {
+  height: 400px;
+  background-color: rgba(255, 170, 42, 0.479);
+  border-radius: 30%;
 }
-.square-spiraling{
-    height: 400px;
-    background: rgba(131, 94, 218, 0.87);
-    border-radius: 30%;  
+.square-spiraling {
+  height: 400px;
+  background: rgba(131, 94, 218, 0.87);
+  border-radius: 30%;
 }
 
 /* / */
 
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 300px;
-    perspective: 1000px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-front {
-    background: rgb(255,205,1);
-    color: black;
-  }
-  
-  .flip-card-back {
-    background-color: #2980b9;
-    color: white;
-    transform: rotateY(180deg);
-  }
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background: rgb(255, 205, 1);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}

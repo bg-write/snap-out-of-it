@@ -1,5 +1,4 @@
-import React, { Component, useState, useEffect, useRef } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react';
 import EditAffirmationCard from "../EditAffirmationCard/EditAffirmationCard";
 import "./AffirmationCard.css";
 
