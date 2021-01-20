@@ -424,6 +424,6 @@ class SnakeGame extends React.Component {
       </div>
     );
   }
-}
+};
 
 export default SnakeGame;
