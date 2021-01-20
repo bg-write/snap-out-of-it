@@ -76,7 +76,7 @@ const NavBar = ({ user, handleLogout }) => {
                   </Navbar.Brand>
 
                   <Navbar.Brand>
-                    <Link to="/playlistpage">
+                    <Link to="/snakepage">
                       <Col xm={7}>
                         <Image
                           className="Logo"
