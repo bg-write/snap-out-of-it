@@ -1,8 +1,9 @@
 import React, { Component, useState, useEffect, useRef } from 'react';
 import { Link } from "react-router-dom";
+import EditAffirmationCard from "../EditAffirmationCard/EditAffirmationCard";
 import "./AffirmationCard.css";
 
-function AffirmationCard({ affirmation, handleDeleteAffirmation }) {
+function AffirmationCard({ user, handleUpdateAffirmation, affirmation, handleDeleteAffirmation }) {
 
     return (
         <>
@@ -18,6 +19,13 @@ function AffirmationCard({ affirmation, handleDeleteAffirmation }) {
             <div>
                 <button className="btn af-delete" onClick={() => handleDeleteAffirmation(affirmation._id)}>x</button>
             </div>
+            <>
+            <EditAffirmationCard
+                affirmation={affirmation}
+                handleUpdateAffirmation={handleUpdateAffirmation}
+                key={affirmation._id}
+              />
+            </>
             </div>
         </>
     )
