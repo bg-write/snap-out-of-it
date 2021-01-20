@@ -409,16 +409,16 @@ class SnakeGame extends React.Component {
         </div>
         <div class="controls">
           <button class="control-button" id="left" onClick={() => this.goLeft()}>
-            ⬅
+            ←
           </button>
           <button class="control-button" id="up" onClick={() => this.goUp()}>
-            ⬆
+            ↑
           </button>
           <button class="control-button" id="down" onClick={() => this.goDown()}>
-            ⬇
+            ↓
           </button>
           <button class="control-button" id="right" onClick={() => this.goRight()}>
-            ➡
+            →
           </button>
         </div>
       </div>
