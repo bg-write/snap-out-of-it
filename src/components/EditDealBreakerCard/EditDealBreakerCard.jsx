@@ -29,7 +29,7 @@ export default function EditDealBreakerCard({
           <input
             className="form-control input-edit-deal form-control-md"
             name="text"
-            value={state.text}
+            // value={state.text}
             onChange={handleChange}
             required
           />
