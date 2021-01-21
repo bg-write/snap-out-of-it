@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import authService from "../../services/authService";
 
+
+
 class SignupForm extends Component {
   state = {
     name: "",
@@ -40,7 +42,9 @@ class SignupForm extends Component {
       <div>
         <h3 className="login-text h2">Sign Up</h3>
         <form autoComplete="off" onSubmit={this.handleSubmit}>
-          <label htmlFor="name">Name</label>
+          <div className="white">
+          <label className="name">Name</label>
+          </div>
           <input
             className="form-control form-control-sm"
             type="text"
@@ -51,7 +55,9 @@ class SignupForm extends Component {
             onChange={this.handleChange}
           />
           <br />
+          <div className="white">
           <label htmlFor="email">Email</label>
+          </div>
           <input
             className="form-control form-control-sm"
             type="text"
@@ -62,7 +68,9 @@ class SignupForm extends Component {
             onChange={this.handleChange}
           />
           <br />
-          <label htmlFor="password">Password</label>
+          <div className="white">
+          <label htmlFor="password white">Password</label>
+          </div>
           <input
             className="form-control form-control-sm"
             type="password"
@@ -73,7 +81,9 @@ class SignupForm extends Component {
             onChange={this.handleChange}
           />
           <br />
-          <label htmlFor="confirm">Confirm Password</label>
+          <div className="white">
+          <label htmlFor="confirm white">Confirm Password</label>
+          </div>
           <input
             className="form-control form-control-sm"
             type="password"
