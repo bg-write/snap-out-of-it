@@ -20,12 +20,9 @@ function HomePage({ user }) {
       </div>
 
       <div className="about-us">
-        <h1>About Us</h1>
+        <h1>Heartbreak Is Hard</h1>
         <div>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-          reiciendis inventore voluptas molestiae porro dolorum, minus harum!
-          Cupiditate quam, itaque at, saepe hic suscipit perspiciatis delectus
-          corrupti excepturi vel debitis.
+          Love, career, relationships, goals. Life's hard. Let's take a load off and get sassy and grow.
         </div>
       </div>
 
@@ -62,28 +59,36 @@ function HomePage({ user }) {
               </ol>
 
               <div className="carousel-inner">
+               
                 <div className="carousel-item active">
-                  <div className="square-mantra"></div>
+              
+                  
+                  <div className="square-mantra">  <img className="carousel-pic"src="images/mantra_nav.png" alt=""/></div>
+               
                   <div className="carousel-caption  d-md-block">
+                  <p>Wake up with a smile to your own personal mantras.</p>
                     <h5>Mantras</h5>
                   </div>
                 </div>
 
                 <div className="carousel-item">
-                  <div className="square-MeTime"></div>
+                  <div className="square-MeTime"><img className="carousel-pic2"src="images/metime_nav.png" alt=""/></div>
                   <div className="carousel-caption d-md-block">
+                  <p>Discover how to create your own healing space for self-love and development.</p>
                     <h5>Me Time</h5>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <div className="square-dealbreaker"></div>
+                  <div className="square-dealbreaker"> <img className="carousel-pic3"src="images/dealbreaker_nav.png" alt=""/></div>
                   <div className="carousel-caption d-md-block">
+                  <p>Remind yourself why these people weren't for you! Let's make that list! </p>
                     <h5>Deal Breaker</h5>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <div className="square-spiraling "></div>
+                  <div className="square-spiraling "><img className="carousel-pic4"src="images/spiraling_nav.png" alt=""/></div>
                   <div className="carousel-caption d-md-block ">
+                  <p>When those rough times hit you, visit our affirmations page to help lift you up. Please enjoy one of our soothing quotes.</p>
                     <h5>I'm Spiraling</h5>
                   </div>
                 </div>
