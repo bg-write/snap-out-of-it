@@ -4,7 +4,6 @@ import NavBar from "../../components/NavBar/NavBar";
 import Signup from "../Signup/Signup";
 import Login from "../Login/Login";
 import authService from "../../services/authService";
-import Users from "../Users/Users";
 import HomePage from "../HomePage/HomePage";
 import MantraPage from "../MantraPage/MantraPage";
 import DealBreakerPage from "../DealBreakerPage/DealBreakerPage";
@@ -67,11 +66,7 @@ class App extends Component {
             />
           )}
         />
-        <Route
-          exact
-          path="/users"
-          render={() => (user ? <Users /> : <Redirect to="/Login" />)}
-        />
+      
         <Route
           exact
           path="/mantra-page"
