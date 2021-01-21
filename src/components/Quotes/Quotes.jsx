@@ -33,10 +33,10 @@ const Quotes = () => {
 			<div className="quote-box-home">
 				<div className="sassy-box">
 					<div class="sassy-quote">
+
 						<div>
 							<h1 className="sassy-text">{quote}</h1>
 							<h5 className="sassy-author">{author}</h5>
-						</div>
 						<div class="sassy-button">
 							<button
 								onClick={handleClick}
@@ -45,7 +45,10 @@ const Quotes = () => {
 							>
 								You're OK.
 							</button>
+						</div>	
 						</div>
+						
+
 					</div>
 				</div>
 			</div>
