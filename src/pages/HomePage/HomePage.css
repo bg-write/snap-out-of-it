@@ -53,6 +53,9 @@
 	border-radius: 10px;
 }
 
+.sassy-word{
+  color: rgba(250, 248, 229, 0.87);
+}
 .about-us {
 	width: 80%;
 	font-size: 1rem;
@@ -63,7 +66,9 @@
 	/* background-color: aliceblue; */
 	margin-bottom: 50px;
 	color: rgb(57, 73, 72);
-	font-family: 'helvetica';
+  font-family: 'helvetica';
+  font-weight: 400;
+  /* font-family: 'Laila', serif; */
 }
 /* ************************************************* */
 
@@ -107,6 +112,10 @@
   height: 30%;
  margin-bottom: 180px;
 }
+.carousel-pic5{
+  height: 30%;
+ margin-bottom: 100px;
+}
 
 
 .d-block {
@@ -148,6 +157,14 @@
   align-items: center;
   height: 400px;
   background-color: rgba(248, 201, 131, 0.664);
+  border-radius: 30%;
+}
+.square-gameplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: rgba(184, 238, 235, 0.699);
   border-radius: 30%;
 }
 .square-spiraling {

@@ -20,9 +20,9 @@ function HomePage({ user }) {
       </div>
 
       <div className="about-us">
-        <h1>Heartbreak Is Hard</h1>
+        <h1>Heartbreak Is Hard.</h1>
         <div>
-          Love, career, relationships, goals. Life's hard. Let's take a load off and get sassy and grow.
+          Love, career, relationships, goals. Life's hard. Let's take a load off and get <span className="sassy-word">sassy</span> and grow.
         </div>
       </div>
 
@@ -56,6 +56,10 @@ function HomePage({ user }) {
                   data-bs-target="#carouselExampleIndicators"
                   data-bs-slide-to="3"
                 ></li>
+                 <li
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="4"
+                ></li>
               </ol>
 
               <div className="carousel-inner">
@@ -78,6 +82,7 @@ function HomePage({ user }) {
                     <h5>Me Time</h5>
                   </div>
                 </div>
+
                 <div className="carousel-item">
                   <div className="square-dealbreaker"> <img className="carousel-pic3"src="images/dealbreaker_nav.png" alt=""/></div>
                   <div className="carousel-caption d-md-block">
@@ -85,6 +90,15 @@ function HomePage({ user }) {
                     <h5>Deal Breaker</h5>
                   </div>
                 </div>
+
+                <div className="carousel-item">
+                  <div className="square-gameplay"> <img className="carousel-pic5"src="images/game_nav.png" alt=""/></div>
+                  <div className="carousel-caption d-md-block">
+                  <p>Unwind and let go with our relaxing snake game.</p>
+                    <h5>Game Time</h5>
+                  </div>
+                </div>
+
                 <div className="carousel-item">
                   <div className="square-spiraling "><img className="carousel-pic4"src="images/spiraling_nav.png" alt=""/></div>
                   <div className="carousel-caption d-md-block ">
