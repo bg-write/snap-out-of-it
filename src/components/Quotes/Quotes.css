@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	height: 99%;
+	width: 99%;
+	padding: 10px;
+	margin: 10px;
 }
 
 .sassy-box {
@@ -9,32 +13,39 @@
 	justify-content: center;
 	align-items: center;
 	flex-flow: column wrap;
-	height: 300px;
-	width: 80%;
+	height: 99%;
+	margin: 0;
+	width: 95%;
 	background-color: rgb(251, 252, 236);
 	border-radius: 10px;
-	padding: 40px;
+	padding: 10px;
 	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
-	margin: 0px 0px 100px 0px;
 }
 
 .sassy-quote {
+	padding: 5px;
+	width: 90%;
+	height: 90%;
 }
 
 .sassy-text {
-	font-size: 1.2rem;
-	margin-bottom: 20px;
+	font-size: 1rem;
+	width: 90%;
+	margin-bottom: 10px;
 }
 
 .sassy-author {
 	font-size: 1rem;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .sassy-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-size: 1rem;
+	width: 80%;
+	margin: 0px;
 }
 
 #new-quote {
