@@ -30,7 +30,7 @@ export default function AddMeTimeCard({ user, meTime, handleAddMeTime }) {
             <div className="input-group">
               <input
                 className="form-control width100"
-                placeholder="Check in with yourself ... anything new you want to try?"
+                placeholder="A little TLC ..."
                 name="text"
                 value={state.text}
                 onChange={handleChange}

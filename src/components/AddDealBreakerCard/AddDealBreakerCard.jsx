@@ -34,7 +34,7 @@ export default function AddDealBreakerCard({
             <div className="input-group">
               <input
                 className="form-control width100"
-                placeholder="What are some things you DON'T miss about your ex ..."
+                placeholder="Your ex was not THAT great ..."
                 name="text"
                 value={state.text}
                 onChange={handleChange}
