@@ -52,9 +52,9 @@ function MantraPage({ user }) {
         <h1 className="mantra-page-head"> Mantra</h1>
       </div>
 
-      <>
+      <div className="mantra-pic-container">
         <img className="mantra-pic" src="/images/Mantrapic.jpg" alt="" />
-      </>
+      </div>
 
       <div>
         <>

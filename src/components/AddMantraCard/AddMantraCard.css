@@ -4,7 +4,11 @@
     align-items: center;
     flex-direction: row;
     margin-top: 20px;
-    
+
 }
 
+
+.mantra-but{
+    margin: 10px;
+}
 
