@@ -13,7 +13,7 @@ function DealBreakerCard({ user, dealBreaker, handleDeleteDealBreaker, handleUpd
 			<p className="card-text d-text">{dealBreaker.text}</p>
 			</div>
 			<div>
-				<button className="btn deal-delete" onClick={() => handleDeleteDealBreaker(dealBreaker._id)}>x</button>
+				<button className="btn deal-delete" onClick={() => handleDeleteDealBreaker(dealBreaker._id)}>-</button>
 			</div>
 		</div>
 		<>
