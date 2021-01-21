@@ -1,103 +1,94 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .home-container-container {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: salmon;
- 
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: salmon;
 }
 
 .banner-top {
-  display: grid;
-  grid-template-columns: 20% 80%;
-grid-template-areas: 
-"left right";
-  justify-content: start;
-  align-items: center;
-  height: auto;
-  width: 100%;
-  background-color: rgb(1, 158, 158);
-  
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-areas: 'left right';
+	justify-content: start;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	background-color: rgb(1, 158, 158);
 }
 .snap-title-box {
 }
 .snap-title {
-  grid-area: right;
-  margin: 20px ;
-  font-family: "Laila", serif;
-  color: rgba(250, 248, 229, 0.87);
+	grid-area: right;
+	margin: 20px;
+	font-family: 'Laila', serif;
+	color: rgba(250, 248, 229, 0.87);
 }
 
-.container-logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .title-logo {
-
-  justify-content: center;
-  align-items: center;
-  grid-area: left;
-  height: 50px;
-  border-radius: 50%;
-  
+	justify-content: center;
+	align-items: center;
+	grid-area: left;
+	height: 50px;
+	border-radius: 50%;
 }
 /* add media iphone5 */
-.welcome{
-    margin: 50px 0;
-    font-size: 2.8rem;
-    font-family: "Laila", serif;
-    color: rgba(250, 248, 229, 0.87);
-    border: 15px solid;
-    border-radius: 10px;
+.welcome {
+	margin: 50px 0;
+	font-size: 2.8rem;
+	font-family: 'Laila', serif;
+	color: rgba(250, 248, 229, 0.87);
+	border: 15px solid;
+	border-radius: 10px;
 }
 
 .about-us {
-  width: 80%;
-  font-size: 1rem;
-  line-height: 2;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: start;
-  /* background-color: aliceblue; */
-  margin-bottom: 50px;
-  color:rgb(57, 73, 72);
-  font-family: "helvetica";
-  
+	width: 80%;
+	font-size: 1rem;
+	line-height: 2;
+	padding: 20px;
+	border-radius: 10px;
+	text-align: start;
+	/* background-color: aliceblue; */
+	margin-bottom: 50px;
+	color: rgb(57, 73, 72);
+	font-family: 'helvetica';
 }
 /* ************************************************* */
 
 .carousel-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
 }
-.home-container{
- 
+.home-container {
 }
 
 .quote-box-home {
-display: flex;
-justify-content: center;
-align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .space {
-  height: 100px;
+	height: 100px;
 }
-
 
 /* ************************************************* */
 .divide {
-  height: 400px;
+	height: 400px;
 }
 
 .carousel-pic{
@@ -119,20 +110,40 @@ align-items: center;
 
 
 .d-block {
+	width: 400px;
+	border-radius: 30%;
+	margin-bottom: 100px;
   width: 400px;
   border-radius: 30%;
   margin-bottom: 100px;
 }
 
 .carousel-container {
-  width: 85vw;
-  border-radius: 30%;
-  margin-bottom: 100px;
-  
+	width: 85vw;
+	border-radius: 30%;
+	margin-bottom: 100px;
 }
 
 
 .square-mantra {
+	height: 400px;
+	background: rgba(255, 204, 1, 0.829);
+	border-radius: 30%;
+}
+.square-MeTime {
+	height: 400px;
+	background-color: pink;
+	border-radius: 30%;
+}
+.square-dealbreaker {
+	height: 400px;
+	background-color: rgba(248, 201, 131, 0.664);
+	border-radius: 30%;
+}
+.square-spiraling {
+	height: 400px;
+	background: rgba(131, 94, 218, 0.692);
+	border-radius: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -208,3 +219,31 @@ align-items: center;
   color: white;
   transform: rotateY(180deg);
 } */
+
+/*---------------- Media Queries ----------------------------*/
+
+
+/*----TABLETS----*/
+@media only screen and (min-width: 43em) {
+	.about-us {
+		background-color: aliceblue;
+	}
+}
+
+
+/*----DESKTOP (smaller)----*/
+@media only screen and (min-width: 62em) {
+	.about-us {
+		background-color: goldenrod;
+	}
+}
+
+
+/*----DESKTOP (larger)----*/
+@media only screen and (min-width: 82em) {
+	.about-us {
+		background-color: aquamarine;
+	}
+}
+
+
