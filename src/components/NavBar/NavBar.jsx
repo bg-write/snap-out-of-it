@@ -45,7 +45,7 @@ const NavBar = ({ user, handleLogout }) => {
 
 							{/* Game logo */}
 							<Navbar.Brand>
-								<Link to="/playlistpage">
+								<Link to="/snakepage">
 									<Image className="Logo" src="images/game_nav.png" fluid />
 								</Link>
 							</Navbar.Brand>

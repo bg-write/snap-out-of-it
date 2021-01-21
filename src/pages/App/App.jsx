@@ -9,7 +9,7 @@ import MantraPage from "../MantraPage/MantraPage";
 import DealBreakerPage from "../DealBreakerPage/DealBreakerPage";
 import MeTimePage from "../MeTimePage/MeTimePage";
 import AffirmationsPage from "../AffirmationsPage/AffirmationsPage";
-import PlaylistPage from "../PlaylistPage/PlaylistPage";
+import SnakePage from "../SnakePage/SnakePage";
 import "./App.css";
 
 // This App page is rendering all the components that were imported above into the page.
@@ -113,10 +113,10 @@ class App extends Component {
         />
         <Route
           exact
-          path="/playlistpage"
+          path="/snakepage"
           render={() =>
             user ? (
-              <PlaylistPage user={this.state.user} />
+              <SnakePage user={this.state.user} />
             ) : (
               <Redirect to="/Login" />
             )
