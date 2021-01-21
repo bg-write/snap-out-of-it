@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useForm } from "../../hooks/useForm";
+import './AddMantraCard.css';
 
 export default function AddMantraCard({ user, mantra, handleAddMantra }) {
   const [invalidForm, setValidForm] = useState(true);
@@ -16,8 +17,8 @@ export default function AddMantraCard({ user, mantra, handleAddMantra }) {
   return (
     <>
       {user ? (
-        <div className="add-mantra-container">
-          <form
+        <>
+          <form className="add-mantra-container"
             autoComplete="off"
             ref={formRef}
             onSubmit={(e) => {
@@ -53,7 +54,7 @@ export default function AddMantraCard({ user, mantra, handleAddMantra }) {
               )}
             </div>
           </form>
-        </div>
+        </>
       ) : (
         <h1>You have no Mantras</h1>
       )}

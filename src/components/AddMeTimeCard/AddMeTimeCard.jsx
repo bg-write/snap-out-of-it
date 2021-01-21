@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useForm } from "../../hooks/useForm";
+import './AddMeTimeCard.css';
 
 export default function AddMeTimeCard({ user, meTime, handleAddMeTime }) {
   const [invalidForm, setValidForm] = useState(true);
@@ -16,8 +17,8 @@ export default function AddMeTimeCard({ user, meTime, handleAddMeTime }) {
   return (
     <>
       {user ? (
-        <div className="add-metime-container">
-          <form
+        <>
+          <form className="add-metime-container"
             autoComplete="off"
             ref={formRef}
             onSubmit={(e) => {
@@ -53,7 +54,7 @@ export default function AddMeTimeCard({ user, meTime, handleAddMeTime }) {
               )}
             </div>
           </form>
-        </div>
+        </>
       ) : (
         <h1>You have no lists</h1>
       )}

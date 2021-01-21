@@ -6,22 +6,27 @@
   background: rgba(131, 94, 218, 0.87);
   padding: 20px;
   padding-bottom: 160px;
+  width: 100vw;
 }
 
 .spiral-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 30px;
   font-family: "Laila", serif;
 }
 
 .spiral-page-head {
+	text-align: center;
   color: rgb(61, 42, 165);
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .spiral-pic {
   border-radius: 50%;
-  height: 400px;
+  height: 300px;
+  width: 90%;
   margin: 20px;
   margin-bottom: 50px;
 }
-
