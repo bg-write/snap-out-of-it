@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useForm } from "../../hooks/useForm";
+import './AddDealBreakerCard.css';
 
 export default function AddDealBreakerCard({
   user,
@@ -20,8 +21,8 @@ export default function AddDealBreakerCard({
   return (
     <>
       {user ? (
-        <div className="add-breaker-container">
-          <form
+        <>
+          <form className="add-breaker-container"
             autoComplete="off"
             ref={formRef}
             onSubmit={(e) => {
@@ -57,7 +58,7 @@ export default function AddDealBreakerCard({
               )}
             </div>
           </form>
-        </div>
+        </>
       ) : (
         <h1>You have no lists</h1>
       )}
