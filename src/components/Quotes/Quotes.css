@@ -1,3 +1,9 @@
+.quote-box-home {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .sassy-box {
 	display: flex;
 	justify-content: center;
@@ -14,11 +20,6 @@
 
 .sassy-quote {
 }
-.sassy-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 .sassy-text {
 	font-size: 1.2rem;
@@ -28,6 +29,12 @@
 .sassy-author {
 	font-size: 1rem;
 	margin-bottom: 50px;
+}
+
+.sassy-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 #new-quote {
