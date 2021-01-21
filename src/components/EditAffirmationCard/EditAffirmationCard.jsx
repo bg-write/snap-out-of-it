@@ -29,7 +29,7 @@ export default function EditAffirmationCard({
           <input
             className="form-control form-control-md"
             name="text"
-            value={state.text}
+            // value={state.text}
             onChange={handleChange}
             required
           />

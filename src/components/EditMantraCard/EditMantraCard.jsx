@@ -27,7 +27,7 @@ export default function EditMantraCard({ mantra, handleUpdateMantra }) {
           <input
             className="form-control form-control-md"
             name="text"
-            value={state.text}
+            // value={state.text}
             onChange={handleChange}
             required
           />
