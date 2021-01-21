@@ -8,7 +8,7 @@ function SnakePage() {
     const history = useHistory();
     useEffect(() => {
       // This is listening for changes in Snakes state, then the function below will reroute
-      history.push("/Snakepage");
+      history.push("/snakepage");
     }, [Snakes, history]);
 
     return (
