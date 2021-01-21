@@ -91,10 +91,31 @@
 	height: 400px;
 }
 
+.carousel-pic{
+  height: 50%;
+ padding-bottom: 70px;
+}
+.carousel-pic2{
+  height: 50%;
+ padding-bottom: 80px;
+}
+.carousel-pic3{
+  height: 50%;
+ padding-bottom: 80px;
+}
+.carousel-pic4{
+  height: 30%;
+ margin-bottom: 180px;
+}
+
+
 .d-block {
 	width: 400px;
 	border-radius: 30%;
 	margin-bottom: 100px;
+  width: 400px;
+  border-radius: 30%;
+  margin-bottom: 100px;
 }
 
 .carousel-container {
@@ -102,6 +123,7 @@
 	border-radius: 30%;
 	margin-bottom: 100px;
 }
+
 
 .square-mantra {
 	height: 400px;
@@ -122,6 +144,37 @@
 	height: 400px;
 	background: rgba(131, 94, 218, 0.692);
 	border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: rgba(255, 204, 1, 0.829);
+  border-radius: 30%;
+}
+.square-MeTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: pink;
+  border-radius: 30%;
+}
+.square-dealbreaker {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background-color: rgba(248, 201, 131, 0.664);
+  border-radius: 30%;
+}
+.square-spiraling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  background: rgba(131, 94, 218, 0.692);
+  border-radius: 30%;
 }
 
 /* / */

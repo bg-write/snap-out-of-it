@@ -10,9 +10,11 @@ class QuoteAndAuthor extends React.Component {
 						{this.props.author ? this.props.author : 'Unknown'}
 					</h5>
 				</div>
+				<div className="sassy-button">
 				<button onClick={this.props.handleClick} id="new-quote" className="hvr-grow-shadow">
 					Slap!
 				</button>
+				</div>
 			</div>
 		);
 	}
