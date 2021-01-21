@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useForm } from "../../hooks/useForm";
+import './EditAffirmationCard.css';
 
 export default function EditAffirmationCard({
   affirmation,
@@ -35,7 +36,7 @@ export default function EditAffirmationCard({
         </div>
 
         <button
-          className="btn btn-light edit-metime"
+          className="btn btn-light edit-aff-btn"
           type="submit"
           disabled={invalidForm}
         >

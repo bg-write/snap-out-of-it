@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useForm } from "../../hooks/useForm";
+import './AddAffirmationCard.css';
 
 export default function AddAffirmationCard({
   user,
@@ -20,7 +21,7 @@ export default function AddAffirmationCard({
   return (
     <>
       {user ? (
-        <form
+        <form className="add-aff-form"
           autoComplete="off"
           ref={formRef}
           onSubmit={(e) => {
