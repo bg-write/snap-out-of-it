@@ -31,13 +31,13 @@ const Quotes = () => {
 	return (
 		<>
 			<div className="quote-box-home">
-				<div className="sassy-box">
-					<div class="sassy-quote">
+				<div className="emp-box">
+					<div class="emp-quote">
 
 						<div>
-							<h1 className="sassy-text">{quote}</h1>
-							<h5 className="sassy-author">{author}</h5>
-						<div class="sassy-button">
+							<h1 className="emp-text">{quote}</h1>
+							<h5 className="emp-author">{author}</h5>
+						<div class="emp-button">
 							<button
 								onClick={handleClick}
 								id="new-quote"

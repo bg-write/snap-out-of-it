@@ -8,7 +8,7 @@
 	margin: 10px;
 }
 
-.sassy-box {
+.emp-box {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -22,24 +22,24 @@
 	box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
 }
 
-.sassy-quote {
+.emp-quote {
 	padding: 5px;
 	width: 90%;
 	height: 90%;
 }
 
-.sassy-text {
+.emp-text {
 	font-size: 1rem;
 	width: 90%;
 	margin-bottom: 10px;
 }
 
-.sassy-author {
+.emp-author {
 	font-size: 1rem;
 	margin-bottom: 20px;
 }
 
-.sassy-button {
+.emp-button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
