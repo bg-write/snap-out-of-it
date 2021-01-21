@@ -26,7 +26,7 @@ export default function EditMeTimeCard({ meTime, handleUpdateMeTime }) {
           <input
             className="form-control form-control-md"
             name="text"
-            value={state.text}
+            // value={state.text}
             onChange={handleChange}
             required
           />
