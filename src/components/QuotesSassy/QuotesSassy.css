@@ -4,7 +4,7 @@
 	align-items: center;
 	flex-flow: column wrap;
 	height: 300px;
-	width: 80%;
+	width: 300px;
 	background-color: rgb(251, 252, 236);
 	border-radius: 10px;
 	padding: 40px;
@@ -13,6 +13,9 @@
 }
 
 .sassy-quote {
+  height: 300px;
+  width: 300px;
+padding-right: 50px;
 }
 .sassy-button {
 	display: flex;
@@ -21,7 +24,7 @@
 }
 
 .sassy-text {
-	font-size: 1.2rem;
+	font-size: 20px;
 	margin-bottom: 20px;
 }
 
