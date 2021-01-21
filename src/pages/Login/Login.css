@@ -1,32 +1,14 @@
-.LoginPage {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 50px;
-}
+
 
 .Login {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-  width: 100%;
-  height: 100vh;
+  flex-flow: column nowrap;
+  width: 100vw;
+  height: 100%;
   background-color: rgba(27, 189, 175, 0.541);
-}
-
-ul {
-  justify-content: center;
-}
-
-.buttons {
-  margin: 20px;
-}
-
-.login-text {
-  margin: 20px;
-  color: rgb(255, 255, 255);
+ 
 }
 
 .logo-container {
@@ -34,17 +16,41 @@ ul {
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  margin-bottom: 20px;
-}
+  margin-top: 40px;
 
+}
 .logo-pic {
   height: 200px;
   border-radius: 50%;
 }
 
+.brand-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .Brand-name {
   color: #fff;
   margin: 30px;
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: "Laila", serif;
 }
+
+.login-text {
+  margin: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.buttons {
+  margin: 20px;
+  color: rgb(100, 94, 94);
+}
+ul { 
+  justify-content: space-around;
+
+}
+
+
+
+
