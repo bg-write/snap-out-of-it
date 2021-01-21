@@ -36,10 +36,15 @@ class LoginPage extends Component {
     const { email, pw } = this.state;
     return (
       <main className="Login">
+
         <div className="logo-container">
           <img className="logo-pic" src="/images/logo.jpg" alt="" />
         </div>
+
+<div className="brand-container">
         <h1 className="Brand-name">Snap Out Of It!</h1>
+        </div>
+        
         <form autoComplete="off" onSubmit={this.handleSubmit}>
           <h3 className="login-text h2">Log In</h3>
           <input
@@ -70,6 +75,7 @@ class LoginPage extends Component {
           </Link>
         </form>
         <p>{this.state.message}</p>
+        <div className="space"></div>
       </main>
     );
   }

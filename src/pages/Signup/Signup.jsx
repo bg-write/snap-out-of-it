@@ -13,7 +13,7 @@ class Signup extends Component {
 
   render() {
     return (
-      <main className="Login">
+      <main className="SignUp">
         <SignupForm {...this.props} updateMessage={this.updateMessage} />
         <p>{this.state.message}</p>
       </main>

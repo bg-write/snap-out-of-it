@@ -1,9 +1,11 @@
 a {
-	color: black;
+	
+	color: rgb(100, 94, 94);
 	text-decoration: none;
+	font-family: Helvetica, sans-serif;
 }
 a:hover {
-	color: blue;
+	color: rgb(135, 135, 155);
 }
 
 .navbar{
