@@ -16,7 +16,7 @@ function AffirmationCard({ user, handleUpdateAffirmation, affirmation, handleDel
                 </div>
             </div>
             <div>
-                <button className="btn af-delete" onClick={() => handleDeleteAffirmation(affirmation._id)}>x</button>
+                <button className="btn af-delete" onClick={() => handleDeleteAffirmation(affirmation._id)}>-</button>
             </div>
             <>
             <EditAffirmationCard

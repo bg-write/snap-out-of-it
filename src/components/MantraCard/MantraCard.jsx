@@ -16,7 +16,7 @@ function MantraCard({ user, mantra, handleDeleteMantra, handleUpdateMantra }) {
               className="btn mantra-delete"
               onClick={() => handleDeleteMantra(mantra._id)}
             >
-              x
+              -
             </button>
           </div>
         </div>

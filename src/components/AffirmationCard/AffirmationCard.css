@@ -37,4 +37,6 @@
 .af-delete{
     background-color: rgba(40, 93, 241, 0.24);
     border-radius: 50%;
+    color: rgb(176, 171, 245);
+    margin: 10px 0 20px 0;
 }
