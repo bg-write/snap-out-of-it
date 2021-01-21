@@ -18,3 +18,32 @@
   margin-bottom: 10px;
   font-family: "Helvetica", sans-serif;
 }
+
+/*---------------- Media Queries ----------------------------*/
+/*----TABLETS----*/
+@media only screen and (min-width: 43em) {
+  #nav-mobile {
+    /* background-color: aliceblue; */
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .SignUp {
+    background: aliceblue;
+  }
+}
+
+/*----DESKTOP (smaller)----*/
+@media only screen and (min-width: 62em) {
+  .SignUp {
+    background: goldenrod;
+  }
+}
+
+/*----DESKTOP (larger)----*/
+@media only screen and (min-width: 82em) {
+  .SignUp {
+    background: aquamarine;
+  }
+}
+
