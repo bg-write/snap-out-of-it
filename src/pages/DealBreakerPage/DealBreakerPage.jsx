@@ -51,9 +51,9 @@ function DealBreakerPage({ user }) {
       <div>
         <h1 className="deal-page-head"> Deal Breakers</h1>
       </div>
-      <>
+      <div className="deal-pic-container">
         <img className="dealbreaker-pic" src="/images/dealbreaker.jpg" alt="" />
-      </>
+      </div>
       <div>
         <>
           <AddDealBreakerCard
