@@ -18,13 +18,6 @@ const NavBar = ({ user, handleLogout }) => {
 								</Link>
 							</Navbar.Brand>
 
-							{/* User logo */}
-							<Navbar.Brand>
-								<Link to="/users">
-									<Image className="Logo" src="images/user_nav.png" fluid />
-								</Link>
-							</Navbar.Brand>
-
 							{/* Mantra logo */}
 							<Navbar.Brand>
 								<Link to="/mantra-page">

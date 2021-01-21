@@ -3,10 +3,10 @@ import React from 'react';
 class QuoteAndAuthor extends React.Component {
 	render() {
 		return (
-			<div id="quote-box">
+			<div className="sassy-quote">
 				<div key={Math.random()}>
-					<h1 id="text">"{this.props.quote}"</h1>
-					<h5 id="author">
+					<h1 className="sassy-text">"{this.props.quote}"</h1>
+					<h5 className="sassy-author">
 						{this.props.author ? this.props.author : 'Unknown'}
 					</h5>
 				</div>
