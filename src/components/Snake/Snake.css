@@ -1,54 +1,56 @@
 #GameBoard {
-	position: relative;
-	margin: auto;
-	border-style: solid;
+  position: relative;
+  margin: auto;
+  border-style: solid;
 }
 
 #GameBoard .Block {
-    position: absolute;
-    z-index: 10;
+  position: absolute;
+  z-index: 10;
 }
 
 #GameBoard #GameOver {
-	text-align: center;
-	height: 100%;
-	flex-direction: column;
-	display: flex;
-	justify-content: space-around;
+  text-align: center;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
 }
 
 #GameBoard #Score {
-	position: relative;
-	top: 105%;
-	text-align: center;
-	font-weight: bold;
+  position: relative;
+  top: 105%;
+  text-align: center;
+  font-weight: bold;
 }
 
 #GameBoard #GameOverText {
-	color: #ca0000;
-	font-weight: bold;
-	text-decoration-line: underline;
+  color: #ca0000;
+  font-weight: bold;
+  text-decoration-line: underline;
 }
 
 #GameBoard #PressSpaceText {
-	color: #2e7ecb;
-	font-weight: bold;
+  color: #2e7ecb;
+  font-weight: bold;
 }
 
 /* Control Buttons */
-@import 'https://fonts.googleapis.com/css?family=Press+Start+2P';
+@import "https://fonts.googleapis.com/css?family=Press+Start+2P";
 
 .controls {
   margin-top: 80%;
   display: flex;
   order: 2;
 }
+
 .control-button {
   width: 50px;
   height: 50px;
-  background-color: #d58e5e;
+  background-color: #5eb3d5;
   margin: 0px auto;
-  color: #9b4637;
+  font-weight: bold;
+  color: #8d3525;
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -56,10 +58,12 @@
   box-shadow: 0px 5px 0px #9b4637;
   text-align: center;
 }
+
 .control-button:hover {
   background-color: #9b4637;
   color: #d58e5e;
 }
+
 .control-button i {
   margin: 0 auto;
 }

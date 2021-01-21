@@ -1,5 +1,5 @@
-const User = require('../models/user');
-const jwt = require("jsonwebtoken")
+const User = require("../models/user");
+const jwt = require("jsonwebtoken");
 
 const SECRET = process.env.SECRET;
 
@@ -23,7 +23,8 @@ async function signup(req, res) {
 async function login(req, res) {
   try {
     const user = await User.findOne({ email: req.body.email });
-    if (!user) return res.status(401).json({ err: "Let's try that again darling" });
+    if (!user)
+      return res.status(401).json({ err: "Let's try that again darling" });
     user.comparePassword(req.body.pw, (err, isMatch) => {
       if (isMatch) {
         const token = createJWT(user);
@@ -42,7 +43,7 @@ async function login(req, res) {
 function createJWT(user) {
   return jwt.sign(
     { user }, // data payload
-    process.env.SECRET,
+    SECRET,
     { expiresIn: "24h" }
   );
 }

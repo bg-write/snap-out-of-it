@@ -1,21 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./DealBreakerPage.css";
-import { Route, NavLink, useHistory } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
 import DealBreakerCard from "../../components/DealBreakerCard/DealBreakerCard";
 import * as dealBreakerAPI from "../../services/dealBreakers-api";
-import EditDealBreakerCard from "../../components/EditDealBreakerCard/EditDealBreakerCard";
 import AddDealBreakerCard from "../../components/AddDealBreakerCard/AddDealBreakerCard";
-import { useStateWithCallback } from "../../hooks/useStateWithCallback";
 
 // This is our mantra list page! All our functions will live here, and we'll pass from props to components. Here we import all the things we are exporting from all our pages
-function DealBreakerPage(props) {
+function DealBreakerPage({ user }) {
   // Creating state for mantras
+  const [person, setPerson] = useState(user);
   const [dealBreakers, setDealBreakers] = useState([]);
   const history = useHistory();
-  useEffect(() => {
-    // This is listening for changes in mantras state, then the function below will reroute
-    history.push("/dealbreakerpage");
-  }, [dealBreakers, history]);
+
   // Add a mantra
   async function handleAddDealBreaker(newDealBreakerData) {
     const newDealBreaker = await dealBreakerAPI.create(newDealBreakerData);
@@ -33,14 +29,20 @@ function DealBreakerPage(props) {
   }
   // Delete a mantra
   async function handleDeleteDealBreaker(id) {
-    await dealBreakerAPI.deleteOne(id);
-    setDealBreakers(dealBreakers.filter((d) => d._id !== id));
+    if (user) {
+      await dealBreakerAPI.deleteOne(id);
+      setDealBreakers(dealBreakers.filter((d) => d._id !== id));
+    } else {
+      history.push("/login");
+    }
   }
   /*--- Lifecycle Methods ---*/
   useEffect(() => {
     (async function () {
-      const dealBreakers = await dealBreakerAPI.getAll();
-      setDealBreakers(dealBreakers);
+      const allDealBreakers = await dealBreakerAPI.getAll();
+      setDealBreakers(
+        allDealBreakers.filter((d) => user._id === d.postedBy._id)
+      );
     })();
   }, []);
 
@@ -54,23 +56,29 @@ function DealBreakerPage(props) {
       </>
       <div>
         <>
-          <>
-            <AddDealBreakerCard handleAddDealBreaker={handleAddDealBreaker} />
-          </>
-          {dealBreakers.map((dealBreaker) => (
-            <p>
-              <DealBreakerCard
-                dealBreaker={dealBreaker}
-                handleDeleteDealBreaker={handleDeleteDealBreaker}
-                key={dealBreaker._id}
-              />
-              <EditDealBreakerCard
-                dealBreaker={dealBreaker}
-                handleUpdateDealBreaker={handleUpdateDealBreaker}
-                key={dealBreaker._id}
-              />
-            </p>
-          ))}
+          <AddDealBreakerCard
+            user={person}
+            dealBreaker={dealBreakers.length}
+            handleAddDealBreaker={handleAddDealBreaker}
+          />
+
+          {dealBreakers.length ? (
+            <>
+              {dealBreakers.map((dealBreaker) => (
+                <p>
+                  <DealBreakerCard
+                    user={person}
+                    dealBreaker={dealBreaker}
+                    handleDeleteDealBreaker={handleDeleteDealBreaker}
+                    handleUpdateDealBreaker={handleUpdateDealBreaker}
+                    key={dealBreaker._id}
+                  />
+                </p>
+              ))}
+            </>
+          ) : (
+            <p>No Deal Breakers</p>
+          )}
         </>
       </div>
     </div>

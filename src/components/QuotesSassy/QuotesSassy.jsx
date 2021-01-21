@@ -1,78 +1,84 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
+import "./QuotesSassy.css";
+// import QuoteAndAuthor from './QuotesSassyCard';
+import quotesSassyAPI from '../../services/quotesSassy-api';
 
-const textNodes =  [
+const QuotesSassy = () => {
+	const [quote, setQuoteSassy] = useState('');
+	const [author, setAuthorSassy] = useState('');
 
-    '"All discarded lovers should be given a second chance, but with somebody else." - Mae West',
+	useEffect(() => {
+		getQuoteSassy();
+	}, []);
 
-    '"Love is a fire. But whether it is going to warm your hearth or burn down your house, you can never tell." - Joan Crawford',
+	const getQuoteSassy = () => {
+		fetch(quotesSassyAPI)
+		.then((res) => res.json())
+		.then((data) => {
+			let dataQuotesSassy = data.quotesSassy;
+			let randomNum = Math.floor(Math.random() * dataQuotesSassy.length);
+			let randomQuoteSassy = dataQuotesSassy[randomNum];
 
-    '"The difference between a divorce and a legal separation is that a legal separation gives a husband time to hide his money." - Johnny Carson',
+			setQuoteSassy(randomQuoteSassy.quote);
+			setAuthorSassy(randomQuoteSassy.author);
+		});
+	};
 
-     '"Only time can heal your broken heart, just as time can heal his broken arms and legs." - Miss Piggy',
+	const handleClick = () => {
+		getQuoteSassy();
+	};
 
-     '"Snap out of it!" - Cher',
+	return (
+		<>
+		<div id="quote-box">
+			<div id="text">
+				<p>{quote}</p>
+			</div>
+			<div id="author">
+				<p>{author}</p>
+			</div>
+			<button onClick={handleClick} id="new-quote">
+				Slap!
+			</button>
+		</div>
+		</>
+	);
+};
 
-     '"Sometimes I wonder if men and women really suit each other. Perhaps they should live next door and just visit now and then." - Katherine Hepburn',
+export default QuotesSassy
 
-     '“I break up very well. I am a good breaker-upper.” – Simon Cowell',
-     '“I’m so miserable without you, it’s almost as if you’re here!” – Billy Ray Cyrus',
+// class QuotesSassy extends React.Component {
+// 	constructor() {
+// 		super();
+// 		this.state = {
+// 			quote: quotes[0].quote,
+// 			author: quotes[0].author,
+// 		};
+// 	}
+// 	randomQuote() {
+// 		const randomNumber = Math.floor(Math.random() * quotes.length);
+// 		return quotes[randomNumber];
+// 	}
+// 	shuffleQuotes(array) {
+// 		return array.sort(() => Math.random() - 0.5);
+// 	}
 
-     '“A breakup would imply she was my girlfriend. She was a girl who was my friend who is now a girl who is not my friend.” - Sheldon Cooper',
+// 	handleClick = () => {
+// 		const generateRandomQuote = this.randomQuote();
+// 		this.setState({
+// 			quote: generateRandomQuote.quote,
+// 			author: generateRandomQuote.author,
+// 		});
+// 		this.shuffleQuotes(quotes);
+// 	};
+	
+// 	render() {
+// 		return (
+// 			<div className="sassy-box">
+// 				<QuoteAndAuthor handleClick={this.handleClick} {...this.state} />
+// 			</div>
+// 		);
+// 	}
+// }
 
-    '“When one door closes another door opens. Usually a refrigerator.” - Bonnie McFarlane',
-
-    '“When your ex says ‘You’ll never find anyone like me’. Say ‘that’s the point’.” - Drake',
-
-    '“I`ve never been married, but I tell people I`m divorced so they won`t think something is wrong with me.” - Elayne Boosler',
-
-    '“I will always love the false image I had of you.” - Ashleigh Brilliant'
-
-]
-
-function showTextNode(textNodes){
-
-    // const textNode = textNodes.find(textNode => textNode.id === textIndex)
-    let randomQuoteSelector = Math.floor(Math.random() * 7) + 1
-
-return (
-    <>
-        <div>
-            <p>{textNodes[randomQuoteSelector]}</p>
-        </div>
-    </>
-)
-}
-
-export default showTextNode;
-
-// const textNodes =  [
-//     {
-//         id: 1,
-//         text: '"All discarded lovers should be given a second chance, but with somebody else." - Mae West',
-//     },
-//     {
-//         id: 2,
-//         text: '"Love is a fire. But whether it is going to warm your hearth or burn down your house, you can never tell." - Joan Crawford',
-//     },
-//     {
-//         id: 3,
-//         text: '"The difference between a divorce and a legal separation is that a legal separation gives a husband time to hide his money." - Johnny Carson',
-
-//     },
-//     {
-//         id: 4,
-//         text: '"Only time can heal your broken heart, just as time can heal his broken arms and legs." - Miss Piggy',
-//     },
-//     {
-//         id: 5,
-//         text: '"Snap out of it!" - Cher',
-//     },
-//     {
-//         id: 6,
-//         text: '"Sometimes I wonder if men and women really suit each other. Perhaps they should live next door and just visit now and then." - Katherine Hepburn',
-//     },
-//     {
-//         id: 7,
-//         text: '“I break up very well. I am a good breaker-upper.” – Simon Cowell',
-//     }
-// ]
+// export default QuotesSassy;

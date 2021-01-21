@@ -1,39 +1,35 @@
-
-.deal-card-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column ;
-    margin-top: 50px;
-   text-align: center;
+.deal-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  margin-top: 50px;
+  text-align: center;
 }
 
-.d-card{
-    
-    text-align: center;
-    padding: 10px;
-    width: 500px;
-    background-color:rgba(255, 255, 255, 0);
-    border: none;
-   
+.d-card {
+  text-align: center;
+  padding: 10px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
-.d-header{
- background-color:rgba(255, 255, 255, 0.301);
- border-radius: 25px;
- font-family: 'Laila', serif;
- color: rgb(161, 85, 22);
-
+.d-header {
+  background-color: rgba(255, 255, 255, 0.301);
+  border-radius: 25px;
+  font-family: "Laila", serif;
+  color: rgb(161, 85, 22);
 }
-.d-text{
-    padding: 20px 10px 20px 10px;
-    background-color:rgba(255, 255, 255, 0.664);
-    border-radius: 30px 50px 30px 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.d-text {
+  padding: 20px 10px 20px 10px;
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 30px 50px 30px 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
-.deal-delete{
-    background-color: rgba(243, 172, 19, 0.24);
-    border-radius: 50%;
+.deal-delete {
+  background-color: rgba(243, 172, 19, 0.24);
+  border-radius: 50%;
 }

@@ -6,7 +6,7 @@
   margin-bottom: 50px;
 }
 
-.Login{
+.Login {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,22 +16,20 @@
   background-color: rgba(27, 189, 175, 0.541);
 }
 
-ul{
+ul {
   justify-content: center;
 }
 
-
-.buttons{
-margin: 20px;
+.buttons {
+  margin: 20px;
 }
 
-.login-text{
+.login-text {
   margin: 20px;
   color: rgb(255, 255, 255);
 }
 
-
-.logo-container{
+.logo-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,14 +37,14 @@ margin: 20px;
   margin-bottom: 20px;
 }
 
-.logo-pic{
+.logo-pic {
   height: 200px;
   border-radius: 50%;
 }
 
-.Brand-name{
+.Brand-name {
   color: #fff;
   margin: 30px;
   font-size: 5rem;
-  font-family: 'Laila', serif;
+  font-family: "Laila", serif;
 }

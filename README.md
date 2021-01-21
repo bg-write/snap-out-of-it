@@ -1,54 +1,54 @@
 # Snap Out Of It!
 
-The app to help you get through a breakup, or any other kind of heartbreak. This MERN app uses a mix of user action steps and available resources to address how hard and overwhelming heartbreak can feel, and to help users in all stages of grief help navigate towards healing and embrace empathy.
-
-Heroku: (link)
+The app to help you get through a breakup, or any other kind of heartbreak. This MERN-stack app mixes user action steps and available resources to address how hard and overwhelming heartbreak can feel, and to help users in all stages of grief navigate towards empathy and healing.
 
 ## Getting Started
 
-Deploy the app: TBD
+Deploy the app: https://snap-out-of-it.herokuapp.com/
 
 Trello board: https://trello.com/b/5GaF2ssf/snap-out-of-it
 
-# ERD
-
-![ERD](public/images/erd.png)
-
 ## Screenshots
 
-### Landing Page
+### Log-in Page
 
-## ![landing page](TBD)
+### Home Page Page
 
-### SCREENSHOT TWO
+### Landing Page (Mobile View)
 
-![MobileScreenshot1](public/images/mobilescreenshot.png)
+## Users Can Use This App To:
 
-### SCREENSHOT THREE
-
-![DesktopScreenshot](public/images/desktopscreenshot.png)
-
-## What This App Can Do
-
-- Users can sign in and out to have full-CRUD, navbar-format access to lists, playlists, and other content.
-- Users can click on buttons to return random sassy and empathetic quote generators, depending on their mood and needs at any given time.
-- Users can scroll over a summary of the app's components: Mantras, Me Time, Deal Breakers, and Playlists.
-- For users wishing for a more serious experience, another button will take them to an entire section focusing on more empathy content.
-- App will utulize carousel & card flip scroll design, API playlisting, Illustrations, and responsive design.
-- Mobile and desktop friendly.
+- Sign in and out to have full-CRUD access to lists, quotes, games, and other types of content, ranging from snarky and upbeat to more serious and empathetic, depending on the user's mood and needs at any given time.
+- Scroll over a summary of the app's responsive components: Mantras, Me Time, Deal Breakers, and our Self-Care Snake game, all of which is desktop and mobile-friendly.
 
 ## The Code Itself
 
-- we'll find out!
+### The Main Mongoose Model
 
-## Key Learnings/Takeaways
+- TBD
+- 
+### React Component 1
 
-- We'll find out!
+- TBD
+
+### React Component 2
+
+- TBD
+
+### React Component 3
+
+- TBD
+
+## Key Takeaways
+
+- Biggest challenge: TBD
+- Group conflict (and what we learned): TBD
+- Other key learnings: TBD
 
 ## Technologies Used
 
 - Whimsical
-- API
+- APIs
 - Axios
 - React.js
 - Node.js
@@ -68,9 +68,6 @@ Trello board: https://trello.com/b/5GaF2ssf/snap-out-of-it
 - React Developer Tools
 - Bootstap
 - Coffee
-- Naps
-- Breaks
-- Decent nights' sleep
 
 ## Next Steps (Icebox)
 
@@ -86,6 +83,10 @@ Trello board: https://trello.com/b/5GaF2ssf/snap-out-of-it
 
 ## The Team
 
-- Brady Gerber: GitHub Manager, Documenter // [GitHub] (https://github.com/bg-write) [LinkedIn] (https://www.linkedin.com/in/brady-gerber/)
-- Erika Tidwell: Scrum Master, Designer // [GitHub] (https://github.com/erikacolette29) [LinkedIn] (https://www.linkedin.com/in/erikatidwell/)
-- Sebastian Guzman: Database Manager, API Leader // [GitHub] (https://github.com/Sebastians9517) [LinkedIn] (https://www.linkedin.com/in/sebastians9517/)
+- Brady Gerber: GitHub Manager, Documenter // [GitHub](https://github.com/bg-write) [LinkedIn](https://www.linkedin.com/in/brady-gerber/)
+- Erika Tidwell: Scrum Master, Designer // [GitHub](https://github.com/erikacolette29) [LinkedIn](https://www.linkedin.com/in/erikatidwell/)
+- Sebastian Guzman: Database Manager, API Leader // [GitHub](https://github.com/Sebastians9517) [LinkedIn](https://www.linkedin.com/in/sebastians9517/)
+
+## Other Credits
+
+- TBD

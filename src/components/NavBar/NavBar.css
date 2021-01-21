@@ -6,11 +6,11 @@ a:hover {
 	color: blue;
 }
 
-/* .navbar{
+.navbar{
     display:flex;
     justify-content: center;
     border-top: 2px grey solid;
-} */
+}
 
 li {
 	list-style: none;
@@ -27,7 +27,7 @@ ul {
 
 .Logo {
     /* border: solid; */
-	margin: 1rem;
+	margin: .5rem;
 	padding: 5px;
 	border-radius: 35%;
 }

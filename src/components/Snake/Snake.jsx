@@ -145,7 +145,7 @@ class SnakeGame extends React.Component {
       direction: "right",
       directionChanged: false,
       isGameOver: false,
-      gameLoopTimeout: 50,
+      gameLoopTimeout: 400,
       snakeColor: this.getRandomColor(),
       appleColor: this.getRandomColor(),
       score: 0,
@@ -375,7 +375,7 @@ class SnakeGame extends React.Component {
         style={{
           width: this.state.width + 20,
           height: this.state.height + 20,
-          borderWidth: this.state.width / 70,
+          borderWidth: this.state.width / 75,
         }}
       >
         {this.state.snake.map((snakePart, index) => {
@@ -424,6 +424,6 @@ class SnakeGame extends React.Component {
       </div>
     );
   }
-};
+}
 
 export default SnakeGame;
