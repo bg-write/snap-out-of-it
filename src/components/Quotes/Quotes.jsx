@@ -43,7 +43,7 @@ const Quotes = () => {
 								id="new-quote"
 								class="hvr-grow-shadow"
 							>
-								You're OK.
+								We got this.
 							</button>
 						</div>	
 						</div>
