@@ -1,56 +1,71 @@
-
-
 .Login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column nowrap;
-  width: 100vw;
-  height: 100%;
-  background-color: rgba(27, 189, 175, 0.541);
- 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column nowrap;
+	width: 100vw;
+	height: 100%;
+	background-color: rgba(27, 189, 175, 0.541);
 }
 
 .logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column wrap;
-  margin-top: 40px;
-
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	margin-top: 40px;
 }
 .logo-pic {
-  height: 200px;
-  border-radius: 50%;
+	height: 200px;
+	border-radius: 50%;
 }
 
-.brand-container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.brand-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 .Brand-name {
-  color: #fff;
-  margin: 30px;
-  font-size: 4rem;
-  font-family: "Laila", serif;
+	color: #fff;
+	margin: 30px;
+	font-size: 4rem;
+	font-family: 'Laila', serif;
 }
 
 .login-text {
-  margin: 20px;
-  color: rgb(255, 255, 255);
-  text-align: center;
+	margin: 20px;
+	color: rgb(255, 255, 255);
+	text-align: center;
 }
 .buttons {
-  margin: 20px;
-  color: rgb(100, 94, 94);
+	margin: 20px;
+	color: rgb(100, 94, 94);
 }
-ul { 
-  justify-content: space-around;
-
+ul {
+	justify-content: space-around;
 }
 
+/*---------------- Media Queries ----------------------------*/
+/*----TABLETS----*/
+@media only screen and (min-width: 43em) {
+	#nav-mobile {
+		/* background-color: aliceblue; */
+		padding: 0px;
+		margin: 0px;
+	}
+}
 
+/*----DESKTOP (smaller)----*/
+@media only screen and (min-width: 62em) {
+	/* #nav-mobile {
+		background-color: goldenrod;
+	} */
+}
 
-
+/*----DESKTOP (larger)----*/
+@media only screen and (min-width: 82em) {
+	/* #nav-mobile {
+		background-color: aquamarine;
+	} */
+}
