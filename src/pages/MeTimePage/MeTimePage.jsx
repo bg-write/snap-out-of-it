@@ -47,13 +47,14 @@ function MeTimePage({ user }) {
   console.log(person);
   return (
     <div className="metime-list-container">
+
       <div className="metime-heading">
         <h1 className="metime-page-head"> Me Time</h1>
       </div>
 
-      <>
+      <div className="metime-pic-container">
         <img className="metime-pic" src="/images/selflove2.png" alt="" />
-      </>
+      </div>
 
       <div>
         <>

@@ -4,17 +4,27 @@
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  width: 100vw;
+  padding-bottom: 200px;
+ 
 }
 
 .metime-page-head {
-  margin: 30px;
+  margin: 50px 0 20px 0;
   font-family: "Laila", serif;
   color: rgb(187, 88, 88);
   font-size: 4rem;
 }
+.metime-pic-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 .metime-pic {
   border-radius: 50%;
-  height: 260px;
-  padding: 10px;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
   margin-bottom: 30px;
 }
