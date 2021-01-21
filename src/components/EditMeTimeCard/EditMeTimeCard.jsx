@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useForm } from "../../hooks/useForm";
+import "./EditMeTimeCard.css";
 
 export default function EditMeTimeCard({ meTime, handleUpdateMeTime }) {
   const [invalidForm, setValidForm] = useState(true);
@@ -32,7 +33,7 @@ export default function EditMeTimeCard({ meTime, handleUpdateMeTime }) {
         </div>
 
         <button
-          className="btn btn-light"
+          className="btn btn-light edit-metime-btn"
           type="submit"
           disabled={invalidForm}
           styles="margin-top: 10px"
