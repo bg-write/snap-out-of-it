@@ -28,18 +28,6 @@ const NavBar = ({ user, handleLogout }) => {
                   </Navbar.Brand>
 
                   <Navbar.Brand>
-                    <Link to="/users">
-                      <Col xm={7}>
-                        <Image
-                          className="Logo"
-                          src="https://i.imgur.com/eyAuiBI.png"
-                          fluid
-                        />
-                      </Col>
-                    </Link>
-                  </Navbar.Brand>
-
-                  <Navbar.Brand>
                     <Link to="/mantra-page">
                       <Col xm={7}>
                         <Image
