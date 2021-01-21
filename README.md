@@ -1,6 +1,6 @@
 # Snap Out Of It!
 
-The app to help you get through a breakup, or any other kind of heartbreak. This MERN-stack app mixes user action steps and available resources to address how hard and overwhelming heartbreak can feel, and to help users in all stages of grief navigate towards empathy and healing.
+The app to help you get through a breakup, or any kind of heartbreak. This MERN-stack app mixes user action steps and available resources to address how hard and overwhelming heartbreak can feel, and to help users in all stages of grief navigate towards empathy and healing. This app was created in one week during General Assembly's Software Engineering Intensive Fellowship as a group React project.
 
 ## Getting Started
 
@@ -12,44 +12,24 @@ Trello board: https://trello.com/b/5GaF2ssf/snap-out-of-it
 
 ### Log-in Page
 
-### Home Page Page
+![Login](https://i.imgur.com/zyLsaFU.png)
 
-### Landing Page (Mobile View)
+### Home Page
+
+![Home](https://i.imgur.com/nLJuHVr.png)
+
+### Mantra Page (Component Example)
+
+![Mantra](https://i.imgur.com/g6YkWNT.png)
 
 ## Users Can Use This App To:
 
-- Sign in and out to have full-CRUD access to lists, quotes, games, and other types of content, ranging from snarky and upbeat to more serious and empathetic, depending on the user's mood and needs at any given time.
-- Scroll over a summary of the app's responsive components: Mantras, Me Time, Deal Breakers, and our Self-Care Snake game, all of which is desktop and mobile-friendly.
-
-## The Code Itself
-
-### The Main Mongoose Model
-
-- TBD
-- 
-### React Component 1
-
-- TBD
-
-### React Component 2
-
-- TBD
-
-### React Component 3
-
-- TBD
-
-## Key Takeaways
-
-- Biggest challenge: TBD
-- Group conflict (and what we learned): TBD
-- Other key learnings: TBD
+Sign in and out to have full-CRUD access to lists, quotes, games, and other types of content, ranging from snarky and upbeat to more serious and empathetic, depending on the user's mood and needs at any given time.
 
 ## Technologies Used
 
 - Whimsical
-- APIs
-- Axios
+- [Quotes API](https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json)
 - React.js
 - Node.js
 - Express
@@ -62,18 +42,19 @@ Trello board: https://trello.com/b/5GaF2ssf/snap-out-of-it
 - Postman
 - GitHub
 - Git
-- Mac Terminal
+- Google Fonts
+- Pinterest
 - Visual Studio Code
 - Google Chrome DevTools (and, like, just Google)
 - React Developer Tools
 - Bootstap
+- Flaticon
 - Coffee
 
 ## Next Steps (Icebox)
 
 - Chat Room socket.io
-- YouTube video
-- Make more broad
+- YouTube videos
 - Animations
 - Sounds
 - User Profile Page
@@ -83,10 +64,14 @@ Trello board: https://trello.com/b/5GaF2ssf/snap-out-of-it
 
 ## The Team
 
-- Brady Gerber: GitHub Manager, Documenter // [GitHub](https://github.com/bg-write) [LinkedIn](https://www.linkedin.com/in/brady-gerber/)
-- Erika Tidwell: Scrum Master, Designer // [GitHub](https://github.com/erikacolette29) [LinkedIn](https://www.linkedin.com/in/erikatidwell/)
-- Sebastian Guzman: Database Manager, API Leader // [GitHub](https://github.com/Sebastians9517) [LinkedIn](https://www.linkedin.com/in/sebastians9517/)
+- Brady Gerber: GitHub Manager, Documenter // [GitHub](https://github.com/bg-write), [LinkedIn](https://www.linkedin.com/in/brady-gerber/)
+- Erika Tidwell: Scrum Master, Designer // [GitHub](https://github.com/erikacolette29), [LinkedIn](https://www.linkedin.com/in/erikatidwell/)
+- Sebastian Guzman: Database Manager, API Leader // [GitHub](https://github.com/Sebastians9517), [LinkedIn](https://www.linkedin.com/in/sebastians9517/)
 
 ## Other Credits
 
-- TBD
+- [Nathaniel McDonald](http://www.nnmcdonald-portfolio.com/react/react-snake/) and [CSS Renderer](https://codepen.io/sebastians9517/pen/NWRmope?editors=1111) for helping guide our snake game
+- [Sébastien Thibault](https://www.behance.net/gallery/53056121/Toxic-Love)'s "Toxic Love" image
+- [SOLA](https://solasweet.com/5-tips-on-how-to-practice-self-love/)'s "Me Time" image
+- [iStock](https://www.istockphoto.com/vector/set-of-meditating-yogi-men-characters-in-the-lotus-position-vector-illustration-in-gm1214418470-353315246)'s "Mantra" image
+- [The New York Times](https://www.nytimes.com/guides/year-of-living-better/how-to-be-more-empathetic)'s "Empathy" image
