@@ -2,6 +2,7 @@
   position: relative;
   margin: auto;
   border-style: solid;
+  border-radius: 10px;
 }
 
 #GameBoard .Block {
@@ -25,13 +26,13 @@
 }
 
 #GameBoard #GameOverText {
-  color: #ca0000;
+  color: #836c49;
   font-weight: bold;
   text-decoration-line: underline;
 }
 
 #GameBoard #PressSpaceText {
-  color: #2e7ecb;
+  color: #85add3;
   font-weight: bold;
 }
 
@@ -45,23 +46,25 @@
 }
 
 .control-button {
+
   width: 50px;
   height: 50px;
-  background-color: #5eb3d5;
-  margin: 0px auto;
+  background-color: #e4af73;
+  margin: 0;
   font-weight: bold;
-  color: #8d3525;
+  color: #f0ece2;
   display: flex;
-  align-items: center;
+  align-items: space-between;
   cursor: pointer;
   transition: s background-color ease, 0.5s color ease;
-  box-shadow: 0px 5px 0px #9b4637;
+  box-shadow: 0px 5px 0px #c2bb94;
   text-align: center;
+  padding: 10px;
 }
 
 .control-button:hover {
-  background-color: #9b4637;
-  color: #d58e5e;
+  background-color: #ecd3a5;
+  color: #c0a795;
 }
 
 .control-button i {

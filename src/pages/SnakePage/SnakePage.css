@@ -1,0 +1,34 @@
+.snake-page-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+    background-color: rgba(241, 235, 220, 0.473);
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid rgb(235, 213, 184);
+    border-radius: 8px;
+    
+   
+}
+
+.snake-heading{
+    margin: 50px 0;
+    font-family: "Laila", serif;
+    font-size: 3.5rem;
+    color:rgb(172, 153, 128)
+}
+
+.sub-heading-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.snake-sub-heading{
+    font-family: "Laila", serif;  
+     color:rgb(206, 184, 156); 
+     margin-bottom: 40px;
+}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import SnakeGame from "../../components/Snake/Snake"
+import './SnakePage.css'
 
 function SnakePage() {
     // Creating state for Snake
@@ -12,16 +13,16 @@ function SnakePage() {
     }, [Snakes, history]);
 
     return (
-      <>
+      <div className="snake-page-container">
         <div>
-          <h1>Relaxing snake game</h1>
+          <h1 className="snake-heading">Game Time</h1>
         </div>
-        <div>
-          <h1> Play to your heart's contempt</h1>
+        <div className="sub-heading-container">
+          <h1 className="snake-sub-heading"> Play to your heart's content</h1>
           <SnakeGame />
 
         </div>
-      </>
+      </div>
     );
   }
   export default SnakePage;
