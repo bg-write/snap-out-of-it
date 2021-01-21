@@ -28,8 +28,8 @@ export default function AddMantraCard({ user, mantra, handleAddMantra }) {
           >
             <div className="input-group">
               <input
-                className="form-control width100"
-                placeholder="Something like 'I am awesome' or 'I am worthy' ..."
+                className="form-control "
+                placeholder="Something like 'I am awesome' ..."
                 name="text"
                 value={state.text}
                 onChange={handleChange}
@@ -38,7 +38,7 @@ export default function AddMantraCard({ user, mantra, handleAddMantra }) {
               {mantra <= 4 ? (
                 <span class="input-group-btn">
                   <button
-                    class="btn btn-info"
+                    class="btn btn-info mantra-but"
                     type="submit"
                     disabled={invalidForm}
                   >
@@ -55,7 +55,7 @@ export default function AddMantraCard({ user, mantra, handleAddMantra }) {
           </form>
         </div>
       ) : (
-        <h1>You have no lists</h1>
+        <h1>You have no Mantras</h1>
       )}
     </>
   );

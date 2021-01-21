@@ -5,12 +5,14 @@
   flex-flow: column;
   margin-top: 50px;
   text-align: center;
+  width: 100vw;
+ 
 }
 
 .m-card {
   text-align: center;
   padding: 10px;
-  width: 500px;
+  width: 90%;
   background-color: rgba(255, 255, 255, 0);
   border: none;
 }
@@ -27,6 +29,7 @@
   border-radius: 10px 140px 30px 140px;
   margin-top: 10px;
   margin-bottom: 10px;
+  color:rgba(136, 70, 16, 0.836);
 }
 
 .mantra-delete {

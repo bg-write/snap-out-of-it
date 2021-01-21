@@ -12,20 +12,26 @@
   );
   padding: 20px;
   padding-bottom: 160px;
-}
-
-.mantra-page-head {
-  color: rgb(165, 87, 42);
-  font-size: 4rem;
+  width: 100vw;
 }
 
 .mantra-heading {
   margin: 30px;
   font-family: "Laila", serif;
 }
+.mantra-page-head {
+  color: rgb(165, 87, 42);
+  font-size: 4rem;
+}
 
+.mantra-pic-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px 30px 10px;
+}
 .mantra-pic {
-  border-radius: 50%;
-  height: 400px;
-  margin: 20px;
+  border-radius: 50%;   
+    height: 300px;
+  
 }
