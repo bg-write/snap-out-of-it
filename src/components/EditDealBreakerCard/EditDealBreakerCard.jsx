@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useForm } from "../../hooks/useForm";
+import './EditDealBreakerCard.css';
 
 export default function EditDealBreakerCard({
   dealBreaker,
@@ -14,7 +15,7 @@ export default function EditDealBreakerCard({
   }, [state]);
 
   return (
-    <>
+    <div className="editdeal-card-container">
       <form
         ref={formRef}
         autoComplete="off"
@@ -26,7 +27,7 @@ export default function EditDealBreakerCard({
       >
         <div>
           <input
-            className="form-control form-control-md"
+            className="form-control input-edit-deal form-control-md"
             name="text"
             value={state.text}
             onChange={handleChange}
@@ -42,6 +43,6 @@ export default function EditDealBreakerCard({
           Edit Deal Breaker
         </button>
       </form>
-    </>
+    </div>
   );
 }

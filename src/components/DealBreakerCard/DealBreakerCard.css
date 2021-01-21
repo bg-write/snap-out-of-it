@@ -5,12 +5,14 @@
   flex-flow: column;
   margin-top: 50px;
   text-align: center;
+  width: 100vw;
+  
 }
 
 .d-card {
   text-align: center;
-  padding: 10px;
-  width: 500px;
+  padding: 10px ;
+width: 80%;
   background-color: rgba(255, 255, 255, 0);
   border: none;
 }

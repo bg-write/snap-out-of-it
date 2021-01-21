@@ -5,17 +5,26 @@
   flex-flow: column;
   background-color: rgba(255, 170, 42, 0.479);
   text-align: center;
+  width: 100vw;
+  padding-bottom: 150px;
+ 
 }
 
 .deal-page-head {
-  margin: 30px;
+  margin: 40px 0 30px 0;
   font-family: "Laila", serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: rgba(255, 81, 0, 0.733);
 }
 
+.deal-pic-container{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
 .dealbreaker-pic {
   border-radius: 50%;
-  height: 400px;
-  margin: 30px;
+ height: 330px;
+  margin-bottom: 30px;
 }

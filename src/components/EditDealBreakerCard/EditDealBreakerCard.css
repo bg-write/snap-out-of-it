@@ -1,0 +1,11 @@
+
+.editdeal-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input-edit-deal{
+    margin: 30px 0 10px;
+}
