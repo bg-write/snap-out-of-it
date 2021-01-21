@@ -1,5 +1,4 @@
-const quotesSassyApi = {
-	quotesSassy: [
+const quotesSassy = [
 		{
 			quote:
 				'All discarded lovers should be given a second chance, but with somebody else.',
@@ -77,7 +76,6 @@ const quotesSassyApi = {
 			quote: 'Want to be happy? Stop trying to be perfect.',
 			author: 'Brene Brown',
 		},
-	],
-};
+	]
 
-export default quotesSassyApi;
+export default quotesSassy;
