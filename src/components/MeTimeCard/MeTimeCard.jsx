@@ -8,9 +8,9 @@ function MeTimeCard({ user, meTime, handleDeleteMeTime, handleUpdateMeTime }) {
       <div className="metime-card-container">
 
         <div className="card met-card">
-          <p className="card-text mt-text">{meTime.text}</p>
+            <p className="card-text mt-text">{meTime.text}</p>
         </div>
-		
+
         <div className="metime-delete-box">
           <button
             className="btn btn-light metime-delete"
