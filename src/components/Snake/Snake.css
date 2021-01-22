@@ -43,6 +43,8 @@
   margin-top: 80%;
   display: flex;
   order: 2;
+  justify-content: center;
+  padding: 5px;
 }
 
 .control-button {
