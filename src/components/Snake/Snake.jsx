@@ -177,7 +177,7 @@ class SnakeGame extends React.Component {
       previousPartY = tmpPartY;
     }
     this.setState({ snake });
-  }
+  };
 
   tryToEatApple() {
     let snake = this.state.snake;
