@@ -133,6 +133,7 @@ function HomePage({ user }) {
               </a>
             </div>
           </div>
+      </div>
 
          
     <div className="quote-box-home">
@@ -141,7 +142,6 @@ function HomePage({ user }) {
 
           <div className="space"></div>
       
-      </div>
     </div>
   );
 }
