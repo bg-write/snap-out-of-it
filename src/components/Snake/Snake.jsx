@@ -368,7 +368,7 @@ class SnakeGame extends React.Component {
           score={this.state.score}
         />
       );
-    }
+    };
 
     return (
       <div
