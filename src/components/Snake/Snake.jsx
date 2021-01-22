@@ -232,7 +232,7 @@ class SnakeGame extends React.Component {
         newHighScore,
         gameLoopTimeout,
       });
-    }
+    };
   }
 
   tryToEatSnake() {
