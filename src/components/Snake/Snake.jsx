@@ -33,7 +33,7 @@ class SnakeGame extends React.Component {
     this.initGame();
     window.addEventListener("keydown", this.handleKeyDown);
     this.gameLoop();
-  }
+  };
 
   initGame() {
     console.log(this.state.width, "<-- this state width")
