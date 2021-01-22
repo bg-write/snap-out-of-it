@@ -393,7 +393,7 @@ class SnakeGame extends React.Component {
               }}
             />
           );
-        })};
+        })}
         <div
           className="Block"
           style={{
