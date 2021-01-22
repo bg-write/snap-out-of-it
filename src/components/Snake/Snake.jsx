@@ -36,11 +36,12 @@ class SnakeGame extends React.Component {
   }
 
   initGame() {
+    console.log(this.state.width, "<-- this state width")
     // Game size initialization
     let percentageWidth = this.props.percentageWidth || 45;
     let width =
-      document.getElementById("GameBoard").parentElement.offsetWidth *
-      (percentageWidth / 100);
+    document.getElementById("GameBoard").parentElement.offsetWidth *
+    (percentageWidth / 100);
     width -= width % 30;
     if (width < 30) width = 35;
     let height = (width / 3) * 2;
@@ -373,7 +374,7 @@ class SnakeGame extends React.Component {
       <div
         id="GameBoard"
         style={{
-          width: this.state.width,
+          width: this.state.width +5,
           height: this.state.height,
           borderWidth: this.state.width / 75,
         }}
