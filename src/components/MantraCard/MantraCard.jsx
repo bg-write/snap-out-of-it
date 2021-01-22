@@ -5,7 +5,7 @@ import EditMantraCard from "../EditMantraCard/EditMantraCard";
 function MantraCard({ user, mantra, handleDeleteMantra, handleUpdateMantra }) {
   return (
     <>
-      <div className="mantra-card-container">
+      <div id="mantra-card-container" className="mantra-card-container">
         <div className="card m-card">
           <div className="card-header m-header">Mantra</div>
 

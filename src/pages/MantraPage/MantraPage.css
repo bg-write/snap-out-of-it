@@ -35,3 +35,58 @@
     height: 300px;
   
 }
+
+
+/*---------------- Media Queries ----------------------------*/
+/*----TABLETS----*/
+@media only screen and (min-width: 43em) {
+	.mantra-list-container{
+	  width: 100vw;
+	  }
+  }
+  
+  
+  /*----DESKTOP (smaller)----*/
+  @media only screen and (min-width: 62em) {
+	.mantra-list-container{
+	  width: 100vw;
+	  }
+  }
+  
+  
+  /*----DESKTOP (larger)----*/
+  @media only screen and (min-width: 62em) {
+	.mantra-list-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 10% 10% 10%;
+		grid-template-areas: 
+		  "header header "
+		  "qu list "
+		  "pic list";
+	   gap: 20px 10px;
+		 justify-items: flex-start;
+		 align-items: start;
+		 width: 100vw;
+		 margin-bottom: 100px;
+		}
+
+        .mantra-heading{
+            grid-area: header;
+            margin-left: 180px;
+        }
+
+        .mantra-pic{
+            grid-area: pic;
+            height: 500px;
+            margin-left: 30px;
+            margin-top: 50px;
+        }
+        #mantra-card-container{
+            grid-area: list;
+            width: 400px;
+        }
+
+
+
+    }
