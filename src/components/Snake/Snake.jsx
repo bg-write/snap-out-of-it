@@ -303,7 +303,7 @@ class SnakeGame extends React.Component {
     snake[0].Ypos =
       snake[0].Ypos >= height - blockHeight ? 0 : snake[0].Ypos + blockHeight;
     this.setState({ snake });
-  }
+  };
 
   handleKeyDown(event) {
     // if spacebar is pressed to run a new game
