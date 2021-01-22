@@ -122,7 +122,7 @@ class SnakeGame extends React.Component {
       Xpos -= blockWidth;
       let snakePart = { Xpos: Xpos, Ypos: Ypos };
       snake.push(snakePart);
-    }
+    };
 
     // apple position reset
     apple.Xpos =
