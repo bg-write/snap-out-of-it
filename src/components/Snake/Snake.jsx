@@ -251,7 +251,7 @@ class SnakeGame extends React.Component {
         return true;
     };
     return false;
-  }
+  };
 
   moveHead() {
     switch (this.state.direction) {
