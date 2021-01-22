@@ -242,7 +242,7 @@ class SnakeGame extends React.Component {
       if (snake[0].Xpos === snake[i].Xpos && snake[0].Ypos === snake[i].Ypos)
         this.setState({ isGameOver: true });
     };
-  }
+  };
 
   isAppleOnSnake(appleXpos, appleYpos) {
     let snake = this.state.snake;
