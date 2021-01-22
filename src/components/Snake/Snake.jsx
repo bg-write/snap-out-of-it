@@ -92,7 +92,7 @@ class SnakeGame extends React.Component {
         this.tryToEatSnake();
         this.tryToEatApple();
         this.setState({ directionChanged: false });
-      }
+      };
 
       this.gameLoop();
     }, this.state.gameLoopTimeout);
