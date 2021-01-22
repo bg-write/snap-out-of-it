@@ -310,7 +310,7 @@ class SnakeGame extends React.Component {
     if (this.state.isGameOver && event.keyCode === 32) {
       this.resetGame();
       return;
-    }
+    };
 
     if (this.state.directionChanged) return;
 
