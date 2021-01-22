@@ -374,7 +374,7 @@ class SnakeGame extends React.Component {
         id="GameBoard"
         style={{
           width: this.state.width + 20,
-          height: this.state.height + 20,
+          height: this.state.height,
           borderWidth: this.state.width / 75,
         }}
       >
