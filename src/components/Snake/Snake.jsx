@@ -98,7 +98,7 @@ class SnakeGame extends React.Component {
     }, this.state.gameLoopTimeout);
 
     this.setState({ timeoutId });
-  }
+  };
 
   componentWillUnmount() {
     clearTimeout(this.state.timeoutId);
