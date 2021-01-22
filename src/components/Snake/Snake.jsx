@@ -27,7 +27,7 @@ class SnakeGame extends React.Component {
       highScore: Number(localStorage.getItem("snakeHighScore")) || 0,
       newHighScore: false,
     };
-  }
+  };
 
   componentDidMount() {
     this.initGame();
