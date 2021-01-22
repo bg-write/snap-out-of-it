@@ -18,7 +18,7 @@ export default function AddMeTimeCard({ user, meTime, handleAddMeTime }) {
     <>
       {user ? (
         <>
-          <form className="add-metime-container"
+          <form id="add-metime-container" className="add-metime-container"
             autoComplete="off"
             ref={formRef}
             onSubmit={(e) => {

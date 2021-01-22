@@ -2,12 +2,13 @@ import React from "react";
 import "./MeTimeCard.css";
 import EditMeTimeCard from "../EditMeTimeCard/EditMeTimeCard";
 
+
 function MeTimeCard({ user, meTime, handleDeleteMeTime, handleUpdateMeTime }) {
   return (
     <>
-      <div className="metime-card-container">
+      <div id="metime-card-container" className="metime-card-container">
 
-        <div className="card met-card">
+        <div id="met-card" className="card met-card">
             <p className="card-text mt-text">{meTime.text}</p>
         </div>
 

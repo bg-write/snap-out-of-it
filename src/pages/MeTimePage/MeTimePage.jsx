@@ -46,7 +46,7 @@ function MeTimePage({ user }) {
 
   console.log(person);
   return (
-    <div className="metime-list-container">
+    <div className="metime-list-containers">
 
       <div className="metime-heading">
         <h1 className="metime-page-head"> Me Time</h1>
