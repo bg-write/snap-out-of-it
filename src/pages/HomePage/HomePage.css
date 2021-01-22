@@ -285,11 +285,12 @@
   }
   .sassy-box{
     grid-area: footer;
+    border: solid;
   }
   .carousel-box{
     margin-left: 50px;
     grid-area: quote;
-   width: 60px;
+    width: 60px;
   }
   .carousel-container{
     width: 400px;
