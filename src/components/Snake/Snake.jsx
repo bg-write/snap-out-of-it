@@ -72,7 +72,7 @@ class SnakeGame extends React.Component {
       appleYpos =
         Math.floor(Math.random() * ((height - blockHeight) / blockHeight + 1)) *
         blockHeight;
-    }
+    };
 
     this.setState({
       width,
