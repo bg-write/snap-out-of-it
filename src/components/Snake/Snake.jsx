@@ -152,7 +152,7 @@ class SnakeGame extends React.Component {
       score: 0,
       newHighScore: false,
     });
-  }
+  };
 
   getRandomColor() {
     let hexa = "0123456789ABCDEF";
