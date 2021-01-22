@@ -294,7 +294,7 @@ class SnakeGame extends React.Component {
     snake[0].Xpos =
       snake[0].Xpos >= width - blockWidth ? 0 : snake[0].Xpos + blockWidth;
     this.setState({ snake });
-  }
+  };
 
   moveHeadDown() {
     let height = this.state.height;
