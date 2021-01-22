@@ -223,7 +223,7 @@
 /*----TABLETS----*/
 @media only screen and (min-width: 43em) {
 	.about-us {
-		background-color: aliceblue;
+		/* background-color: aliceblue; */
 	}
 }
 
@@ -231,16 +231,78 @@
 /*----DESKTOP (smaller)----*/
 @media only screen and (min-width: 62em) {
 	.about-us {
-		background-color: goldenrod;
+		/* background-color: goldenrod; */
 	}
 }
 
 
 /*----DESKTOP (larger)----*/
 @media only screen and (min-width: 82em) {
+
+  .home-container-container{
+  /* margin: 0;
+  padding: 0;
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: 
+  "nav nav nav"
+  "we we ab"
+  "qu qu ca";
+  grid-template-columns: 20% 20% 1fr;
+  grid-template-rows: 10% 20% auto; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header "
+    "main side "
+    "quote footer";
+ gap: 20px 10px;
+   justify-items: center;
+   align-items: center;
+   width: 100vw;
+}
+
+.banner-top{
+  grid-row: 1/2;
+  grid-area: header;
+}
+.welcome{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+ margin-left: 50px;
+  grid-area: main;
+}
 	.about-us {
-		background-color: aquamarine;
-	}
+    margin-top: 50px;
+    grid-area: side;
+	
+  }
+  .quote-box-home{
+    grid-area: footer;
+  }
+  .sassy-box{
+    grid-area: footer;
+  }
+  .carousel-box{
+    margin-left: 50px;
+    grid-area: quote;
+   width: 60px;
+  }
+  .carousel-container{
+    width: 400px;
+  }
+
+  nav{
+    max-height: 10rem;
+  }
+
+  .Logo{
+    max-height: 5rem;
+    margin-left: 50px;
+  }
 }
 
 
