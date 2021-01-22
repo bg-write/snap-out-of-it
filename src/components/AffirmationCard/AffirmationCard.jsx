@@ -6,7 +6,7 @@ function AffirmationCard({ user, handleUpdateAffirmation, affirmation, handleDel
 
     return (
         <>
-            <div className="af-card-container">
+            <div id="af-card-container"className="af-card-container">
             <div className="card a-card">
             <div className="card-header a-header">
             Affirmation
