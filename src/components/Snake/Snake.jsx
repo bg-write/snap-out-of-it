@@ -212,7 +212,7 @@ class SnakeGame extends React.Component {
           Math.floor(
             Math.random() * ((height - blockHeight) / blockHeight + 1)
           ) * blockHeight;
-      }
+      };
 
       // increment high score if needed
       if (this.state.score === highScore) {
