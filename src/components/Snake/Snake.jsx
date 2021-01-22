@@ -249,7 +249,7 @@ class SnakeGame extends React.Component {
     for (let i = 0; i < snake.length; i++) {
       if (appleXpos === snake[i].Xpos && appleYpos === snake[i].Ypos)
         return true;
-    }
+    };
     return false;
   }
 
