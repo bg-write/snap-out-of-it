@@ -344,7 +344,7 @@ class SnakeGame extends React.Component {
   goUp() {
     let newDirection = this.state.direction === "down" ? "down" : "up";
     this.setState({ direction: newDirection });
-  }
+  };
 
   goRight() {
     let newDirection = this.state.direction === "left" ? "left" : "right";
