@@ -30,3 +30,101 @@
   margin: 20px;
   margin-bottom: 50px;
 }
+
+
+/*---------------- Media Queries ----------------------------*/
+/*----TABLETS----*/
+@media only screen and (min-width: 43em) {
+	.spiral-list-container{
+	  width: 100vw;
+	  }
+  }
+  
+  
+  /*----DESKTOP (smaller)----*/
+  @media only screen and (min-width: 62em) {
+	.spiral-list-container{
+	  width: 100vw;
+	  }
+  }
+  
+  
+  /*----DESKTOP (larger)----*/
+  @media only screen and (min-width: 82em) {
+	.spiral-list-container{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 10% 10% 10%;
+		grid-template-areas: 
+		  "header header "
+		  "qu list "
+		  "pic list";
+	   gap: 20px 10px;
+		 justify-items: flex-start;
+		 align-items: start;
+		 width: 100vw;
+		}
+
+
+
+.spiral-heading{
+	
+	grid-area: header;
+}
+
+.spiral-pic{
+	grid-area: pic;
+	height: 500px;
+	margin-left: 30px;
+	margin-top: 50px;
+}
+.Quotes-big-container{
+	grid-area: qu;
+height: auto;
+margin-left: 50px;
+width: 500px;
+}
+
+
+.aff-card-container{
+	grid-area: list;
+	max-width: 400px;
+	justify-content: flex-start;
+	
+	
+}
+.af-card-container{
+	width: 400px;
+	justify-content: flex-start;
+	display: flex;
+}
+
+.a-card{
+	width: 50%;
+	justify-content: flex-start;
+	display: flex;
+}
+.a-header{
+	width: 300px;
+	justify-content: flex-start;
+	display: flex;
+}
+.af-delete{
+	justify-content: flex-start;
+	display: flex;
+}
+
+.form{
+	
+justify-content: flex-start;
+display: flex;
+}
+
+.edit-container{
+	display: flex;
+	justify-content: flex-start;
+	text-align: left;
+
+}
+
+  }

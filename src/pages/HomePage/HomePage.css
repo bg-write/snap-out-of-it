@@ -222,16 +222,16 @@
 /*---------------- Media Queries ----------------------------*/
 /*----TABLETS----*/
 @media only screen and (min-width: 43em) {
-	.about-us {
-		/* background-color: aliceblue; */
+  .home-container-container{
+    width: 100vh;
 	}
 }
 
 
 /*----DESKTOP (smaller)----*/
 @media only screen and (min-width: 62em) {
-	.about-us {
-		/* background-color: goldenrod; */
+  .home-container-container{
+    width: 100vh;
 	}
 }
 
