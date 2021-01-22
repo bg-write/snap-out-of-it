@@ -1,6 +1,6 @@
 # Snap Out Of It!
 
-The app to help you get through a breakup, or any kind of heartbreak. This MERN-stack app mixes user action steps and available resources to address how hard and overwhelming heartbreak can feel, and to help users in all stages of grief navigate towards empathy and healing. This app was created in one week during General Assembly's Software Engineering Intensive Fellowship as a group React project.
+The app to help you get through a breakup, or any kind of heartbreak. This MERN-stack app provides user action steps to address how hard and overwhelming heartbreak can feel, and to help users in all stages of grief navigate towards empathy and healing. This app was created in one week during General Assembly's Software Engineering Intensive Fellowship as a group React project.
 
 ## Getting Started
 
