@@ -267,7 +267,7 @@ class SnakeGame extends React.Component {
       default:
         this.moveHeadDown();
     };
-  }
+  };
 
   moveHeadLeft() {
     let width = this.state.width;
