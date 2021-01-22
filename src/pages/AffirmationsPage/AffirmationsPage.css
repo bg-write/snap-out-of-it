@@ -50,7 +50,7 @@
   
   
   /*----DESKTOP (larger)----*/
-  @media only screen and (min-width: 82em) {
+  @media only screen and (min-width: 62em) {
 	.spiral-list-container{
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -63,6 +63,7 @@
 		 justify-items: flex-start;
 		 align-items: start;
 		 width: 100vw;
+		 margin-bottom: 100px;
 		}
 
 
@@ -88,19 +89,22 @@ width: 500px;
 
 .aff-card-container{
 	grid-area: list;
-	max-width: 400px;
-	justify-content: flex-start;
+width: 400px;
+	/* justify-content: center; */
 	
 	
 }
-.af-card-container{
+#af-card-container{
 	width: 400px;
-	justify-content: flex-start;
+	text-align: center;
 	display: flex;
+	justify-content: center;
+	
+
 }
 
 .a-card{
-	width: 50%;
+	width: 50px;
 	justify-content: flex-start;
 	display: flex;
 }
@@ -115,15 +119,14 @@ width: 500px;
 }
 
 .form{
-	
-justify-content: flex-start;
-display: flex;
+text-align: center;
 }
 
 .edit-container{
 	display: flex;
 	justify-content: flex-start;
-	text-align: left;
+
+	
 
 }
 
