@@ -13,9 +13,9 @@
 }
 
 .sassy-quote {
-  height: 300px;
-  width: 300px;
-padding-right: 50px;
+	height: 300px;
+	width: 300px;
+	padding-right: 50px;
 }
 .sassy-button {
 	display: flex;
@@ -67,4 +67,45 @@ padding-right: 50px;
 	box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
+}
+
+/*---------------- Media Queries ----------------------------*/
+/*----TABLETS----*/
+@media only screen and (min-width: 43em) {
+	.sassy-box {
+		grid-area: footer;
+		margin-left: 10rem;
+		margin-right: auto;
+		width: 500px;
+		margin: 0px 0px 250px 0px;
+		border: none;
+	}
+
+	.sassy-quote {
+		height: 600px;
+		width: 400px;
+		padding-right: 0;
+	}
+	.sassy-button {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.sassy-text {
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+
+	.sassy-author {
+		font-size: 1rem;
+		margin-bottom: 50px;
+	}
+}
+
+/*----DESKTOP (smaller)----*/
+@media only screen and (min-width: 62em) {
+}
+
+/*----DESKTOP (larger)----*/
+@media only screen and (min-width: 82em) {
 }
