@@ -103,7 +103,7 @@ class SnakeGame extends React.Component {
   componentWillUnmount() {
     clearTimeout(this.state.timeoutId);
     window.removeEventListener("keydown", this.handleKeyDown);
-  }
+  };
 
   resetGame() {
     let width = this.state.width;
