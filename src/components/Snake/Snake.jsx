@@ -219,7 +219,7 @@ class SnakeGame extends React.Component {
         highScore++;
         localStorage.setItem("snakeHighScore", highScore);
         newHighScore = true;
-      }
+      };
 
       // decrease the game loop timeout
       if (gameLoopTimeout > 25) gameLoopTimeout -= 0.5;
