@@ -332,7 +332,7 @@ class SnakeGame extends React.Component {
         this.goDown();
         break;
       default:
-    }
+    };
     this.setState({ directionChanged: true });
   }
 
