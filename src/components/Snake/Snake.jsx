@@ -406,7 +406,7 @@ class SnakeGame extends React.Component {
         />
         <div id="Score" style={{ fontSize: this.state.width / 20 }}>
           HIGH-SCORE: {this.state.highScore}&ensp;&ensp;&ensp;&ensp;SCORE:{" "}
-          {this.state.score}
+          {this.state.score};
         </div>
         <div class="controls">
           <button class="control-button" id="left" onClick={() => this.goLeft()}>
