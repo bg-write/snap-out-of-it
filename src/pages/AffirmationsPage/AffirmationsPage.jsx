@@ -59,11 +59,11 @@ function AffirmationPage({ user }) {
         <img className="spiral-pic" src="/images/empathy.jpg" alt="" />
       </>
 
-      <>
+      <div className="Quotes-big-container">
         <Quotes />
-      </>
+      </div>
 
-      <div>
+      <div className="aff-card-container">
         <>
           <AddAffirmationCard
             user={person}
