@@ -266,7 +266,7 @@ class SnakeGame extends React.Component {
         break;
       default:
         this.moveHeadDown();
-    }
+    };
   }
 
   moveHeadLeft() {
