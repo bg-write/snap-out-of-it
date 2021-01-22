@@ -233,7 +233,7 @@ class SnakeGame extends React.Component {
         gameLoopTimeout,
       });
     };
-  }
+  };
 
   tryToEatSnake() {
     let snake = this.state.snake;
