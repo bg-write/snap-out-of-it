@@ -83,7 +83,7 @@ class SnakeGame extends React.Component {
       snake,
       apple: { Xpos: appleXpos, Ypos: appleYpos },
     });
-  }
+  };
 
   gameLoop() {
     let timeoutId = setTimeout(() => {
