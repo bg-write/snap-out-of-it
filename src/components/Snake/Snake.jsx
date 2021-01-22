@@ -159,7 +159,7 @@ class SnakeGame extends React.Component {
     let color = "#";
     for (let i = 0; i < 6; i++) color += hexa[Math.floor(Math.random() * 16)];
     return color;
-  }
+  };
 
   moveSnake() {
     let snake = this.state.snake;
